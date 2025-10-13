@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="nav-buttons">
+    
+    <button onclick="history.back()" class="btn btn-secondary">
+        <i class="fas fa-arrow-left me-1"></i> Previous
+    </button>
+    <a href="/" class="btn btn-primary">
+        <i class="fas fa-home me-1"></i> Home
+    </a>
+    <button onclick="history.forward()" class="btn btn-secondary">
+        Next <i class="fas fa-arrow-right ms-1"></i>
+    </button>
+</div>
+<h2>Configuration</h2>
+<div class="card">
+    <div class="card-body">
+        <form id="configForm" method="POST" action="{{ url_for('configuration') }}">
+            <div id="tableRows">
+                <div class="row mb-2 table-row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Select the Table Name" name="tableName[]">
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" name="sheetName[]">
+                            {% for sheet in sheet_names %}
+                                <option value="{{ sheet }}">{{ sheet }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success addRow">+</button>
+                        <button type="button" class="btn btn-danger removeRow">-</button>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit Configuration</button>
+        </form>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tableRows = document.getElementById("tableRows");
+
+    // Add new row
+    tableRows.addEventListener("click", function(e) {
+        if (e.target.classList.contains("addRow")) {
+            const row = e.target.closest(".table-row");
+            const clone = row.cloneNode(true);
+            clone.querySelector("input").value = "";
+            tableRows.appendChild(clone);
+        }
+    });
+
+    // Remove row
+    tableRows.addEventListener("click", function(e) {
+        if (e.target.classList.contains("removeRow")) {
+            const rows = document.querySelectorAll(".table-row");
+            if (rows.length > 1) {
+                e.target.closest(".table-row").remove();
+            } else {
+                alert("At least one row is required.");
+            }
+        }
+    });
+});
+</script>
+{% endblock %}

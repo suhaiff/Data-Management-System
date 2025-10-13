@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="nav-buttons">
+    
+    <button onclick="history.back()" class="btn btn-secondary">
+        <i class="fas fa-arrow-left me-1"></i> Previous
+    </button>
+    <a href="/" class="btn btn-primary">
+        <i class="fas fa-home me-1"></i> Home
+    </a>
+    <button onclick="history.forward()" class="btn btn-secondary">
+        Next <i class="fas fa-arrow-right ms-1"></i>
+    </button>
+</div>
+<h2>Data Model — define joins</h2>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="alert alert-info">
+      {% for m in messages %} <div>{{ m }}</div> {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+<form id="joinForm" method="POST" action="{{ url_for('data_model') }}">
+  <div id="joinRows">
+    <div class="row join-row mb-2">
+      <div class="col-md-4">
+        <label>Left Column</label>
+        <select class="form-select left-col" name="left_col[]" required>
+          {% for sheet, cols in available_columns.items() %}
+            <optgroup label="{{ sheet }}">
+              {% for c in cols %}
+                <option value="{{ c.option }}">{{ c.option }}</option>
+              {% endfor %}
+            </optgroup>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label>Right Column</label>
+        <select class="form-select right-col" name="right_col[]" required>
+          {% for sheet, cols in available_columns.items() %}
+            <optgroup label="{{ sheet }}">
+              {% for c in cols %}
+                <option value="{{ c.option }}">{{ c.option }}</option>
+              {% endfor %}
+            </optgroup>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="col-md-2">
+        <label>Join Type</label>
+        <select class="form-select" name="join_type[]" required>
+          <option>Inner Join</option>
+          <option>Left Join</option>
+          <option>Right Join</option>
+          <option>Outer Join</option>
+        </select>
+      </div>
+
+      <div class="col-md-2 d-flex align-items-end">
+        <button type="button" class="btn btn-success me-2 addRow">+</button>
+        <button type="button" class="btn btn-danger removeRow">-</button>
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary mt-3">Submit & Define Model</button>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const joinRows = document.getElementById('joinRows');
+
+  joinRows.addEventListener('click', function (e) {
+    if (e.target.classList.contains('addRow')) {
+      const row = e.target.closest('.join-row');
+      const clone = row.cloneNode(true);
+      clone.querySelectorAll('select').forEach(s => s.selectedIndex = 0);
+      joinRows.appendChild(clone);
+    }
+    if (e.target.classList.contains('removeRow')) {
+      const rows = document.querySelectorAll('.join-row');
+      if (rows.length > 1) {
+        e.target.closest('.join-row').remove();
+      } else {
+        alert('At least one join row is required.');
+      }
+    }
+  });
+});
+</script>
+{% endblock %}

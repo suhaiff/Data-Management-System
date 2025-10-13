@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Enterprise Data Hub</h1>
+    <p class="lead">Your comprehensive solution for data management, analysis, and reporting</p>
+    <hr class="my-4">
+    <p>Streamline your data operations with our powerful toolset</p>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-upload fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">Data Upload</h5>
+                <p class="card-text">Easily upload and manage your data files with our intuitive interface.</p>
+                <a href="{{ url_for('upload') }}" class="btn btn-primary">Start Upload</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">Analytics Dashboard</h5>
+                <p class="card-text">View comprehensive analytics and insights from your data.</p>
+                <a href="{{ url_for('dashboard') }}" class="btn btn-primary">View Dashboard</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-cogs fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">System Configuration</h5>
+                <p class="card-text">Customize and configure the system to meet your needs.</p>
+                <a href="{{ url_for('configuration') }}" class="btn btn-primary">Configure</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-cubes fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">Data Models</h5>
+                <p class="card-text">Create and manage data models for better organization.</p>
+                <a href="{{ url_for('data_model') }}" class="btn btn-primary">Manage Models</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-file-alt fa-3x mb-3 text-primary"></i>
+                <h5 class="card-title">Report Builder</h5>
+                <p class="card-text">Generate customized reports with our powerful reporting tools.</p>
+                <a href="{{ url_for('report_configuration') }}" class="btn btn-primary">Create Reports</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="mt-5 py-3 text-center text-muted">
+        <div class="container">
+            <p>&copy; 2025 Enterprise Data Hub. All rights reserved.</p>
+        </div>
+    </footer>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="nav-buttons">
+    
+    <button onclick="history.back()" class="btn btn-secondary">
+        <i class="fas fa-arrow-left me-1"></i> Previous
+    </button>
+    <a href="/" class="btn btn-primary">
+        <i class="fas fa-home me-1"></i> Home
+    </a>
+    <button onclick="history.forward()" class="btn btn-secondary">
+        Next <i class="fas fa-arrow-right ms-1"></i>
+    </button>
+</div>
+<h2>Dashboard</h2>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                Chart 1
+            </div>
+            <div class="card-body">
+                <p>Chart visualization will be displayed here</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                Chart 2
+            </div>
+            <div class="card-body">
+                <p>Chart visualization will be displayed here</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

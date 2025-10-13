@@ -1,0 +1,1001 @@
+MatchID,Date,PlayerName,Team,Opponent,Position,TotalRaids,SuccessfulRaids,TotalTackles,SuccessfulTackles,RaidPoints,TacklePoints,MatchDuration,RaidSuccessRate,TackleSuccessRate,PointsScored,Injuries,YellowCards,RedCards,MatchResult,TeamPoints,OpponentPoints,MVP,DateOfBirth,PlayerAge,PlayerNationality,MatchLocation,HomeOrAway,TeamRank,WinStreak,LossStreak,PlayerExperience,TotalMatchesPlayed,IsAllRounder
+1,2025-05-07,Aashish B,U Mumba,Bengal Warriors,All-Rounder,10,8,3,3,8,6,34,80.0,100.0,14,2,1,1,Loss,29,33,N/A,1985-11-18,39,Bangladesh,Kolkata,Away,8,3,4,9,21,False
+2,2025-04-11,Rahul Chaudhari,Jaipur Pink Panthers,Patna Pirates,Raider,15,6,15,7,6,14,30,40.0,46.67,20,0,1,1,Win,38,19,N/A,2005-03-18,20,Pakistan,Bengaluru,Away,11,1,4,3,95,False
+3,2021-01-24,Surender Nada,Patna Pirates,Tamil Thalaivas,Defender,18,16,13,4,16,8,42,88.89,30.77,24,3,0,0,Loss,28,29,Surender Nada,2004-01-12,21,Sri Lanka,Chennai,Away,12,1,1,10,70,False
+4,2022-10-27,Mohit,Dabang Delhi,Patna Pirates,Defender,16,7,7,5,7,10,38,43.75,71.43,17,2,1,1,Loss,37,16,Mohit,2000-04-25,25,Bangladesh,Patna,Away,1,5,0,11,38,False
+5,2022-03-22,Tushar,Jaipur Pink Panthers,Tamil Thalaivas,Defender,11,3,4,3,3,6,42,27.27,75.0,9,3,1,0,Loss,37,29,Tushar,1995-03-05,30,Sri Lanka,Mumbai,Away,4,3,2,7,58,False
+6,2020-11-20,Surender Gill,UP Yoddha,Bengal Warriors,Defender,7,2,15,0,2,0,34,28.57,0.0,2,2,1,0,Loss,29,19,N/A,1988-03-06,37,India,Bengaluru,Away,4,3,0,11,87,False
+7,2021-02-18,Vikas Kandola,Hariyana Steelers,Telugu Titans,Defender,22,16,14,1,16,2,40,72.73,7.14,18,1,1,0,Loss,21,21,N/A,2002-01-01,23,India,Patna,Away,9,1,3,12,43,False
+8,2020-06-06,Mohit,Telugu Titans,Patna Pirates,All-Rounder,14,5,8,7,5,14,44,35.71,87.5,19,1,1,0,Win,37,28,N/A,1998-09-03,26,India,Mumbai,Away,2,2,5,5,84,False
+9,2023-08-19,Meetu Sharma,Hariyana Steelers,Bengal Warriors,Raider,15,4,13,9,4,18,32,26.67,69.23,22,0,1,0,Loss,35,24,Meetu Sharma,2004-01-07,21,Nepal,Patna,Away,9,4,2,3,39,False
+10,2020-11-23,Jeeva Kumar,Tamil Thalaivas,Telugu Titans,Raider,20,3,7,1,3,2,46,15.0,14.29,5,2,0,1,Loss,31,21,N/A,1994-06-19,30,Sri Lanka,Chandigarh,Away,3,5,1,6,53,False
+11,2023-08-14,Parvesh Bhainswal,Gujarat Fortunegiants,U Mumba,Raider,18,15,7,2,15,4,38,83.33,28.57,19,0,0,1,Loss,40,24,Parvesh Bhainswal,2003-05-06,22,Nepal,Ahmedabad,Home,8,2,2,10,40,False
+12,2022-01-11,Vinod Kumar,Gujarat Fortunegiants,Telugu Titans,Defender,19,5,8,0,5,0,30,26.32,0.0,5,3,0,1,Win,26,26,N/A,1999-10-08,25,India,Kolkata,Away,11,4,0,13,22,False
+13,2021-06-09,Nitin Rawal,Jaipur Pink Panthers,Hariyana Steelers,Raider,23,6,9,5,6,10,39,26.09,55.56,16,3,0,1,Win,38,23,Nitin Rawal,1987-11-24,37,Bangladesh,Hyderabad,Away,2,5,4,3,21,False
+14,2025-01-15,Sahil Gulia,Tamil Thalaivas,Hariyana Steelers,Defender,5,5,9,5,5,10,47,100.0,55.56,15,2,0,1,Loss,27,30,Sahil Gulia,1995-12-24,29,Pakistan,Kolkata,Away,6,4,5,7,99,False
+15,2021-04-08,Harendra,U Mumba,Jaipur Pink Panthers,Defender,22,4,8,6,4,12,46,18.18,75.0,16,3,0,0,Loss,35,20,N/A,1998-09-02,26,India,Hyderabad,Away,3,2,0,9,49,False
+16,2018-12-23,Rajnish,Telugu Titans,Hariyana Steelers,Raider,16,8,4,2,8,4,35,50.0,50.0,12,2,0,0,Loss,36,20,Rajnish,2000-03-22,25,Pakistan,Bengaluru,Away,11,3,0,14,61,False
+17,2021-03-17,Ajinkya Pawar,Tamil Thalaivas,Patna Pirates,Raider,11,11,6,3,11,6,58,100.0,50.0,17,1,1,0,Loss,26,28,Ajinkya Pawar,1999-12-22,25,Sri Lanka,Jaipur,Away,11,1,0,11,96,False
+18,2019-09-25,Meetu Sharma,Hariyana Steelers,Gujarat Fortunegiants,Defender,13,3,15,12,3,24,43,23.08,80.0,27,3,1,1,Win,28,20,N/A,1995-09-28,29,India,Ahmedabad,Away,5,5,3,15,100,False
+19,2024-06-26,Durgesh,Telugu Titans,UP Yoddha,Raider,19,8,8,8,8,16,37,42.11,100.0,24,2,1,1,Win,20,29,N/A,1991-09-10,33,Nepal,Kolkata,Away,4,4,3,14,31,False
+20,2023-10-22,Sandeep Kumar,Dabang Delhi,Bengal Warriors,Raider,25,4,14,9,4,18,30,16.0,64.29,22,1,1,0,Loss,32,27,Sandeep Kumar,1997-10-04,27,Sri Lanka,Jaipur,Away,7,0,2,9,69,False
+21,2023-04-13,Ajinkya Pawar,Tamil Thalaivas,U Mumba,All-Rounder,23,12,11,7,12,14,48,52.17,63.64,26,0,0,1,Win,20,25,Ajinkya Pawar,1997-04-14,28,Nepal,Chandigarh,Away,7,1,4,3,94,False
+22,2020-12-13,Adarsh T,Telugu Titans,Jaipur Pink Panthers,Raider,6,2,13,9,2,18,44,33.33,69.23,20,1,1,1,Win,26,31,N/A,1987-03-01,38,India,Jaipur,Away,5,0,3,5,47,False
+23,2025-05-21,Siddhant Bhosale,U Mumba,UP Yoddha,All-Rounder,14,3,4,0,3,0,38,21.43,0.0,3,1,0,0,Loss,24,19,N/A,1984-10-27,40,Pakistan,Delhi,Away,7,4,2,11,66,False
+24,2020-08-03,M Abishek,Tamil Thalaivas,Jaipur Pink Panthers,Defender,23,23,8,5,23,10,44,100.0,62.5,33,0,0,0,Win,36,31,M Abishek,1987-08-30,37,Sri Lanka,Jaipur,Away,8,1,1,5,29,False
+25,2020-06-16,Manjeet,Dabang Delhi,Patna Pirates,Defender,13,13,10,3,13,6,60,100.0,30.0,19,1,1,0,Win,28,32,N/A,2005-01-21,20,Pakistan,Lucknow,Away,3,1,3,14,46,False
+26,2021-05-02,Sunil,Hariyana Steelers,Gujarat Fortunegiants,All-Rounder,10,6,12,0,6,0,56,60.0,0.0,6,1,1,0,Loss,30,15,Sunil,2002-03-03,23,Sri Lanka,Hyderabad,Away,9,5,2,15,59,False
+27,2023-12-01,Ravinder,Patna Pirates,Bengal Warriors,Raider,14,4,8,2,4,4,44,28.57,25.0,8,1,1,0,Loss,34,23,N/A,1992-07-23,32,India,Delhi,Away,12,3,1,6,66,False
+28,2022-07-16,Balaji D,Bengal Warriors,Tamil Thalaivas,Defender,12,12,13,1,12,2,44,100.0,7.69,14,3,1,0,Loss,40,24,Balaji D,1992-04-18,33,Bangladesh,Chandigarh,Away,8,4,5,8,41,False
+29,2019-06-11,Vishal,Dabang Delhi,Hariyana Steelers,Defender,10,1,7,3,1,6,49,10.0,42.86,7,2,1,0,Loss,38,33,N/A,1994-07-19,30,Pakistan,Delhi,Home,6,3,5,6,41,False
+30,2022-01-01,Rahul Chaudhari,Jaipur Pink Panthers,UP Yoddha,All-Rounder,22,2,12,9,2,18,60,9.09,75.0,20,3,0,1,Loss,31,26,Rahul Chaudhari,1993-02-21,32,Sri Lanka,Bengaluru,Away,6,0,1,5,56,False
+31,2023-10-26,Pawan Sehrawat,Telugu Titans,Gujarat Fortunegiants,All-Rounder,5,4,13,6,4,12,35,80.0,46.15,16,3,1,0,Win,33,26,Pawan Sehrawat,1988-11-06,36,Bangladesh,Lucknow,Away,5,2,5,6,34,False
+32,2018-12-15,Harsh,Hariyana Steelers,Dabang Delhi,All-Rounder,8,4,11,7,4,14,48,50.0,63.64,18,2,1,0,Win,23,29,N/A,1985-08-30,39,Sri Lanka,Lucknow,Away,2,5,2,13,61,False
+33,2025-04-25,K. Prapanjan,Tamil Thalaivas,Patna Pirates,Defender,15,12,9,5,12,10,53,80.0,55.56,22,1,0,1,Loss,26,35,K. Prapanjan,2003-09-02,21,Nepal,Kolkata,Away,7,5,2,15,53,False
+34,2024-08-30,K. Shanmugam,Gujarat Fortunegiants,Patna Pirates,All-Rounder,8,1,11,1,1,2,34,12.5,9.09,3,2,0,0,Loss,29,29,K. Shanmugam,1992-04-28,33,Sri Lanka,Bengaluru,Away,10,2,4,8,67,False
+35,2018-04-27,Ravi Kumar,Dabang Delhi,Telugu Titans,All-Rounder,19,5,10,2,5,4,47,26.32,20.0,9,2,0,0,Win,29,15,N/A,1986-02-18,39,Pakistan,Mumbai,Away,8,5,4,15,70,False
+36,2023-01-26,Naresh,Hariyana Steelers,UP Yoddha,Raider,11,1,10,5,1,10,47,9.09,50.0,11,0,0,0,Loss,39,27,N/A,1988-08-03,36,Pakistan,Patna,Away,3,5,0,15,31,False
+37,2024-05-20,Shubham Shinde,Bengal Warriors,Telugu Titans,Defender,21,20,9,0,20,0,48,95.24,0.0,20,0,0,0,Win,23,22,N/A,1996-08-20,28,Pakistan,Patna,Away,6,5,1,6,36,False
+38,2018-12-05,Rajveer,Patna Pirates,Telugu Titans,Defender,15,3,8,7,3,14,34,20.0,87.5,17,3,0,0,Loss,34,27,Rajveer,1995-01-21,30,Bangladesh,Jaipur,Away,3,5,0,9,86,False
+39,2022-08-17,Soleiman Pahlevani,Bengal Warriors,Tamil Thalaivas,Defender,13,3,15,2,3,4,58,23.08,13.33,7,1,0,1,Win,27,25,N/A,1985-05-28,40,India,Chennai,Away,4,5,5,11,77,False
+40,2023-04-16,Ankush,U Mumba,Gujarat Fortunegiants,Defender,6,3,13,8,3,16,31,50.0,61.54,19,3,1,1,Win,22,20,Ankush,1992-09-22,32,India,Mumbai,Home,1,1,3,14,90,False
+41,2023-05-19,Sagar,Tamil Thalaivas,Hariyana Steelers,Defender,22,22,12,1,22,2,42,100.0,8.33,24,2,0,0,Loss,33,19,N/A,1992-11-07,32,India,Delhi,Away,5,3,3,13,23,False
+42,2019-10-04,Surender Nada,Patna Pirates,Gujarat Fortunegiants,Raider,21,2,6,2,2,4,41,9.52,33.33,6,2,1,1,Win,36,26,Surender Nada,1996-11-19,28,Bangladesh,Delhi,Away,2,4,4,14,25,False
+43,2024-05-25,Ankit,Patna Pirates,Jaipur Pink Panthers,Defender,17,7,11,7,7,14,59,41.18,63.64,21,1,0,0,Win,31,16,N/A,1992-11-18,32,Sri Lanka,Patna,Home,6,2,1,4,41,False
+44,2022-03-12,Soleiman Pahlevani,Bengal Warriors,Hariyana Steelers,Raider,8,1,7,2,1,4,36,12.5,28.57,5,3,0,0,Win,40,18,Soleiman Pahlevani,1984-09-21,40,Sri Lanka,Bengaluru,Away,9,0,1,6,81,False
+45,2022-08-31,Rakesh,Gujarat Fortunegiants,Hariyana Steelers,Defender,6,6,9,4,6,8,39,100.0,44.44,14,2,1,0,Win,23,18,N/A,1987-05-25,38,Pakistan,Mumbai,Away,5,1,2,15,40,False
+46,2023-07-14,Siddharth,Gujarat Fortunegiants,Bengal Warriors,Raider,5,0,5,2,0,4,59,0.0,40.0,4,3,1,1,Win,26,28,N/A,1985-09-20,39,India,Lucknow,Away,6,2,4,11,42,False
+47,2018-02-22,Mohit Nandal,Hariyana Steelers,Tamil Thalaivas,All-Rounder,11,8,5,3,8,6,58,72.73,60.0,14,3,1,0,Win,27,35,Mohit Nandal,2004-12-20,20,Bangladesh,Chandigarh,Home,5,0,3,5,45,False
+48,2023-01-19,Rajesh Narwal,Hariyana Steelers,Tamil Thalaivas,Raider,8,3,11,8,3,16,50,37.5,72.73,19,2,0,1,Win,26,34,N/A,2001-12-07,23,Nepal,Patna,Away,12,2,1,12,42,False
+49,2023-10-13,Monu,Patna Pirates,Dabang Delhi,Defender,6,3,10,7,3,14,49,50.0,70.0,17,3,1,0,Loss,24,23,Monu,1996-02-20,29,Sri Lanka,Bengaluru,Away,8,4,1,5,76,False
+50,2024-05-26,Nehal,UP Yoddha,Bengal Warriors,Raider,20,3,10,4,3,8,37,15.0,40.0,11,0,0,0,Loss,34,19,Nehal,1991-03-03,34,India,Patna,Away,6,0,1,10,87,False
+51,2021-09-18,Siddharth Desai,Telugu Titans,Bengal Warriors,Raider,24,17,14,14,17,28,57,70.83,100.0,45,1,1,1,Win,21,32,Siddharth Desai,2002-11-13,22,Sri Lanka,Delhi,Away,7,3,3,7,70,False
+52,2019-12-01,Abhishek Singh,Telugu Titans,Gujarat Fortunegiants,All-Rounder,25,13,11,3,13,6,39,52.0,27.27,19,0,1,1,Loss,28,22,N/A,1999-05-31,26,Bangladesh,Chandigarh,Away,10,5,4,15,77,False
+53,2019-05-10,Rakesh Narwal,Hariyana Steelers,Dabang Delhi,Raider,23,22,14,1,22,2,46,95.65,7.14,24,2,0,0,Win,28,16,Rakesh Narwal,1995-10-26,29,Pakistan,Bengaluru,Away,8,1,4,7,63,False
+54,2021-08-16,Parshant Kumar,Bengal Warriors,Telugu Titans,Raider,16,4,4,4,4,8,46,25.0,100.0,12,3,0,1,Loss,39,21,N/A,1986-02-10,39,India,Chennai,Away,4,2,4,7,79,False
+55,2018-07-02,Rajveer,Patna Pirates,UP Yoddha,Raider,15,13,8,0,13,0,54,86.67,0.0,13,1,1,1,Win,34,27,Rajveer,1999-08-09,25,Sri Lanka,Ahmedabad,Away,7,2,0,14,72,False
+56,2025-04-20,Ankit Jaglan,Gujarat Fortunegiants,Bengal Warriors,Raider,25,23,15,1,23,2,57,92.0,6.67,25,1,1,1,Win,35,17,N/A,1992-10-26,32,Pakistan,Chennai,Away,3,2,5,13,20,False
+57,2020-07-07,Shubham Kumar,UP Yoddha,Dabang Delhi,Raider,8,7,13,12,7,24,45,87.5,92.31,31,3,0,1,Loss,33,22,Shubham Kumar,1989-10-25,35,Nepal,Chandigarh,Away,3,1,1,10,48,False
+58,2023-07-10,Neeraj Narwal,Dabang Delhi,Hariyana Steelers,Defender,25,13,11,3,13,6,41,52.0,27.27,19,3,1,0,Loss,39,15,Neeraj Narwal,1992-09-25,32,Nepal,Delhi,Home,9,4,4,3,28,False
+59,2024-06-04,Vinay,Telugu Titans,Dabang Delhi,Raider,17,9,13,7,9,14,40,52.94,53.85,23,2,1,1,Loss,39,21,Vinay,2005-03-20,20,Sri Lanka,Delhi,Away,4,5,5,11,20,False
+60,2023-01-28,Ankit Jaglan,Gujarat Fortunegiants,Hariyana Steelers,Raider,16,12,9,5,12,10,44,75.0,55.56,22,3,0,0,Loss,34,18,Ankit Jaglan,2003-08-17,21,Nepal,Bengaluru,Away,8,5,4,4,86,False
+61,2022-01-02,Sahil,Hariyana Steelers,Gujarat Fortunegiants,Defender,22,5,12,2,5,4,39,22.73,16.67,9,3,0,1,Loss,28,19,N/A,1999-03-13,26,Pakistan,Hyderabad,Away,5,5,5,12,37,False
+62,2022-12-05,Lucky Sharma,Jaipur Pink Panthers,Tamil Thalaivas,Raider,23,14,6,6,14,12,57,60.87,100.0,26,3,0,0,Win,39,27,Lucky Sharma,1991-08-21,33,Bangladesh,Bengaluru,Away,11,2,3,7,38,False
+63,2024-10-08,Naresh,Hariyana Steelers,Telugu Titans,Raider,17,9,12,2,9,4,50,52.94,16.67,13,0,0,0,Loss,37,34,N/A,2004-03-01,21,Pakistan,Hyderabad,Away,9,0,5,8,20,False
+64,2018-10-21,Devank,Jaipur Pink Panthers,U Mumba,Raider,10,0,7,7,0,14,55,0.0,100.0,14,1,1,0,Loss,33,19,N/A,1988-03-10,37,India,Hyderabad,Away,1,1,3,15,20,False
+65,2018-02-18,Ujjval,Jaipur Pink Panthers,Hariyana Steelers,Defender,6,0,7,1,0,2,46,0.0,14.29,2,0,1,1,Win,28,25,N/A,1987-03-20,38,Bangladesh,Jaipur,Home,12,5,0,4,88,False
+66,2021-10-25,Sahil Gulia,Tamil Thalaivas,U Mumba,Defender,23,20,10,6,20,12,46,86.96,60.0,32,1,1,1,Win,30,23,Sahil Gulia,2001-08-29,23,Sri Lanka,Hyderabad,Away,11,5,5,11,45,False
+67,2023-04-23,Vikas Jaglan,Patna Pirates,Jaipur Pink Panthers,All-Rounder,12,8,8,1,8,2,38,66.67,12.5,10,3,0,1,Win,23,23,Vikas Jaglan,1996-04-01,29,Pakistan,Bengaluru,Away,9,1,3,5,77,False
+68,2018-03-01,Mohit Nandal,Hariyana Steelers,UP Yoddha,All-Rounder,23,23,13,13,23,26,31,100.0,100.0,49,0,1,0,Win,37,31,N/A,2003-12-24,21,India,Kolkata,Away,11,5,1,10,20,True
+69,2021-02-22,Mehul Kumar,Gujarat Fortunegiants,Tamil Thalaivas,Defender,6,5,10,0,5,0,39,83.33,0.0,5,2,1,0,Loss,21,19,N/A,1989-11-05,35,India,Ahmedabad,Home,5,2,4,5,24,False
+70,2022-05-05,Vinay,Telugu Titans,Bengal Warriors,Defender,7,6,11,10,6,20,45,85.71,90.91,26,3,0,0,Loss,20,19,N/A,1984-09-20,40,Bangladesh,Chennai,Away,6,5,0,6,64,False
+71,2022-01-12,Vinod Kumar,Gujarat Fortunegiants,Dabang Delhi,Defender,12,1,5,5,1,10,45,8.33,100.0,11,1,0,0,Win,20,30,Vinod Kumar,1989-06-10,35,Sri Lanka,Patna,Away,5,3,4,13,26,False
+72,2025-01-26,Reza Katoulinezhad,Jaipur Pink Panthers,UP Yoddha,Defender,10,1,8,6,1,12,42,10.0,75.0,13,3,0,0,Loss,20,16,N/A,1992-11-22,32,Nepal,Ahmedabad,Away,5,4,4,3,99,False
+73,2024-07-30,Heidarali Ekrami,U Mumba,Gujarat Fortunegiants,All-Rounder,11,10,12,3,10,6,32,90.91,25.0,16,0,1,1,Loss,32,35,Heidarali Ekrami,1990-01-09,35,Pakistan,Jaipur,Away,8,0,3,4,29,False
+74,2025-01-29,Karamvir,Patna Pirates,UP Yoddha,Defender,18,3,3,1,3,2,53,16.67,33.33,5,1,1,0,Loss,31,18,Karamvir,1991-11-01,33,Pakistan,Patna,Home,5,2,4,11,98,False
+75,2019-08-27,Akash Pikalmunde,Bengal Warriors,Tamil Thalaivas,All-Rounder,15,9,13,10,9,20,53,60.0,76.92,29,2,1,1,Win,27,19,Akash Pikalmunde,2001-06-06,23,Sri Lanka,Jaipur,Away,12,0,3,8,73,False
+76,2023-05-14,Kapil,Dabang Delhi,Patna Pirates,Defender,19,1,12,9,1,18,38,5.26,75.0,19,3,0,0,Loss,23,16,Kapil,1988-04-16,37,Pakistan,Jaipur,Away,11,2,2,15,64,False
+77,2019-11-20,Prashanth Kumar Rai,Patna Pirates,Hariyana Steelers,All-Rounder,19,1,7,7,1,14,54,5.26,100.0,15,2,0,0,Win,32,17,N/A,1996-01-29,29,Sri Lanka,Mumbai,Away,3,1,2,12,71,False
+78,2018-03-06,Nitesh Kumar,UP Yoddha,U Mumba,All-Rounder,25,13,6,4,13,8,54,52.0,66.67,21,1,1,0,Loss,34,30,N/A,1988-07-22,36,Nepal,Patna,Away,5,0,2,6,31,False
+79,2019-12-20,Neeraj Narwal,Dabang Delhi,Telugu Titans,All-Rounder,8,1,9,7,1,14,54,12.5,77.78,15,2,0,0,Win,20,23,Neeraj Narwal,1987-04-03,38,Sri Lanka,Jaipur,Away,4,2,1,14,72,False
+80,2019-07-26,Rohit Banne,Bengal Warriors,U Mumba,Raider,8,7,13,5,7,10,58,87.5,38.46,17,3,1,1,Win,29,18,N/A,1998-12-27,26,Nepal,Delhi,Away,10,4,3,7,53,False
+81,2019-11-19,Prince,U Mumba,Bengal Warriors,All-Rounder,19,2,15,10,2,20,38,10.53,66.67,22,2,0,1,Loss,32,22,Prince,2001-04-23,24,Sri Lanka,Hyderabad,Away,8,3,2,9,40,False
+82,2024-02-26,Ajith Kumar,Jaipur Pink Panthers,Gujarat Fortunegiants,All-Rounder,7,5,9,5,5,10,39,71.43,55.56,15,2,0,0,Win,20,28,Ajith Kumar,1990-08-30,34,Sri Lanka,Patna,Away,7,1,4,10,46,False
+83,2018-08-19,Ankush,U Mumba,Gujarat Fortunegiants,All-Rounder,15,2,6,6,2,12,30,13.33,100.0,14,1,0,0,Loss,22,34,N/A,1985-11-15,39,Sri Lanka,Hyderabad,Away,5,3,0,13,96,False
+84,2023-10-30,Mohit Nandal,Hariyana Steelers,Dabang Delhi,All-Rounder,9,3,13,3,3,6,57,33.33,23.08,9,2,0,1,Win,32,31,Mohit Nandal,1987-08-23,37,Bangladesh,Chandigarh,Home,7,4,2,13,87,False
+85,2025-04-02,Maninder Singh,Bengal Warriors,Jaipur Pink Panthers,All-Rounder,25,7,14,4,7,8,54,28.0,28.57,15,3,1,1,Win,37,26,Maninder Singh,1990-08-11,34,Bangladesh,Lucknow,Away,7,5,0,7,56,False
+86,2022-02-26,Sachin Narwal,Gujarat Fortunegiants,Jaipur Pink Panthers,Defender,17,8,11,2,8,4,38,47.06,18.18,12,3,1,0,Win,25,16,N/A,1995-02-27,30,Nepal,Jaipur,Away,1,4,5,5,82,False
+87,2021-02-13,Sahul Kumar,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,23,16,5,1,16,2,50,69.57,20.0,18,2,1,0,Loss,28,31,Sahul Kumar,1989-11-02,35,India,Bengaluru,Away,7,3,4,7,30,False
+88,2019-02-24,M Abishek,Tamil Thalaivas,Hariyana Steelers,Defender,6,5,10,0,5,0,57,83.33,0.0,5,3,0,0,Win,36,35,M Abishek,1989-12-29,35,Sri Lanka,Chennai,Home,8,3,0,9,61,False
+89,2021-12-11,Anil,Dabang Delhi,Telugu Titans,Defender,16,1,5,0,1,0,40,6.25,0.0,1,0,0,1,Loss,39,34,N/A,1993-11-13,31,Pakistan,Mumbai,Away,7,1,0,3,77,False
+90,2020-12-14,Akash Pikalmunde,Bengal Warriors,U Mumba,Defender,15,14,15,5,14,10,56,93.33,33.33,24,2,0,0,Loss,38,15,Akash Pikalmunde,1990-04-17,35,Pakistan,Mumbai,Away,5,2,2,11,20,False
+91,2025-03-02,Siddharth Desai,Telugu Titans,UP Yoddha,Raider,12,12,11,6,12,12,43,100.0,54.55,24,1,0,0,Win,24,17,Siddharth Desai,1999-05-28,26,Sri Lanka,Bengaluru,Away,7,3,5,3,49,False
+92,2018-06-03,K. Prapanjan,Tamil Thalaivas,U Mumba,Defender,8,5,3,2,5,4,60,62.5,66.67,9,2,1,0,Loss,39,21,N/A,2000-12-05,24,India,Ahmedabad,Away,3,2,4,9,41,False
+93,2022-08-19,Shivansh Thakur,U Mumba,Dabang Delhi,All-Rounder,10,2,3,3,2,6,43,20.0,100.0,8,0,0,0,Loss,31,18,N/A,1987-06-23,37,Nepal,Hyderabad,Away,2,1,1,11,71,False
+94,2024-05-20,Maninder Singh,Bengal Warriors,UP Yoddha,Raider,18,3,13,13,3,26,38,16.67,100.0,29,2,0,0,Win,29,31,Maninder Singh,1995-02-07,30,Bangladesh,Ahmedabad,Away,9,2,4,3,75,False
+95,2022-09-13,Sunil,Hariyana Steelers,Dabang Delhi,All-Rounder,17,7,10,4,7,8,44,41.18,40.0,15,1,1,0,Loss,22,21,Sunil,2003-08-08,21,India,Delhi,Away,4,5,5,11,72,False
+96,2022-07-15,Ankit,UP Yoddha,Patna Pirates,Raider,24,17,3,0,17,0,51,70.83,0.0,17,3,0,1,Win,39,22,N/A,1997-12-01,27,India,Mumbai,Away,2,3,5,6,32,False
+97,2020-11-22,Dipak,Dabang Delhi,UP Yoddha,Defender,7,7,10,8,7,16,32,100.0,80.0,23,2,0,1,Win,30,19,N/A,2001-11-17,23,India,Bengaluru,Away,10,2,2,11,41,False
+98,2018-12-26,Dipak,Dabang Delhi,Tamil Thalaivas,All-Rounder,5,4,15,8,4,16,44,80.0,53.33,20,1,1,0,Win,40,19,N/A,1992-02-12,33,Pakistan,Chandigarh,Away,4,3,3,3,68,False
+99,2022-06-04,Siddhant Bhosale,U Mumba,Tamil Thalaivas,All-Rounder,20,3,7,2,3,4,48,15.0,28.57,7,1,1,0,Win,38,17,N/A,1993-11-17,31,Bangladesh,Chennai,Away,3,5,4,13,99,False
+100,2022-01-18,Ajinkya Pawar,Tamil Thalaivas,Bengal Warriors,Defender,15,7,15,3,7,6,55,46.67,20.0,13,2,1,0,Win,34,17,N/A,1995-10-22,29,Pakistan,Patna,Away,10,1,1,7,67,False
+101,2022-03-28,Arpit Saroha,Tamil Thalaivas,Dabang Delhi,Defender,13,1,4,0,1,0,52,7.69,0.0,1,3,1,0,Loss,30,29,N/A,1992-04-30,33,Pakistan,Bengaluru,Away,4,2,0,14,95,False
+102,2023-01-19,Maninder Singh,Bengal Warriors,Patna Pirates,All-Rounder,15,3,13,3,3,6,51,20.0,23.08,9,3,1,0,Win,38,16,Maninder Singh,1986-12-11,38,Bangladesh,Bengaluru,Away,2,3,5,11,93,False
+103,2022-04-22,Mahendra Rajput,Gujarat Fortunegiants,UP Yoddha,All-Rounder,5,2,10,3,2,6,38,40.0,30.0,8,3,1,0,Win,24,28,N/A,2001-08-12,23,Bangladesh,Mumbai,Away,11,5,3,6,44,False
+104,2018-12-04,Rohit Gulia,Patna Pirates,Dabang Delhi,Raider,25,8,13,7,8,14,59,32.0,53.85,22,0,0,1,Loss,32,19,Rohit Gulia,1985-03-23,40,Nepal,Ahmedabad,Away,2,3,2,4,21,False
+105,2025-01-22,Mujtaba,Telugu Titans,Bengal Warriors,All-Rounder,6,2,5,4,2,8,45,33.33,80.0,10,2,0,1,Loss,38,16,N/A,1986-07-03,38,India,Ahmedabad,Away,12,3,1,7,36,False
+106,2025-03-13,Hamid Nader,Telugu Titans,Bengal Warriors,All-Rounder,14,9,11,11,9,22,35,64.29,100.0,31,0,0,0,Loss,40,19,N/A,2003-05-15,22,Nepal,Ahmedabad,Away,12,1,3,15,50,False
+107,2020-04-27,Abozar Mighani,UP Yoddha,Bengal Warriors,Defender,12,2,6,5,2,10,34,16.67,83.33,12,1,1,0,Win,22,29,Abozar Mighani,1985-07-18,39,Sri Lanka,Jaipur,Away,10,0,5,5,56,False
+108,2020-01-20,Siddharth Desai,Telugu Titans,Jaipur Pink Panthers,Raider,14,0,14,9,0,18,44,0.0,64.29,18,1,0,0,Win,33,20,N/A,1988-03-23,37,Pakistan,Ahmedabad,Away,7,1,1,10,95,False
+109,2024-10-19,Naveen Kumar,Dabang Delhi,Telugu Titans,All-Rounder,16,15,11,7,15,14,59,93.75,63.64,29,1,1,0,Win,28,22,N/A,2000-03-24,25,Nepal,Delhi,Home,11,4,2,11,36,False
+110,2023-03-30,Neeraj Narwal,Dabang Delhi,Hariyana Steelers,Defender,20,3,14,3,3,6,31,15.0,21.43,9,0,1,1,Loss,28,31,Neeraj Narwal,2002-01-04,23,Pakistan,Kolkata,Away,3,3,2,7,68,False
+111,2022-10-13,Anil,Dabang Delhi,Patna Pirates,All-Rounder,20,13,11,4,13,8,54,65.0,36.36,21,0,0,0,Loss,35,23,N/A,1992-11-11,32,India,Patna,Away,3,4,3,12,69,False
+112,2023-07-30,Vishal Bhardwaj,Tamil Thalaivas,Hariyana Steelers,Defender,22,11,13,1,11,2,52,50.0,7.69,13,2,1,1,Win,31,31,N/A,1992-08-22,32,Nepal,Kolkata,Away,11,3,0,7,99,False
+113,2018-04-18,Anil,Dabang Delhi,Telugu Titans,All-Rounder,16,16,11,4,16,8,56,100.0,36.36,24,3,0,1,Win,33,30,Anil,1988-12-28,36,Nepal,Chandigarh,Away,12,4,1,7,38,False
+114,2024-07-06,Rajnish,Telugu Titans,Hariyana Steelers,Raider,11,0,10,1,0,2,47,0.0,10.0,2,3,0,0,Win,36,20,N/A,1997-03-24,28,Sri Lanka,Hyderabad,Home,12,0,1,8,40,False
+115,2020-12-22,Shubham Kumar,UP Yoddha,Tamil Thalaivas,Raider,9,7,6,3,7,6,53,77.78,50.0,13,3,1,0,Loss,38,27,N/A,2004-03-06,21,Nepal,Bengaluru,Away,5,5,2,6,68,False
+116,2022-05-27,Nitin,Telugu Titans,Tamil Thalaivas,All-Rounder,9,8,13,8,8,16,41,88.89,61.54,24,2,0,0,Loss,32,30,N/A,1995-04-30,30,Nepal,Ahmedabad,Away,11,5,5,14,28,False
+117,2020-08-03,Mohit Nandal,Hariyana Steelers,UP Yoddha,All-Rounder,16,12,11,6,12,12,57,75.0,54.55,24,2,1,1,Loss,35,22,Mohit Nandal,1997-02-15,28,India,Patna,Away,12,1,2,12,38,False
+118,2021-05-13,Abozar Mighani,UP Yoddha,Patna Pirates,Raider,5,3,7,6,3,12,33,60.0,85.71,15,3,1,0,Loss,36,27,N/A,1994-09-20,30,India,Chennai,Away,1,0,3,9,57,False
+119,2024-04-07,Parshant Kumar,Bengal Warriors,Jaipur Pink Panthers,Raider,13,9,14,5,9,10,46,69.23,35.71,19,3,1,1,Loss,37,24,N/A,1987-09-21,37,Pakistan,Ahmedabad,Away,1,2,5,14,68,False
+120,2022-04-25,Tushar,Telugu Titans,Jaipur Pink Panthers,All-Rounder,21,18,14,14,18,28,57,85.71,100.0,46,2,1,0,Loss,36,35,N/A,1996-05-02,29,Bangladesh,Ahmedabad,Away,12,3,5,11,42,False
+121,2022-08-12,Narender,Tamil Thalaivas,Hariyana Steelers,Raider,11,4,5,0,4,0,57,36.36,0.0,4,3,0,0,Loss,33,35,Narender,1997-07-06,27,Sri Lanka,Jaipur,Away,5,0,4,9,95,False
+122,2018-02-03,Amit Hooda,Dabang Delhi,UP Yoddha,Defender,8,7,7,0,7,0,48,87.5,0.0,7,3,1,0,Win,35,17,N/A,1996-10-31,28,Nepal,Lucknow,Away,10,0,2,4,91,False
+123,2018-07-29,Mohit Nandal,Hariyana Steelers,Gujarat Fortunegiants,All-Rounder,18,13,9,7,13,14,56,72.22,77.78,27,0,1,0,Loss,40,15,N/A,1989-08-20,35,India,Chandigarh,Home,2,4,4,4,81,False
+124,2018-05-08,Balaji D,Bengal Warriors,Gujarat Fortunegiants,Raider,20,0,3,1,0,2,59,0.0,33.33,2,2,0,0,Loss,35,35,N/A,1987-12-20,37,Bangladesh,Delhi,Away,9,2,3,10,27,False
+125,2021-07-07,Sunil,Patna Pirates,Telugu Titans,Defender,17,2,8,8,2,16,37,11.76,100.0,18,2,1,1,Loss,30,35,Sunil,1989-12-21,35,Pakistan,Bengaluru,Away,11,3,3,14,43,False
+126,2018-08-07,Arjun Patil,Bengal Warriors,Telugu Titans,All-Rounder,6,3,10,10,3,20,56,50.0,100.0,23,3,1,0,Loss,25,31,N/A,1999-11-29,25,Bangladesh,Jaipur,Away,8,3,2,10,78,False
+127,2018-12-21,Neeraj Narwal,Dabang Delhi,Jaipur Pink Panthers,Defender,5,3,4,1,3,2,32,60.0,25.0,5,2,1,1,Win,26,18,Neeraj Narwal,1992-03-12,33,Nepal,Chennai,Away,4,3,2,3,42,False
+128,2024-08-20,Ankit,Patna Pirates,UP Yoddha,Defender,22,12,8,2,12,4,58,54.55,25.0,16,2,0,1,Win,25,19,Ankit,2000-07-06,24,India,Kolkata,Away,4,0,3,9,59,False
+129,2024-07-09,Abhijeet Malik,Jaipur Pink Panthers,U Mumba,All-Rounder,5,0,11,6,0,12,55,0.0,54.55,12,3,1,0,Loss,39,24,Abhijeet Malik,2004-12-05,20,Bangladesh,Chandigarh,Away,7,4,5,5,60,False
+130,2022-05-05,Sachin Tanwar,Patna Pirates,Dabang Delhi,Raider,22,7,3,2,7,4,55,31.82,66.67,11,0,1,0,Loss,40,26,N/A,1992-04-28,33,Bangladesh,Chennai,Away,6,0,0,4,67,False
+131,2024-10-26,Amit Hooda,Dabang Delhi,Tamil Thalaivas,All-Rounder,15,10,8,3,10,6,30,66.67,37.5,16,3,1,0,Win,37,19,Amit Hooda,1999-08-01,25,Nepal,Mumbai,Away,4,4,1,4,35,False
+132,2019-01-27,Sumit Sangwan,UP Yoddha,Bengal Warriors,Defender,24,6,12,8,6,16,39,25.0,66.67,22,2,0,1,Loss,38,17,Sumit Sangwan,1991-06-25,33,Nepal,Lucknow,Home,6,5,1,6,46,False
+133,2018-12-03,Narender,Tamil Thalaivas,Gujarat Fortunegiants,Defender,8,3,9,5,3,10,59,37.5,55.56,13,1,1,1,Loss,37,21,N/A,1985-05-25,40,Pakistan,Jaipur,Away,10,4,2,14,77,False
+134,2024-06-04,Shivam,Gujarat Fortunegiants,Patna Pirates,All-Rounder,20,3,3,3,3,6,52,15.0,100.0,9,1,1,1,Loss,22,16,N/A,1990-01-23,35,Bangladesh,Chennai,Away,4,0,4,15,67,False
+135,2023-02-03,Nehal Desai,U Mumba,Telugu Titans,Defender,9,9,6,3,9,6,50,100.0,50.0,15,2,0,0,Loss,25,16,Nehal Desai,2002-04-16,23,Sri Lanka,Bengaluru,Away,9,4,0,8,80,False
+136,2024-08-01,Mahendra Rajput,Gujarat Fortunegiants,Jaipur Pink Panthers,Raider,15,12,7,3,12,6,50,80.0,42.86,18,3,1,1,Win,22,33,N/A,1988-03-22,37,India,Jaipur,Away,8,5,5,13,94,False
+137,2019-07-24,Rajesh Narwal,Hariyana Steelers,Tamil Thalaivas,Raider,13,10,7,3,10,6,35,76.92,42.86,16,3,0,0,Win,25,18,N/A,2004-01-02,21,India,Lucknow,Away,8,3,1,11,68,False
+138,2020-06-07,Heidarali Ekrami,U Mumba,UP Yoddha,Defender,15,1,3,1,1,2,55,6.67,33.33,3,3,0,0,Loss,32,26,Heidarali Ekrami,1997-03-07,28,Pakistan,Mumbai,Home,5,5,3,7,62,False
+139,2023-05-08,Sagar,Tamil Thalaivas,UP Yoddha,Defender,8,5,13,10,5,20,32,62.5,76.92,25,0,1,1,Loss,30,20,Sagar,2002-10-30,22,India,Mumbai,Away,5,1,2,10,62,False
+140,2019-01-03,Akash Pikalmunde,Bengal Warriors,UP Yoddha,All-Rounder,23,0,11,7,0,14,47,0.0,63.64,14,1,0,0,Win,27,24,Akash Pikalmunde,2005-04-08,20,India,Patna,Away,9,0,0,9,59,False
+141,2024-10-01,Soleiman Pahlevani,Bengal Warriors,Jaipur Pink Panthers,Raider,21,3,7,2,3,4,34,14.29,28.57,7,1,1,0,Win,22,32,N/A,1988-07-17,36,Bangladesh,Chandigarh,Away,9,1,2,12,30,False
+142,2021-02-09,Lucky Sharma,Jaipur Pink Panthers,Tamil Thalaivas,Raider,9,1,15,14,1,28,58,11.11,93.33,29,1,1,1,Win,35,35,Lucky Sharma,2000-05-29,25,Sri Lanka,Ahmedabad,Away,4,0,3,10,43,False
+143,2024-08-12,Nitesh Kumar,UP Yoddha,Bengal Warriors,Raider,18,4,10,4,4,8,60,22.22,40.0,12,3,0,1,Loss,39,20,N/A,1999-01-09,26,Sri Lanka,Hyderabad,Away,1,1,3,4,66,False
+144,2018-11-18,Mohit,Dabang Delhi,U Mumba,Raider,13,1,14,0,1,0,48,7.69,0.0,1,2,1,1,Win,34,33,N/A,1996-06-17,28,India,Patna,Away,2,0,0,4,26,False
+145,2022-07-11,Parvesh Bhainswal,Gujarat Fortunegiants,Dabang Delhi,All-Rounder,18,11,14,13,11,26,45,61.11,92.86,37,2,0,0,Loss,33,34,Parvesh Bhainswal,1991-04-05,34,India,Kolkata,Away,4,0,4,3,22,False
+146,2023-01-23,Sunil,Hariyana Steelers,Bengal Warriors,All-Rounder,13,8,10,5,8,10,36,61.54,50.0,18,1,1,1,Loss,33,34,Sunil,1991-02-26,34,Pakistan,Hyderabad,Away,3,4,3,14,93,False
+147,2025-03-11,Parshant Kumar,Bengal Warriors,Hariyana Steelers,Defender,19,5,13,11,5,22,58,26.32,84.62,27,3,0,0,Win,32,32,N/A,2000-10-07,24,Sri Lanka,Jaipur,Away,2,5,5,3,92,False
+148,2022-06-11,Akshay Bhoir,Bengal Warriors,U Mumba,Raider,24,0,7,5,0,10,33,0.0,71.43,10,0,0,1,Win,35,23,Akshay Bhoir,1989-03-30,36,Bangladesh,Delhi,Away,1,4,2,15,29,False
+149,2020-11-16,Harsh,Hariyana Steelers,Bengal Warriors,Defender,9,4,14,11,4,22,38,44.44,78.57,26,0,0,0,Loss,35,30,Harsh,1995-09-27,29,Sri Lanka,Patna,Away,7,0,0,10,36,False
+150,2020-07-01,Tushar,Jaipur Pink Panthers,Bengal Warriors,All-Rounder,12,6,13,5,6,10,38,50.0,38.46,16,1,0,0,Win,34,33,Tushar,1995-08-25,29,Nepal,Mumbai,Away,6,0,1,13,97,False
+151,2024-07-20,Naresh,Hariyana Steelers,Tamil Thalaivas,Defender,18,7,8,4,7,8,52,38.89,50.0,15,0,0,1,Win,26,32,Naresh,1987-03-04,38,Sri Lanka,Bengaluru,Away,5,5,5,3,57,False
+152,2021-12-08,Manuj,Gujarat Fortunegiants,Bengal Warriors,Defender,13,6,9,6,6,12,31,46.15,66.67,18,2,1,1,Win,32,32,Manuj,1998-06-18,26,Sri Lanka,Ahmedabad,Home,7,1,3,11,34,False
+153,2020-12-26,Abinesh Nadarajan,Tamil Thalaivas,U Mumba,Raider,20,20,12,11,20,22,54,100.0,91.67,42,2,1,1,Loss,27,26,Abinesh Nadarajan,1994-08-10,30,Nepal,Jaipur,Away,4,3,0,8,94,False
+154,2022-12-01,Sandeep Kandola,Telugu Titans,Tamil Thalaivas,All-Rounder,20,5,14,4,5,8,42,25.0,28.57,13,3,0,0,Win,26,15,Sandeep Kandola,2002-11-05,22,Bangladesh,Chennai,Away,8,4,4,11,48,False
+155,2018-07-04,Gulveer Singh,UP Yoddha,Tamil Thalaivas,All-Rounder,16,14,13,12,14,24,45,87.5,92.31,38,3,1,0,Loss,40,21,Gulveer Singh,1994-01-27,31,Sri Lanka,Chennai,Away,2,2,3,3,27,False
+156,2019-09-03,Mohit Nandal,Hariyana Steelers,Tamil Thalaivas,Defender,8,0,15,11,0,22,50,0.0,73.33,22,2,1,0,Win,24,30,Mohit Nandal,1993-12-26,31,Pakistan,Chandigarh,Home,2,4,3,11,82,False
+157,2022-06-23,Mohit Nandal,Hariyana Steelers,U Mumba,All-Rounder,12,8,7,2,8,4,44,66.67,28.57,12,3,1,0,Loss,29,31,Mohit Nandal,1996-02-21,29,Nepal,Jaipur,Away,11,4,0,6,51,False
+158,2018-02-01,Vinay,Hariyana Steelers,Gujarat Fortunegiants,Defender,24,0,10,8,0,16,57,0.0,80.0,16,0,0,1,Win,27,24,Vinay,1986-05-07,39,Nepal,Bengaluru,Away,9,5,1,10,100,False
+159,2020-03-16,Nitin,Telugu Titans,Jaipur Pink Panthers,Defender,11,10,6,4,10,8,31,90.91,66.67,18,3,0,1,Win,34,20,Nitin,1985-02-06,40,India,Chennai,Away,1,2,5,13,31,False
+160,2020-02-29,Vijay,Dabang Delhi,Telugu Titans,All-Rounder,10,9,12,11,9,22,55,90.0,91.67,31,3,0,1,Win,26,34,Vijay,1996-03-07,29,Pakistan,Hyderabad,Away,10,2,4,4,50,False
+161,2023-09-09,Narender,Tamil Thalaivas,UP Yoddha,Defender,7,2,4,2,2,4,50,28.57,50.0,6,2,1,1,Win,32,19,Narender,1991-06-30,33,Pakistan,Patna,Away,3,4,3,12,52,False
+162,2023-02-18,Mohit Nandal,Hariyana Steelers,Bengal Warriors,Defender,19,14,7,3,14,6,38,73.68,42.86,20,1,1,1,Win,27,33,N/A,1997-11-25,27,India,Chandigarh,Home,5,3,3,5,70,False
+163,2025-05-17,Abhishek,Patna Pirates,Hariyana Steelers,All-Rounder,24,14,14,6,14,12,37,58.33,42.86,26,3,1,1,Loss,20,20,N/A,1999-08-07,25,India,Lucknow,Away,6,3,0,11,59,False
+164,2023-08-16,Abinesh Nadarajan,Tamil Thalaivas,U Mumba,Raider,22,3,6,2,3,4,60,13.64,33.33,7,3,0,0,Loss,21,15,Abinesh Nadarajan,2004-03-28,21,Sri Lanka,Patna,Away,3,5,5,14,35,False
+165,2018-11-26,Nitin,Telugu Titans,U Mumba,All-Rounder,23,19,15,1,19,2,42,82.61,6.67,21,3,0,0,Loss,26,20,Nitin,1994-12-25,30,Bangladesh,Bengaluru,Away,11,3,0,15,61,False
+166,2024-01-17,Sahil,Dabang Delhi,Tamil Thalaivas,Raider,8,4,5,1,4,2,47,50.0,20.0,6,2,1,1,Loss,28,31,Sahil,1990-06-25,34,Bangladesh,Lucknow,Away,1,0,1,4,63,False
+167,2022-04-04,Sahul Kumar,Jaipur Pink Panthers,Bengal Warriors,Raider,14,4,9,9,4,18,47,28.57,100.0,22,1,1,1,Loss,24,26,N/A,1985-06-03,40,Bangladesh,Hyderabad,Away,6,5,3,12,45,False
+168,2022-08-17,Vinod Kumar,Gujarat Fortunegiants,Tamil Thalaivas,All-Rounder,10,7,14,7,7,14,41,70.0,50.0,21,0,0,0,Loss,40,33,Vinod Kumar,2003-05-11,22,Nepal,Ahmedabad,Home,10,3,2,14,92,False
+169,2023-03-22,Rathan K,UP Yoddha,Telugu Titans,Defender,24,6,4,2,6,4,60,25.0,50.0,10,3,0,1,Win,39,31,Rathan K,1995-03-05,30,Bangladesh,Bengaluru,Away,4,3,2,10,69,False
+170,2023-05-19,Rathan K,UP Yoddha,Bengal Warriors,Raider,18,17,7,4,17,8,49,94.44,57.14,25,0,0,1,Win,21,16,N/A,2002-04-10,23,Sri Lanka,Jaipur,Away,1,2,2,7,99,False
+171,2023-12-25,Narender,Tamil Thalaivas,Telugu Titans,Raider,9,1,7,6,1,12,52,11.11,85.71,13,1,0,0,Win,39,26,Narender,1991-08-12,33,Nepal,Chandigarh,Away,8,3,1,11,22,False
+172,2022-12-17,Rohit Banne,Bengal Warriors,Hariyana Steelers,Defender,13,8,9,6,8,12,37,61.54,66.67,20,0,0,1,Win,29,30,N/A,2002-10-04,22,Sri Lanka,Jaipur,Away,9,4,3,4,73,False
+173,2022-09-03,Sumit,Dabang Delhi,Patna Pirates,Raider,15,12,13,2,12,4,57,80.0,15.38,16,3,0,0,Win,34,35,N/A,1990-03-24,35,Bangladesh,Hyderabad,Away,2,4,1,10,83,False
+174,2024-10-22,Prashanth Kumar Rai,Patna Pirates,U Mumba,All-Rounder,13,2,6,1,2,2,44,15.38,16.67,4,0,1,1,Win,24,16,Prashanth Kumar Rai,2003-01-22,22,Nepal,Lucknow,Away,3,0,0,13,52,False
+175,2022-10-12,Siddharth,Gujarat Fortunegiants,Tamil Thalaivas,All-Rounder,21,20,12,3,20,6,44,95.24,25.0,26,1,1,1,Win,30,22,N/A,1995-07-23,29,India,Jaipur,Away,9,0,1,3,43,False
+176,2020-10-18,Himanshu Singh,Tamil Thalaivas,Dabang Delhi,All-Rounder,21,9,7,6,9,12,41,42.86,85.71,21,2,1,1,Loss,20,21,N/A,1998-05-29,27,Pakistan,Bengaluru,Away,7,0,0,7,46,False
+177,2019-05-23,Anil,Dabang Delhi,U Mumba,Raider,10,0,6,4,0,8,36,0.0,66.67,8,1,1,0,Loss,24,15,Anil,1990-05-12,35,Sri Lanka,Chandigarh,Away,1,5,1,14,22,False
+178,2021-10-14,Shivam,Gujarat Fortunegiants,Hariyana Steelers,Raider,11,1,7,7,1,14,39,9.09,100.0,15,1,1,1,Win,38,17,N/A,1993-03-26,32,Nepal,Chennai,Away,4,1,0,4,91,False
+179,2023-12-27,Mehul Kumar,Gujarat Fortunegiants,Bengal Warriors,Defender,23,11,10,0,11,0,40,47.83,0.0,11,3,1,1,Loss,31,21,Mehul Kumar,1991-08-31,33,Pakistan,Patna,Away,2,5,3,5,77,False
+180,2021-04-29,Abhishek,Patna Pirates,Dabang Delhi,Defender,15,1,7,4,1,8,39,6.67,57.14,9,0,0,1,Win,40,25,N/A,1995-08-24,29,Sri Lanka,Hyderabad,Away,3,0,0,14,83,False
+181,2025-05-07,Sandeep,Patna Pirates,Jaipur Pink Panthers,Raider,6,2,5,4,2,8,40,33.33,80.0,10,1,1,0,Win,23,15,Sandeep,1990-01-29,35,Pakistan,Delhi,Away,5,5,4,10,91,False
+182,2022-10-09,Soleiman Pahlevani,Bengal Warriors,Jaipur Pink Panthers,Raider,23,1,10,4,1,8,40,4.35,40.0,9,2,1,1,Win,39,29,Soleiman Pahlevani,1992-07-16,32,India,Bengaluru,Away,8,2,1,5,43,False
+183,2023-11-20,Aashish B,U Mumba,Gujarat Fortunegiants,Raider,5,1,13,0,1,0,38,20.0,0.0,1,2,0,1,Win,34,31,N/A,1993-07-24,31,Nepal,Jaipur,Away,8,4,5,3,49,False
+184,2023-11-05,Shankar Gadai,Gujarat Fortunegiants,Patna Pirates,Raider,5,5,5,4,5,8,59,100.0,80.0,13,2,1,0,Win,30,21,N/A,2002-04-19,23,India,Jaipur,Away,8,2,4,14,41,False
+185,2019-03-09,Ravi Kumar,Dabang Delhi,Hariyana Steelers,Raider,20,15,11,2,15,4,30,75.0,18.18,19,2,1,1,Loss,34,18,N/A,1990-10-18,34,Sri Lanka,Jaipur,Away,4,3,3,15,70,False
+186,2021-04-01,Shivam,U Mumba,Patna Pirates,Defender,7,5,12,12,5,24,43,71.43,100.0,29,0,0,0,Win,38,34,Shivam,1999-06-19,25,Sri Lanka,Hyderabad,Away,6,3,2,13,73,False
+187,2022-05-03,Manjeet,Hariyana Steelers,Dabang Delhi,Raider,15,0,11,1,0,2,38,0.0,9.09,2,3,1,0,Win,34,32,Manjeet,1996-10-21,28,India,Ahmedabad,Away,7,1,3,13,67,False
+188,2019-04-24,Rajnish,Telugu Titans,Tamil Thalaivas,Defender,5,1,7,5,1,10,52,20.0,71.43,11,0,0,1,Loss,38,34,Rajnish,1998-05-21,27,Bangladesh,Jaipur,Away,10,3,3,8,78,False
+189,2019-07-29,Surender Nada,Patna Pirates,Gujarat Fortunegiants,All-Rounder,25,22,12,9,22,18,43,88.0,75.0,40,3,1,1,Win,38,17,Surender Nada,1996-10-02,28,Nepal,Bengaluru,Away,12,1,4,3,74,True
+190,2021-12-14,Sachin Tanwar,Patna Pirates,Jaipur Pink Panthers,All-Rounder,8,5,14,2,5,4,36,62.5,14.29,9,1,0,0,Win,20,29,N/A,1987-05-16,38,Nepal,Patna,Home,4,1,3,5,35,False
+191,2019-01-03,Sahil,Dabang Delhi,Bengal Warriors,Raider,22,19,15,5,19,10,34,86.36,33.33,29,1,0,1,Win,30,30,Sahil,2000-04-12,25,Nepal,Lucknow,Away,4,4,3,15,46,False
+192,2018-01-06,Nitin Kumar,Bengal Warriors,U Mumba,All-Rounder,6,6,4,0,6,0,60,100.0,0.0,6,2,0,1,Win,25,31,Nitin Kumar,2004-05-05,21,India,Mumbai,Away,2,5,0,9,47,False
+193,2018-05-06,Prince D,Telugu Titans,Bengal Warriors,Defender,22,14,5,1,14,2,34,63.64,20.0,16,2,1,1,Win,34,20,N/A,2004-12-08,20,Sri Lanka,Kolkata,Away,10,1,5,4,87,False
+194,2022-03-28,Nitesh Kumar,UP Yoddha,Patna Pirates,Defender,24,12,11,10,12,20,45,50.0,90.91,32,0,1,1,Win,31,33,N/A,2002-04-06,23,Bangladesh,Chennai,Away,9,5,3,5,49,False
+195,2023-11-01,Sunil,Patna Pirates,Telugu Titans,Raider,24,4,11,2,4,4,38,16.67,18.18,8,1,0,1,Win,37,17,N/A,1990-03-26,35,Pakistan,Hyderabad,Away,5,3,1,3,35,False
+196,2024-04-06,Vinay,Hariyana Steelers,Jaipur Pink Panthers,Defender,20,11,11,9,11,18,33,55.0,81.82,29,3,1,1,Loss,35,35,Vinay,2003-03-26,22,Nepal,Mumbai,Away,6,3,4,4,43,False
+197,2024-09-09,Akshay Bhoir,Bengal Warriors,Patna Pirates,Raider,24,0,11,10,0,20,30,0.0,90.91,20,1,1,0,Win,28,20,N/A,2002-07-14,22,Bangladesh,Kolkata,Home,5,3,2,11,21,False
+198,2022-02-03,Ujjval,Jaipur Pink Panthers,Patna Pirates,Raider,12,8,10,4,8,8,39,66.67,40.0,16,2,1,1,Win,22,24,Ujjval,1986-11-26,38,India,Jaipur,Home,2,2,5,4,100,False
+199,2023-05-18,Sandeep Kandola,Telugu Titans,Tamil Thalaivas,Raider,9,6,12,12,6,24,52,66.67,100.0,30,2,1,1,Win,37,35,N/A,1997-08-30,27,Pakistan,Mumbai,Away,6,0,1,5,66,False
+200,2020-04-09,Meetu Sharma,Hariyana Steelers,Telugu Titans,Defender,25,3,10,9,3,18,44,12.0,90.0,21,0,1,0,Win,37,35,Meetu Sharma,1999-10-04,25,Bangladesh,Ahmedabad,Away,6,3,4,4,57,False
+201,2020-12-15,Nehal,UP Yoddha,Patna Pirates,Defender,10,1,3,1,1,2,47,10.0,33.33,3,0,0,0,Loss,40,28,Nehal,1987-06-28,37,Pakistan,Jaipur,Away,2,2,3,10,62,False
+202,2023-07-29,Hardeep,U Mumba,Dabang Delhi,Raider,25,10,7,1,10,2,53,40.0,14.29,12,2,1,0,Loss,28,16,N/A,1998-04-13,27,Bangladesh,Mumbai,Home,10,2,2,15,26,False
+203,2024-06-16,Vikas Jaglan,Patna Pirates,Dabang Delhi,All-Rounder,6,1,3,3,1,6,38,16.67,100.0,7,1,0,1,Win,38,35,N/A,1993-04-23,32,Bangladesh,Hyderabad,Away,4,2,5,10,45,False
+204,2023-03-07,Siddharth Desai,Telugu Titans,Tamil Thalaivas,Raider,21,10,9,2,10,4,47,47.62,22.22,14,1,0,0,Loss,29,23,N/A,1997-01-09,28,India,Jaipur,Away,9,3,0,15,94,False
+205,2022-08-17,Siddhant Bhosale,U Mumba,Telugu Titans,Raider,5,2,3,3,2,6,42,40.0,100.0,8,2,1,0,Win,27,15,Siddhant Bhosale,2001-08-16,23,India,Ahmedabad,Away,1,1,4,9,27,False
+206,2018-03-22,Nehal Desai,U Mumba,Bengal Warriors,Defender,18,8,15,7,8,14,47,44.44,46.67,22,2,1,1,Win,24,31,Nehal Desai,1994-04-07,31,Bangladesh,Bengaluru,Away,4,0,5,10,61,False
+207,2018-04-18,Nitesh Kumar,UP Yoddha,U Mumba,Raider,16,11,8,0,11,0,39,68.75,0.0,11,0,1,0,Loss,26,35,N/A,1994-03-14,31,India,Chennai,Away,10,4,1,11,61,False
+208,2024-07-27,Arun,Tamil Thalaivas,Jaipur Pink Panthers,All-Rounder,23,14,14,1,14,2,60,60.87,7.14,16,1,1,1,Loss,26,16,Arun,1987-11-20,37,Pakistan,Chandigarh,Away,1,5,5,12,56,False
+209,2020-12-17,Aashish B,U Mumba,Gujarat Fortunegiants,Raider,15,6,10,8,6,16,40,40.0,80.0,22,3,1,1,Loss,24,19,N/A,1988-07-19,36,Sri Lanka,Patna,Away,5,0,5,4,64,False
+210,2022-10-17,Dipak,Dabang Delhi,Gujarat Fortunegiants,All-Rounder,9,3,10,5,3,10,37,33.33,50.0,13,1,0,0,Loss,37,32,Dipak,2001-04-18,24,Bangladesh,Ahmedabad,Away,6,3,1,10,96,False
+211,2019-11-26,Nitin Kumar,Bengal Warriors,U Mumba,Defender,11,11,13,0,11,0,60,100.0,0.0,11,3,0,1,Win,29,15,N/A,2000-03-18,25,India,Hyderabad,Away,3,4,1,10,27,False
+212,2020-07-11,Rahul Chaudhari,Jaipur Pink Panthers,Bengal Warriors,Defender,24,17,6,5,17,10,33,70.83,83.33,27,0,1,1,Win,35,15,Rahul Chaudhari,1987-09-04,37,Sri Lanka,Kolkata,Away,7,2,3,6,49,False
+213,2022-01-30,Akash Pikalmunde,Bengal Warriors,Jaipur Pink Panthers,Raider,24,20,6,0,20,0,37,83.33,0.0,20,0,0,1,Loss,29,16,Akash Pikalmunde,1998-11-19,26,Pakistan,Bengaluru,Away,1,4,2,8,93,False
+214,2020-01-16,Nitesh Kumar,UP Yoddha,Dabang Delhi,Raider,9,7,9,4,7,8,46,77.78,44.44,15,0,1,1,Loss,35,26,N/A,1999-01-21,26,Pakistan,Delhi,Away,1,5,2,10,80,False
+215,2018-08-09,Vikas Jaglan,Patna Pirates,Dabang Delhi,Defender,24,22,3,3,22,6,36,91.67,100.0,28,3,0,0,Loss,30,21,Vikas Jaglan,1990-03-08,35,Pakistan,Delhi,Away,10,5,2,13,98,False
+216,2020-10-07,Anil,Dabang Delhi,Jaipur Pink Panthers,All-Rounder,8,0,6,2,0,4,30,0.0,33.33,4,2,0,0,Win,35,24,Anil,1988-06-22,36,Sri Lanka,Mumbai,Away,3,0,4,3,68,False
+217,2019-12-27,Gulveer Singh,UP Yoddha,Jaipur Pink Panthers,Defender,24,12,13,12,12,24,31,50.0,92.31,36,3,0,1,Win,34,25,Gulveer Singh,2003-06-26,21,Sri Lanka,Hyderabad,Away,9,2,5,6,98,False
+218,2022-01-11,Vinay,Hariyana Steelers,Dabang Delhi,All-Rounder,21,18,15,3,18,6,43,85.71,20.0,24,2,0,1,Loss,39,23,Vinay,2001-11-15,23,Pakistan,Jaipur,Away,3,0,0,14,86,False
+219,2023-11-07,Durgesh Kumar,UP Yoddha,Tamil Thalaivas,Raider,19,11,12,11,11,22,37,57.89,91.67,33,0,1,1,Win,40,20,N/A,2003-05-01,22,Pakistan,Chandigarh,Away,2,4,5,5,35,False
+220,2024-04-18,Arjun Deshwal,Jaipur Pink Panthers,Dabang Delhi,Raider,12,10,11,6,10,12,58,83.33,54.55,22,3,1,0,Win,40,31,Arjun Deshwal,2003-05-30,22,Sri Lanka,Bengaluru,Away,5,2,5,9,83,False
+221,2022-08-30,Shivam,Gujarat Fortunegiants,Bengal Warriors,All-Rounder,5,5,10,2,5,4,34,100.0,20.0,9,2,0,0,Win,33,22,N/A,2003-03-25,22,Bangladesh,Delhi,Away,3,5,0,15,36,False
+222,2020-06-03,Rakesh,Gujarat Fortunegiants,Jaipur Pink Panthers,Raider,15,9,8,7,9,14,35,60.0,87.5,23,0,0,0,Loss,22,22,N/A,2001-03-20,24,India,Ahmedabad,Home,3,0,0,13,39,False
+223,2024-05-19,Shubham Kumar,UP Yoddha,Patna Pirates,All-Rounder,18,11,14,6,11,12,38,61.11,42.86,23,1,1,0,Loss,32,22,N/A,1989-06-03,36,Nepal,Patna,Away,11,4,1,14,22,False
+224,2021-09-22,Sumit Sangwan,UP Yoddha,Gujarat Fortunegiants,All-Rounder,10,8,4,1,8,2,33,80.0,25.0,10,0,0,0,Win,38,16,Sumit Sangwan,2000-05-21,25,India,Jaipur,Away,5,3,3,7,36,False
+225,2023-06-15,Tushar,U Mumba,Telugu Titans,All-Rounder,13,2,4,1,2,2,31,15.38,25.0,4,1,0,0,Win,21,17,N/A,2002-02-20,23,India,Bengaluru,Away,9,0,0,8,89,False
+226,2018-04-14,K. Shanmugam,Gujarat Fortunegiants,Patna Pirates,Defender,24,11,12,8,11,16,58,45.83,66.67,27,1,0,0,Win,25,23,K. Shanmugam,1996-02-22,29,India,Kolkata,Away,4,4,5,11,58,False
+227,2023-07-01,Shubham Kumar,UP Yoddha,Gujarat Fortunegiants,Raider,14,7,11,6,7,12,55,50.0,54.55,19,0,1,1,Win,26,35,N/A,1993-01-15,32,India,Hyderabad,Away,2,5,2,10,86,False
+228,2023-05-02,Rajveer,Patna Pirates,Gujarat Fortunegiants,All-Rounder,18,15,7,6,15,12,34,83.33,85.71,27,0,1,0,Loss,33,32,Rajveer,1991-01-21,34,Sri Lanka,Hyderabad,Away,4,4,3,11,79,False
+229,2021-12-07,Sagar,Tamil Thalaivas,Dabang Delhi,All-Rounder,20,1,13,2,1,4,50,5.0,15.38,5,1,0,1,Win,36,25,N/A,1985-04-03,40,Bangladesh,Lucknow,Away,11,5,3,6,51,False
+230,2019-11-11,Mujtaba,Telugu Titans,UP Yoddha,Defender,18,14,15,0,14,0,33,77.78,0.0,14,1,0,0,Loss,28,31,N/A,1986-09-24,38,Nepal,Chennai,Away,10,0,0,5,49,False
+231,2023-05-21,K. Shanmugam,Gujarat Fortunegiants,Bengal Warriors,All-Rounder,15,12,12,4,12,8,49,80.0,33.33,20,1,1,0,Win,28,27,N/A,2001-08-11,23,Pakistan,Lucknow,Away,2,0,3,13,23,False
+232,2024-01-20,Nitin Kumar,Bengal Warriors,Hariyana Steelers,All-Rounder,18,8,11,9,8,18,35,44.44,81.82,26,0,1,1,Win,22,15,Nitin Kumar,2002-08-14,22,Bangladesh,Delhi,Away,12,2,2,12,74,False
+233,2023-04-09,Mahipal,UP Yoddha,Hariyana Steelers,Defender,9,2,7,7,2,14,30,22.22,100.0,16,0,0,1,Win,27,34,Mahipal,1992-01-23,33,Pakistan,Patna,Away,6,1,5,14,83,False
+234,2022-07-30,Meetu Sharma,Hariyana Steelers,Jaipur Pink Panthers,All-Rounder,23,13,11,9,13,18,42,56.52,81.82,31,3,1,1,Win,29,22,N/A,1986-02-20,39,Sri Lanka,Hyderabad,Away,6,5,3,12,22,False
+235,2020-04-02,Ankit,Hariyana Steelers,Bengal Warriors,All-Rounder,23,1,12,9,1,18,54,4.35,75.0,19,0,1,0,Loss,35,29,Ankit,1999-07-31,25,Pakistan,Mumbai,Away,3,3,3,12,68,False
+236,2023-11-16,Vikas Jaglan,Patna Pirates,Tamil Thalaivas,Raider,7,6,10,0,6,0,51,85.71,0.0,6,1,1,1,Win,27,18,Vikas Jaglan,1998-05-04,27,Nepal,Chandigarh,Away,8,5,0,3,79,False
+237,2024-10-31,Sahul Kumar,Jaipur Pink Panthers,UP Yoddha,Raider,20,12,8,8,12,16,46,60.0,100.0,28,3,1,0,Win,39,23,N/A,1993-11-27,31,Bangladesh,Bengaluru,Away,11,5,2,13,37,False
+238,2023-06-10,Naresh,Hariyana Steelers,UP Yoddha,Raider,16,6,4,0,6,0,59,37.5,0.0,6,2,1,1,Win,27,23,N/A,1993-08-03,31,India,Hyderabad,Away,9,2,2,10,61,False
+239,2019-04-26,Hardeep,U Mumba,Hariyana Steelers,Raider,11,2,12,4,2,8,47,18.18,33.33,10,3,1,1,Loss,30,17,N/A,1986-01-09,39,Sri Lanka,Delhi,Away,7,2,4,5,51,False
+240,2023-03-16,Kiran Lal,UP Yoddha,Jaipur Pink Panthers,Raider,23,6,10,6,6,12,39,26.09,60.0,18,3,0,0,Loss,28,20,N/A,1997-05-14,28,Bangladesh,Patna,Away,6,5,5,11,41,False
+241,2025-05-12,Abinesh Nadarajan,Tamil Thalaivas,U Mumba,Defender,20,3,7,0,3,0,43,15.0,0.0,3,1,0,0,Loss,37,32,Abinesh Nadarajan,1992-12-21,32,Sri Lanka,Ahmedabad,Away,9,2,5,13,33,False
+242,2018-10-31,Pawan Sehrawat,Telugu Titans,Jaipur Pink Panthers,Defender,15,6,9,7,6,14,60,40.0,77.78,20,3,0,0,Loss,27,27,Pawan Sehrawat,1996-10-25,28,Pakistan,Hyderabad,Home,4,2,1,5,76,False
+243,2023-09-07,Ankit,Patna Pirates,Hariyana Steelers,Raider,13,6,12,11,6,22,37,46.15,91.67,28,0,0,0,Win,30,26,Ankit,1996-03-03,29,Sri Lanka,Jaipur,Away,1,2,1,6,46,False
+244,2018-09-06,Ankit Beniwal,Tamil Thalaivas,U Mumba,Raider,8,8,3,1,8,2,34,100.0,33.33,10,0,1,0,Loss,36,20,Ankit Beniwal,2001-05-01,24,Pakistan,Kolkata,Away,11,2,1,6,32,False
+245,2019-12-24,Sandeep,Patna Pirates,Gujarat Fortunegiants,All-Rounder,13,7,14,0,7,0,32,53.85,0.0,7,3,1,1,Win,26,21,Sandeep,1990-09-30,34,Pakistan,Jaipur,Away,3,0,5,13,99,False
+246,2022-04-17,Mehul Kumar,Gujarat Fortunegiants,Patna Pirates,All-Rounder,20,15,6,0,15,0,59,75.0,0.0,15,1,1,1,Loss,38,22,Mehul Kumar,2005-01-23,20,India,Patna,Away,9,0,1,9,71,False
+247,2020-06-03,Himanshu,Tamil Thalaivas,Telugu Titans,Defender,22,18,4,2,18,4,42,81.82,50.0,22,1,1,0,Loss,37,22,N/A,2001-04-06,24,Bangladesh,Ahmedabad,Away,3,3,5,10,81,False
+248,2018-10-21,Sagar,Tamil Thalaivas,Bengal Warriors,Defender,5,1,6,6,1,12,50,20.0,100.0,13,1,1,1,Loss,21,21,Sagar,1986-08-26,38,Nepal,Chennai,Home,2,2,2,8,52,False
+249,2020-10-01,Abhishek Singh,Telugu Titans,UP Yoddha,Raider,6,6,5,5,6,10,54,100.0,100.0,16,0,0,0,Win,21,27,Abhishek Singh,1987-09-05,37,Sri Lanka,Jaipur,Away,12,2,0,13,44,False
+250,2023-06-28,Hamid Nader,Telugu Titans,Bengal Warriors,Defender,20,5,5,1,5,2,30,25.0,20.0,7,2,1,0,Loss,32,25,Hamid Nader,1990-03-15,35,Sri Lanka,Chennai,Away,10,2,1,8,37,False
+251,2020-01-01,Sunil,Patna Pirates,U Mumba,All-Rounder,21,1,14,1,1,2,34,4.76,7.14,3,2,1,0,Loss,40,34,N/A,1996-12-07,28,Bangladesh,Chandigarh,Away,1,4,5,15,94,False
+252,2019-06-11,Lucky Sharma,Jaipur Pink Panthers,Gujarat Fortunegiants,Defender,5,0,10,0,0,0,31,0.0,0.0,0,0,1,0,Loss,20,24,N/A,1992-11-08,32,Bangladesh,Chandigarh,Away,12,2,5,15,24,False
+253,2019-04-20,Bhavani Rajput,Jaipur Pink Panthers,Tamil Thalaivas,Raider,15,4,4,1,4,2,58,26.67,25.0,6,3,0,0,Win,26,35,Bhavani Rajput,1989-07-16,35,India,Delhi,Away,4,1,3,8,49,False
+254,2022-09-29,Soleiman Pahlevani,Bengal Warriors,Tamil Thalaivas,Defender,20,14,7,4,14,8,55,70.0,57.14,22,1,0,1,Win,32,26,N/A,1997-12-06,27,Nepal,Bengaluru,Away,8,1,3,9,56,False
+255,2018-12-19,Arjun Patil,Bengal Warriors,Gujarat Fortunegiants,Defender,25,0,15,14,0,28,40,0.0,93.33,28,2,0,0,Loss,31,28,N/A,2000-06-30,24,Sri Lanka,Delhi,Away,10,4,0,8,36,False
+256,2021-04-23,Maninder Singh,Bengal Warriors,U Mumba,Raider,25,1,10,8,1,16,59,4.0,80.0,17,3,0,1,Loss,34,17,N/A,2002-07-11,22,Bangladesh,Patna,Away,7,3,1,14,73,False
+257,2022-07-20,Ujjval,Jaipur Pink Panthers,U Mumba,All-Rounder,19,16,10,0,16,0,53,84.21,0.0,16,3,1,0,Win,30,34,Ujjval,1986-05-21,39,Pakistan,Ahmedabad,Away,1,2,1,3,70,False
+258,2023-12-12,Rahul Chaudhari,Jaipur Pink Panthers,Gujarat Fortunegiants,Defender,16,12,3,0,12,0,52,75.0,0.0,12,3,0,0,Loss,30,18,Rahul Chaudhari,1989-09-28,35,Nepal,Patna,Away,9,2,2,3,31,False
+259,2022-11-18,Parshant Kumar,Bengal Warriors,Patna Pirates,Defender,5,3,11,2,3,4,39,60.0,18.18,7,0,1,0,Win,27,17,Parshant Kumar,1989-11-10,35,India,Bengaluru,Away,11,0,4,8,74,False
+260,2020-12-10,Ravinder,Patna Pirates,UP Yoddha,All-Rounder,17,11,9,0,11,0,30,64.71,0.0,11,0,0,0,Loss,40,29,N/A,1990-06-03,35,Bangladesh,Chennai,Away,7,4,3,14,54,False
+261,2021-05-14,Sumit,Dabang Delhi,Hariyana Steelers,All-Rounder,10,1,15,14,1,28,58,10.0,93.33,29,2,0,1,Win,27,31,Sumit,1990-10-31,34,India,Lucknow,Away,9,3,0,5,38,False
+262,2024-05-20,Nehal,UP Yoddha,U Mumba,Raider,24,7,14,6,7,12,42,29.17,42.86,19,3,0,1,Win,36,27,N/A,1997-07-17,27,Bangladesh,Chennai,Away,8,3,0,8,27,False
+263,2025-03-24,Ankit,UP Yoddha,Hariyana Steelers,Raider,9,0,9,7,0,14,33,0.0,77.78,14,0,1,1,Loss,36,32,N/A,1998-04-10,27,India,Chennai,Away,1,0,4,15,39,False
+264,2019-03-18,Rakesh,Gujarat Fortunegiants,Telugu Titans,Defender,10,1,14,7,1,14,58,10.0,50.0,15,1,0,1,Win,26,34,N/A,1990-12-01,34,Pakistan,Bengaluru,Away,3,3,2,3,63,False
+265,2019-03-22,Sunil,Hariyana Steelers,Patna Pirates,All-Rounder,18,14,12,8,14,16,57,77.78,66.67,30,0,0,1,Loss,23,32,Sunil,2001-12-08,23,Bangladesh,Hyderabad,Away,10,1,1,15,69,False
+266,2019-11-28,Vishal,Dabang Delhi,Telugu Titans,All-Rounder,6,2,15,3,2,6,55,33.33,20.0,8,0,0,0,Loss,32,23,Vishal,1994-11-30,30,Sri Lanka,Delhi,Home,12,2,2,5,29,False
+267,2022-05-11,K Prapanjan,Hariyana Steelers,Telugu Titans,All-Rounder,18,3,14,14,3,28,35,16.67,100.0,31,2,0,0,Loss,27,27,N/A,1985-08-26,39,Pakistan,Delhi,Away,9,5,5,7,88,False
+268,2024-08-15,Jaideep Dahiya,Hariyana Steelers,Telugu Titans,Defender,17,3,15,11,3,22,40,17.65,73.33,25,1,1,0,Loss,36,34,Jaideep Dahiya,1990-01-30,35,Pakistan,Hyderabad,Away,3,5,5,7,68,False
+269,2018-05-07,Meetu Sharma,Hariyana Steelers,Gujarat Fortunegiants,All-Rounder,22,17,5,1,17,2,40,77.27,20.0,19,0,0,1,Win,36,16,Meetu Sharma,1984-07-23,40,Nepal,Ahmedabad,Away,10,1,5,9,52,False
+270,2019-07-21,Himanshu Singh,Tamil Thalaivas,Telugu Titans,Defender,25,11,6,5,11,10,60,44.0,83.33,21,3,0,0,Loss,39,33,N/A,1988-07-14,36,India,Bengaluru,Away,12,0,0,3,39,False
+271,2022-03-26,Vikas Kandola,Hariyana Steelers,Gujarat Fortunegiants,Raider,17,1,10,7,1,14,48,5.88,70.0,15,2,0,0,Win,34,17,Vikas Kandola,1996-11-17,28,Sri Lanka,Lucknow,Away,3,2,0,8,88,False
+272,2018-12-30,Maninder Singh,Bengal Warriors,Telugu Titans,All-Rounder,15,13,8,7,13,14,39,86.67,87.5,27,0,0,0,Loss,31,30,N/A,1985-11-16,39,Bangladesh,Chandigarh,Away,11,3,1,4,91,False
+273,2019-08-05,Vishal Bhardwaj,Tamil Thalaivas,Jaipur Pink Panthers,Raider,11,4,5,3,4,6,57,36.36,60.0,10,3,1,0,Loss,39,20,N/A,1996-05-18,29,Pakistan,Delhi,Away,12,5,2,4,88,False
+274,2020-08-06,Manjeet,Hariyana Steelers,Telugu Titans,Raider,16,7,9,7,7,14,49,43.75,77.78,21,3,0,1,Loss,31,29,Manjeet,1991-10-17,33,Bangladesh,Patna,Away,9,3,4,3,93,False
+275,2019-07-24,Sahil,Hariyana Steelers,Patna Pirates,Raider,7,1,14,2,1,4,30,14.29,14.29,5,2,1,1,Win,27,16,N/A,1990-10-30,34,India,Lucknow,Away,1,5,5,3,75,False
+276,2023-01-24,Mohit,Telugu Titans,Tamil Thalaivas,All-Rounder,11,1,3,0,1,0,51,9.09,0.0,1,2,1,0,Loss,27,35,N/A,1987-05-08,38,Pakistan,Patna,Away,11,3,5,10,53,False
+277,2018-11-03,Rahul Chaudhari,Jaipur Pink Panthers,Patna Pirates,Defender,23,19,11,0,19,0,52,82.61,0.0,19,1,1,1,Win,24,35,N/A,1995-02-21,30,Nepal,Delhi,Away,3,1,2,8,56,False
+278,2020-01-08,Vinay,Telugu Titans,Bengal Warriors,Defender,21,17,5,2,17,4,50,80.95,40.0,21,2,0,1,Win,37,32,N/A,1999-07-22,25,Nepal,Hyderabad,Home,12,4,1,6,75,False
+279,2020-04-27,Devank,Jaipur Pink Panthers,Hariyana Steelers,All-Rounder,22,4,14,7,4,14,42,18.18,50.0,18,0,0,1,Loss,35,35,N/A,1999-10-04,25,India,Hyderabad,Away,12,3,4,6,41,False
+280,2023-02-14,Guman Singh,U Mumba,Tamil Thalaivas,All-Rounder,6,4,9,3,4,6,56,66.67,33.33,10,1,0,1,Loss,25,33,Guman Singh,2004-03-21,21,India,Patna,Away,10,5,3,4,51,False
+281,2018-10-20,Hardeep,U Mumba,Telugu Titans,All-Rounder,18,12,7,6,12,12,45,66.67,85.71,24,0,0,0,Loss,30,24,Hardeep,1988-08-09,36,Sri Lanka,Chennai,Away,8,5,5,5,23,False
+282,2021-08-19,Ankit,Hariyana Steelers,Dabang Delhi,Defender,11,0,8,1,0,2,30,0.0,12.5,2,1,1,1,Win,38,21,N/A,2004-05-08,21,Pakistan,Mumbai,Away,4,3,3,9,46,False
+283,2019-02-01,Sumit,Dabang Delhi,Telugu Titans,Raider,17,5,12,11,5,22,45,29.41,91.67,27,3,1,1,Win,25,31,N/A,1998-11-17,26,Sri Lanka,Chandigarh,Away,12,0,1,4,92,False
+284,2018-07-25,Siddharth,Gujarat Fortunegiants,Jaipur Pink Panthers,Raider,21,19,8,7,19,14,36,90.48,87.5,33,1,1,1,Loss,37,16,N/A,1990-02-18,35,India,Bengaluru,Away,8,1,3,8,23,False
+285,2020-02-23,Mahipal,UP Yoddha,Bengal Warriors,Raider,15,11,12,0,11,0,35,73.33,0.0,11,0,1,0,Loss,40,33,N/A,2005-04-03,20,Nepal,Delhi,Away,10,5,3,4,100,False
+286,2020-12-20,Kapil,Dabang Delhi,Bengal Warriors,Raider,11,4,7,4,4,8,46,36.36,57.14,12,0,1,0,Loss,23,33,Kapil,1991-07-26,33,Bangladesh,Lucknow,Away,9,5,1,6,30,False
+287,2025-03-08,Shivam,U Mumba,Bengal Warriors,Raider,8,3,9,2,3,4,58,37.5,22.22,7,2,1,1,Win,22,15,N/A,1988-12-17,36,Nepal,Bengaluru,Away,3,2,5,10,73,False
+288,2019-10-07,Rajesh Narwal,Hariyana Steelers,U Mumba,Defender,24,14,11,2,14,4,50,58.33,18.18,18,2,0,1,Win,37,15,Rajesh Narwal,1998-11-05,26,India,Ahmedabad,Away,2,4,0,14,60,False
+289,2022-05-03,Pawan Sehrawat,Telugu Titans,Tamil Thalaivas,Raider,25,14,15,15,14,30,35,56.0,100.0,44,1,0,0,Win,33,17,N/A,1986-08-31,38,India,Ahmedabad,Away,12,0,5,10,62,False
+290,2018-07-05,Vishal,Dabang Delhi,Gujarat Fortunegiants,Defender,23,2,8,3,2,6,50,8.7,37.5,8,0,1,0,Loss,33,28,Vishal,1986-10-06,38,India,Patna,Away,7,0,2,12,64,False
+291,2022-04-29,Surjeet Singh,Telugu Titans,Jaipur Pink Panthers,Raider,10,6,14,0,6,0,47,60.0,0.0,6,1,0,1,Loss,20,18,N/A,1986-07-10,38,Nepal,Chennai,Away,11,2,4,3,78,False
+292,2023-03-24,Shubham Kumar,UP Yoddha,Dabang Delhi,Raider,10,10,7,7,10,14,56,100.0,100.0,24,2,0,0,Loss,27,22,N/A,1996-05-12,29,Pakistan,Lucknow,Home,4,3,1,4,52,False
+293,2024-06-30,Manjeet,Hariyana Steelers,Gujarat Fortunegiants,Defender,5,2,5,5,2,10,47,40.0,100.0,12,2,1,0,Loss,39,31,Manjeet,1986-07-19,38,Sri Lanka,Delhi,Away,6,4,4,14,61,False
+294,2020-05-08,Amit Kumar,Gujarat Fortunegiants,Telugu Titans,Defender,10,8,5,2,8,4,45,80.0,40.0,12,1,0,1,Win,24,27,Amit Kumar,1991-10-07,33,Bangladesh,Chennai,Away,6,3,2,10,49,False
+295,2018-03-25,Sandeep Kumar,Dabang Delhi,Bengal Warriors,Defender,12,2,11,0,2,0,44,16.67,0.0,2,1,1,1,Win,22,33,N/A,1998-11-05,26,Nepal,Delhi,Home,3,0,1,11,62,False
+296,2022-09-10,Rohit Banne,Bengal Warriors,Gujarat Fortunegiants,Raider,21,13,5,0,13,0,53,61.9,0.0,13,1,0,1,Win,26,35,Rohit Banne,2004-09-13,20,Nepal,Chandigarh,Away,6,5,4,9,35,False
+297,2019-12-03,Vishal Bhardwaj,Tamil Thalaivas,UP Yoddha,Raider,17,3,7,5,3,10,43,17.65,71.43,13,0,0,0,Loss,32,32,N/A,1987-09-11,37,Nepal,Bengaluru,Away,8,1,0,4,51,False
+298,2018-05-24,Rakesh Narwal,Hariyana Steelers,UP Yoddha,All-Rounder,23,12,4,2,12,4,37,52.17,50.0,16,0,1,0,Win,28,26,N/A,1996-10-07,28,India,Hyderabad,Away,11,5,0,8,66,False
+299,2022-10-11,Anand Tomar,Jaipur Pink Panthers,Gujarat Fortunegiants,Raider,16,14,5,0,14,0,32,87.5,0.0,14,1,1,0,Loss,26,29,Anand Tomar,1988-05-14,37,Bangladesh,Bengaluru,Away,8,3,0,5,83,False
+300,2024-08-05,Durgesh,Telugu Titans,Jaipur Pink Panthers,Raider,20,17,13,8,17,16,33,85.0,61.54,33,2,1,0,Loss,24,23,N/A,2001-05-29,24,Pakistan,Chennai,Away,4,5,4,3,59,False
+301,2021-01-07,Sahil,Dabang Delhi,Hariyana Steelers,Raider,24,23,7,0,23,0,53,95.83,0.0,23,3,1,1,Loss,22,18,Sahil,1993-10-04,31,Nepal,Ahmedabad,Away,8,4,0,14,96,False
+302,2022-12-26,Nehal,UP Yoddha,U Mumba,All-Rounder,24,20,13,11,20,22,31,83.33,84.62,42,3,0,1,Loss,40,23,Nehal,1994-09-15,30,Sri Lanka,Hyderabad,Away,12,2,3,14,66,False
+303,2020-02-08,Parvesh Bhainswal,Gujarat Fortunegiants,UP Yoddha,Defender,12,10,13,6,10,12,48,83.33,46.15,22,2,1,0,Loss,34,16,N/A,1984-12-16,40,India,Kolkata,Away,2,2,5,7,100,False
+304,2019-01-02,Ajith Kumar,Jaipur Pink Panthers,U Mumba,Raider,25,11,13,9,11,18,40,44.0,69.23,29,2,0,0,Loss,21,29,N/A,1991-01-26,34,Nepal,Kolkata,Away,12,3,4,11,59,False
+305,2019-10-31,Abhishek Singh,Telugu Titans,U Mumba,Raider,18,4,10,4,4,8,52,22.22,40.0,12,0,1,1,Win,36,35,N/A,1994-02-17,31,Sri Lanka,Ahmedabad,Away,8,0,4,4,40,False
+306,2022-03-14,Mohammadreza Chiyaneh,Patna Pirates,Telugu Titans,All-Rounder,16,16,3,3,16,6,50,100.0,100.0,22,0,0,0,Win,38,26,Mohammadreza Chiyaneh,1993-09-28,31,Bangladesh,Hyderabad,Away,5,1,4,5,58,False
+307,2023-04-16,Vinod Kumar,Gujarat Fortunegiants,Patna Pirates,Defender,25,15,5,2,15,4,55,60.0,40.0,19,1,0,1,Win,21,29,N/A,2001-05-14,24,Pakistan,Delhi,Away,9,1,5,6,35,False
+308,2025-01-05,Vishal,Dabang Delhi,Bengal Warriors,Raider,12,10,13,9,10,18,32,83.33,69.23,28,1,0,1,Win,25,18,N/A,2000-08-30,24,Bangladesh,Ahmedabad,Away,7,2,4,13,85,False
+309,2018-01-27,Ravinder,Patna Pirates,UP Yoddha,Raider,8,2,13,10,2,20,46,25.0,76.92,22,3,0,1,Loss,35,33,N/A,1992-05-04,33,Nepal,Ahmedabad,Away,2,0,3,12,36,False
+310,2023-12-04,Akshay Bhoir,Bengal Warriors,Dabang Delhi,Defender,12,8,5,2,8,4,52,66.67,40.0,12,0,1,1,Loss,33,29,Akshay Bhoir,1989-05-04,36,Sri Lanka,Bengaluru,Away,5,0,0,5,89,False
+311,2023-07-19,Vikas Jaglan,Patna Pirates,Gujarat Fortunegiants,All-Rounder,19,4,5,1,4,2,33,21.05,20.0,6,1,0,1,Win,31,31,N/A,2002-02-02,23,Pakistan,Delhi,Away,5,5,5,9,46,False
+312,2020-01-12,Deepak Niwas Hooda,Bengal Warriors,UP Yoddha,All-Rounder,12,3,14,4,3,8,36,25.0,28.57,11,1,1,0,Win,25,26,N/A,2004-12-11,20,Nepal,Ahmedabad,Away,4,3,2,14,29,False
+313,2021-07-12,Ankit Beniwal,Tamil Thalaivas,Patna Pirates,All-Rounder,17,17,10,4,17,8,46,100.0,40.0,25,3,1,1,Loss,32,21,Ankit Beniwal,1996-12-29,28,Nepal,Bengaluru,Away,9,1,2,9,48,False
+314,2018-11-04,K Prapanjan,Hariyana Steelers,Bengal Warriors,Raider,17,0,9,4,0,8,34,0.0,44.44,8,2,0,0,Loss,26,27,N/A,2000-03-12,25,Nepal,Ahmedabad,Away,10,5,4,4,25,False
+315,2021-03-11,Narender,Tamil Thalaivas,Patna Pirates,Defender,9,3,5,0,3,0,40,33.33,0.0,3,1,1,0,Win,28,24,N/A,1986-12-25,38,India,Delhi,Away,6,0,2,4,84,False
+316,2024-05-10,Ashish,U Mumba,Bengal Warriors,Raider,25,18,9,9,18,18,40,72.0,100.0,36,2,1,0,Loss,25,29,Ashish,2002-04-14,23,Nepal,Bengaluru,Away,12,2,0,5,36,False
+317,2023-09-25,Ashu Malik,Dabang Delhi,Patna Pirates,All-Rounder,5,4,6,1,4,2,41,80.0,16.67,6,3,1,1,Loss,34,17,N/A,1996-11-21,28,India,Kolkata,Away,8,1,5,15,52,False
+318,2024-12-14,Sachin Tanwar,Patna Pirates,UP Yoddha,Defender,19,13,10,7,13,14,54,68.42,70.0,27,1,1,1,Loss,30,15,Sachin Tanwar,1998-02-09,27,Nepal,Hyderabad,Away,6,3,5,6,37,False
+319,2021-05-11,Mohit Nandal,Hariyana Steelers,Jaipur Pink Panthers,Raider,15,10,12,5,10,10,31,66.67,41.67,20,0,1,1,Loss,21,20,Mohit Nandal,2002-01-24,23,Bangladesh,Kolkata,Away,11,3,2,13,51,False
+320,2024-12-09,M Abishek,Tamil Thalaivas,Dabang Delhi,Defender,13,0,11,0,0,0,41,0.0,0.0,0,3,1,0,Loss,31,18,M Abishek,1993-02-26,32,India,Chandigarh,Away,4,1,1,11,41,False
+321,2020-04-24,Ankit,Patna Pirates,Dabang Delhi,Raider,24,12,3,2,12,4,59,50.0,66.67,16,3,0,1,Win,31,29,Ankit,1993-03-18,32,Sri Lanka,Hyderabad,Away,8,0,3,7,66,False
+322,2023-02-13,Rinku Sharma,U Mumba,Dabang Delhi,Raider,20,8,11,9,8,18,43,40.0,81.82,26,0,0,0,Win,26,26,N/A,1987-11-08,37,Bangladesh,Mumbai,Home,10,3,5,6,85,False
+323,2021-03-28,Rathan K,UP Yoddha,Tamil Thalaivas,All-Rounder,13,2,7,3,2,6,55,15.38,42.86,8,1,0,0,Loss,34,16,Rathan K,2003-12-26,21,India,Ahmedabad,Away,5,0,3,8,44,False
+324,2023-12-20,Mahipal,UP Yoddha,Dabang Delhi,Raider,18,6,8,0,6,0,49,33.33,0.0,6,1,1,1,Loss,21,19,N/A,1993-04-14,32,India,Kolkata,Away,7,1,3,9,79,False
+325,2024-07-02,Sachin Tanwar,Patna Pirates,Dabang Delhi,Raider,15,13,4,0,13,0,36,86.67,0.0,13,3,0,0,Loss,34,34,Sachin Tanwar,1996-05-21,29,Pakistan,Bengaluru,Away,11,1,0,3,58,False
+326,2022-09-24,Karamvir,Patna Pirates,Telugu Titans,Raider,11,7,3,3,7,6,55,63.64,100.0,13,3,1,1,Win,31,18,Karamvir,2002-10-02,22,India,Mumbai,Away,2,2,0,7,86,False
+327,2023-12-25,Jeeva Kumar,Tamil Thalaivas,Gujarat Fortunegiants,Raider,21,9,15,9,9,18,51,42.86,60.0,27,3,1,1,Loss,38,18,Jeeva Kumar,1991-09-30,33,India,Patna,Away,4,0,5,12,65,False
+328,2021-02-19,Manjeet,Dabang Delhi,Patna Pirates,Defender,9,9,7,5,9,10,50,100.0,71.43,19,2,0,0,Loss,34,34,Manjeet,2005-01-14,20,Bangladesh,Jaipur,Away,11,4,4,6,21,False
+329,2022-11-30,Pardeep Narwal,UP Yoddha,Gujarat Fortunegiants,Raider,23,15,10,3,15,6,38,65.22,30.0,21,1,0,0,Loss,22,32,N/A,1993-10-11,31,Sri Lanka,Kolkata,Away,9,4,1,4,51,False
+330,2021-09-27,Gulveer Singh,UP Yoddha,U Mumba,Raider,14,13,4,2,13,4,50,92.86,50.0,17,3,0,0,Loss,24,28,N/A,2004-04-01,21,Pakistan,Jaipur,Away,6,2,4,9,35,False
+331,2019-12-14,Sourabh Nandal,Bengal Warriors,Gujarat Fortunegiants,Defender,7,0,14,5,0,10,55,0.0,35.71,10,1,1,1,Win,33,17,N/A,1991-08-27,33,Bangladesh,Delhi,Away,5,4,5,14,58,False
+332,2020-05-28,Bhavani Rajput,Jaipur Pink Panthers,U Mumba,Defender,22,9,9,6,9,12,52,40.91,66.67,21,3,0,1,Win,36,16,Bhavani Rajput,1992-07-30,32,Pakistan,Hyderabad,Away,2,1,1,12,26,False
+333,2018-12-17,Nitin Rawal,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,18,10,6,1,10,2,57,55.56,16.67,12,1,1,1,Win,40,34,Nitin Rawal,1985-07-15,39,Nepal,Hyderabad,Away,2,0,4,15,66,False
+334,2021-07-12,Rakesh,Gujarat Fortunegiants,Bengal Warriors,Defender,17,10,8,5,10,10,52,58.82,62.5,20,2,1,1,Win,31,28,Rakesh,1990-04-11,35,Bangladesh,Lucknow,Away,4,1,1,14,65,False
+335,2018-03-14,Sachin Tanwar,Patna Pirates,Dabang Delhi,All-Rounder,11,3,9,5,3,10,46,27.27,55.56,13,0,0,1,Win,28,23,N/A,1994-10-04,30,Sri Lanka,Ahmedabad,Away,2,0,1,10,21,False
+336,2021-10-12,Vinod Kumar,Gujarat Fortunegiants,Tamil Thalaivas,Raider,21,10,9,5,10,10,54,47.62,55.56,20,1,0,1,Loss,24,22,Vinod Kumar,1989-06-05,36,Bangladesh,Chennai,Away,10,0,1,12,82,False
+337,2019-09-04,Tushar,U Mumba,Dabang Delhi,Defender,9,7,8,7,7,14,60,77.78,87.5,21,3,1,0,Loss,23,34,N/A,1997-07-31,27,Sri Lanka,Chandigarh,Away,3,1,0,4,90,False
+338,2021-03-26,Arjun Patil,Bengal Warriors,Jaipur Pink Panthers,Raider,18,15,12,2,15,4,44,83.33,16.67,19,2,1,0,Win,25,23,Arjun Patil,2002-01-03,23,Pakistan,Hyderabad,Away,11,2,4,9,88,False
+339,2020-09-06,Rakesh,Gujarat Fortunegiants,Tamil Thalaivas,Defender,22,6,6,3,6,6,35,27.27,50.0,12,0,0,1,Win,38,32,N/A,1991-02-10,34,Nepal,Hyderabad,Away,2,1,1,5,67,False
+340,2023-03-07,Bhavani Rajput,Jaipur Pink Panthers,Gujarat Fortunegiants,All-Rounder,17,17,4,1,17,2,54,100.0,25.0,19,2,0,0,Loss,22,23,N/A,1989-10-29,35,Pakistan,Patna,Away,2,1,3,12,83,False
+341,2019-04-22,Kiran Lal,UP Yoddha,Patna Pirates,Defender,11,5,11,8,5,16,50,45.45,72.73,21,2,0,1,Loss,27,28,Kiran Lal,1995-04-19,30,Sri Lanka,Hyderabad,Away,11,5,4,6,54,False
+342,2024-03-18,Himanshu,Tamil Thalaivas,Dabang Delhi,Raider,24,4,7,0,4,0,50,16.67,0.0,4,1,1,1,Loss,40,24,Himanshu,1996-05-03,29,Nepal,Lucknow,Away,2,0,4,3,32,False
+343,2023-05-28,Sombir,Gujarat Fortunegiants,UP Yoddha,Defender,17,1,9,2,1,4,41,5.88,22.22,5,0,0,1,Loss,24,31,N/A,1996-02-17,29,India,Chandigarh,Away,2,4,0,6,22,False
+344,2018-10-19,Prince,U Mumba,Dabang Delhi,Raider,12,6,6,2,6,4,42,50.0,33.33,10,2,0,0,Win,21,21,N/A,2005-01-24,20,India,Lucknow,Away,9,0,4,7,92,False
+345,2024-03-16,Vijay,Dabang Delhi,Bengal Warriors,Defender,9,7,11,3,7,6,30,77.78,27.27,13,2,1,1,Loss,25,19,N/A,2005-02-04,20,India,Delhi,Home,8,0,4,4,40,False
+346,2020-10-28,Sunil,Hariyana Steelers,Tamil Thalaivas,All-Rounder,25,9,5,1,9,2,34,36.0,20.0,11,0,0,0,Loss,27,16,N/A,1985-04-01,40,Sri Lanka,Patna,Away,6,4,1,12,36,False
+347,2023-07-19,Amit Sheoran,Bengal Warriors,Hariyana Steelers,All-Rounder,16,13,15,8,13,16,50,81.25,53.33,29,3,0,1,Loss,27,23,N/A,1996-05-05,29,Bangladesh,Chennai,Away,8,3,3,11,20,False
+348,2020-09-10,Rohit Gulia,Patna Pirates,Tamil Thalaivas,Raider,19,19,9,7,19,14,51,100.0,77.78,33,3,0,1,Win,28,30,N/A,1985-06-06,40,Bangladesh,Hyderabad,Away,3,0,5,3,24,False
+349,2022-05-09,Nitin Kumar,Bengal Warriors,Dabang Delhi,All-Rounder,14,14,14,6,14,12,35,100.0,42.86,26,2,1,1,Loss,37,27,Nitin Kumar,1990-04-07,35,Sri Lanka,Ahmedabad,Away,6,0,1,9,62,False
+350,2019-06-05,Anil,Gujarat Fortunegiants,UP Yoddha,All-Rounder,6,5,5,5,5,10,57,83.33,100.0,15,2,1,0,Loss,31,28,Anil,1990-07-16,34,Sri Lanka,Kolkata,Away,11,2,4,7,93,False
+351,2023-11-24,Harendra,U Mumba,Telugu Titans,Defender,6,1,10,6,1,12,33,16.67,60.0,13,2,0,1,Win,27,22,N/A,1989-03-23,36,Bangladesh,Lucknow,Away,3,4,4,10,28,False
+352,2020-10-10,Sachin Narwal,Gujarat Fortunegiants,U Mumba,Defender,7,1,11,7,1,14,32,14.29,63.64,15,2,0,0,Loss,30,19,N/A,1985-07-15,39,Pakistan,Delhi,Away,2,5,0,9,59,False
+353,2021-01-01,Harendra,UP Yoddha,U Mumba,Raider,18,0,6,3,0,6,47,0.0,50.0,6,1,0,0,Win,28,17,Harendra,1986-02-01,39,Bangladesh,Patna,Away,12,5,0,13,91,False
+354,2022-04-10,Monu,Patna Pirates,Gujarat Fortunegiants,Raider,17,9,9,5,9,10,42,52.94,55.56,19,0,1,0,Win,30,29,N/A,1994-04-09,31,India,Hyderabad,Away,5,3,2,9,74,False
+355,2025-03-10,Rinku Sharma,U Mumba,Telugu Titans,Defender,24,1,14,1,1,2,34,4.17,7.14,3,1,1,1,Win,24,18,N/A,1998-05-25,27,Nepal,Chandigarh,Away,4,3,1,7,35,False
+356,2022-07-01,Maninder Singh,Bengal Warriors,Telugu Titans,Raider,12,7,5,0,7,0,41,58.33,0.0,7,2,0,1,Win,22,27,Maninder Singh,1988-11-16,36,India,Delhi,Away,6,4,5,7,51,False
+357,2021-10-23,Rohit Gulia,Patna Pirates,U Mumba,All-Rounder,12,7,15,13,7,26,53,58.33,86.67,33,1,0,1,Loss,36,18,N/A,2000-02-08,25,Bangladesh,Chennai,Away,5,4,3,3,98,False
+358,2024-06-12,Durgesh,Telugu Titans,UP Yoddha,Raider,15,6,10,1,6,2,38,40.0,10.0,8,1,0,0,Win,39,19,Durgesh,1985-04-18,40,Nepal,Ahmedabad,Away,2,4,4,14,61,False
+359,2020-04-29,Vikas Jaglan,Patna Pirates,Hariyana Steelers,Raider,22,6,15,5,6,10,42,27.27,33.33,16,1,0,0,Loss,22,25,Vikas Jaglan,2001-10-01,23,Pakistan,Ahmedabad,Away,9,1,3,12,42,False
+360,2021-03-29,Ajinkya Kapre,Bengal Warriors,Tamil Thalaivas,Defender,21,9,8,8,9,16,38,42.86,100.0,25,3,0,0,Loss,37,20,N/A,2000-04-04,25,Pakistan,Ahmedabad,Away,12,2,0,12,74,False
+361,2022-02-16,Siddharth Desai,Telugu Titans,Dabang Delhi,Raider,10,6,5,3,6,6,48,60.0,60.0,12,1,0,0,Win,34,23,Siddharth Desai,1986-12-21,38,Bangladesh,Bengaluru,Away,7,5,5,8,26,False
+362,2022-08-16,Siddharth Desai,Telugu Titans,Dabang Delhi,Defender,22,18,9,0,18,0,37,81.82,0.0,18,0,1,1,Win,36,35,N/A,1992-10-30,32,Bangladesh,Chandigarh,Away,4,2,0,10,85,False
+363,2020-01-30,Ankit Beniwal,Tamil Thalaivas,Dabang Delhi,Defender,8,3,8,5,3,10,37,37.5,62.5,13,3,1,0,Loss,20,26,Ankit Beniwal,1988-09-11,36,Sri Lanka,Ahmedabad,Away,4,2,3,9,86,False
+364,2023-09-01,Mohit Nandal,Hariyana Steelers,Bengal Warriors,All-Rounder,23,23,10,5,23,10,41,100.0,50.0,33,3,1,0,Loss,30,19,Mohit Nandal,1994-11-18,30,Bangladesh,Mumbai,Away,5,3,4,6,96,False
+365,2020-02-15,Sourabh Nandal,Bengal Warriors,Hariyana Steelers,Defender,9,4,8,5,4,10,32,44.44,62.5,14,3,1,1,Win,36,24,N/A,1994-09-15,30,Pakistan,Patna,Away,3,2,3,3,32,False
+366,2021-03-08,Gulveer Singh,UP Yoddha,Tamil Thalaivas,All-Rounder,8,7,4,2,7,4,57,87.5,50.0,11,2,1,1,Loss,31,31,N/A,2001-10-03,23,Bangladesh,Chennai,Away,1,4,1,11,85,False
+367,2025-05-15,Ashu Malik,Dabang Delhi,U Mumba,Defender,7,1,9,9,1,18,34,14.29,100.0,19,0,1,1,Loss,38,30,N/A,1985-08-04,39,Sri Lanka,Chennai,Away,4,2,1,9,58,False
+368,2021-09-22,Harendra,UP Yoddha,U Mumba,All-Rounder,12,0,4,1,0,2,32,0.0,25.0,2,3,1,0,Loss,21,33,N/A,2001-04-29,24,Nepal,Hyderabad,Away,7,0,3,14,99,False
+369,2019-11-17,Neeraj Narwal,Dabang Delhi,UP Yoddha,Raider,10,0,14,9,0,18,52,0.0,64.29,18,1,1,1,Loss,38,34,N/A,1986-07-17,38,Nepal,Chandigarh,Away,5,2,1,15,54,False
+370,2023-12-29,Pawan Sehrawat,Telugu Titans,Tamil Thalaivas,Defender,25,24,14,3,24,6,49,96.0,21.43,30,2,0,1,Loss,23,35,N/A,1996-12-04,28,Bangladesh,Bengaluru,Away,11,1,2,7,61,False
+371,2021-02-15,Neeraj Narwal,Dabang Delhi,Tamil Thalaivas,Defender,19,4,9,2,4,4,51,21.05,22.22,8,3,1,0,Loss,40,20,N/A,1993-11-11,31,Nepal,Kolkata,Away,5,4,5,4,77,False
+372,2024-11-09,Amit Kumar,Gujarat Fortunegiants,Bengal Warriors,Raider,12,10,4,4,10,8,34,83.33,100.0,18,1,1,1,Win,32,34,N/A,1991-05-30,34,Sri Lanka,Hyderabad,Away,11,4,2,8,76,False
+373,2021-07-07,Amit Kumar,Gujarat Fortunegiants,UP Yoddha,Defender,7,6,12,8,6,16,36,85.71,66.67,22,2,0,0,Win,29,15,Amit Kumar,2002-12-06,22,Pakistan,Bengaluru,Away,1,4,1,9,84,False
+374,2021-03-14,Tushar,Jaipur Pink Panthers,Gujarat Fortunegiants,Defender,11,6,9,3,6,6,33,54.55,33.33,12,0,0,0,Loss,27,27,N/A,1995-05-26,30,Sri Lanka,Kolkata,Away,11,2,5,7,74,False
+375,2024-02-27,Mohit,Telugu Titans,Bengal Warriors,Raider,23,17,10,3,17,6,55,73.91,30.0,23,1,0,1,Win,31,26,Mohit,2000-07-23,24,India,Chandigarh,Away,11,5,5,14,43,False
+376,2021-07-19,Anand Tomar,Jaipur Pink Panthers,Hariyana Steelers,All-Rounder,12,9,8,1,9,2,44,75.0,12.5,11,1,1,1,Loss,39,22,N/A,2000-07-30,24,Bangladesh,Delhi,Away,2,0,2,8,62,False
+377,2018-07-30,Mahendra Rajput,Gujarat Fortunegiants,Telugu Titans,Raider,14,5,4,2,5,4,48,35.71,50.0,9,1,0,1,Win,31,19,Mahendra Rajput,1991-10-21,33,Pakistan,Lucknow,Away,6,0,2,12,99,False
+378,2018-09-18,M Abishek,Tamil Thalaivas,Patna Pirates,Raider,19,8,6,5,8,10,49,42.11,83.33,18,1,1,0,Win,36,22,N/A,2001-09-11,23,Pakistan,Bengaluru,Away,4,5,3,8,35,False
+379,2018-02-07,Rohit Banne,Bengal Warriors,Tamil Thalaivas,All-Rounder,17,2,4,0,2,0,55,11.76,0.0,2,0,0,1,Loss,30,29,N/A,1993-05-04,32,Bangladesh,Chandigarh,Away,6,5,3,8,79,False
+380,2018-06-23,Vinod Kumar,Gujarat Fortunegiants,Patna Pirates,Defender,25,23,4,2,23,4,34,92.0,50.0,27,2,0,0,Win,27,35,Vinod Kumar,2005-03-29,20,Bangladesh,Bengaluru,Away,5,3,1,10,28,False
+381,2018-12-31,Tushar,U Mumba,Bengal Warriors,Defender,22,5,12,8,5,16,54,22.73,66.67,21,1,1,1,Win,38,26,N/A,2002-07-05,22,Pakistan,Kolkata,Away,8,4,2,13,29,False
+382,2018-03-21,Aashish B,U Mumba,UP Yoddha,Defender,5,4,6,0,4,0,60,80.0,0.0,4,1,0,0,Loss,29,19,Aashish B,2004-10-17,20,India,Bengaluru,Away,11,1,5,10,54,False
+383,2019-04-18,Rakesh Narwal,Hariyana Steelers,UP Yoddha,All-Rounder,20,20,5,4,20,8,33,100.0,80.0,28,2,0,1,Win,30,24,Rakesh Narwal,2000-03-08,25,Sri Lanka,Chandigarh,Home,8,1,5,8,93,False
+384,2021-05-02,Sunil,Hariyana Steelers,Patna Pirates,All-Rounder,11,8,6,3,8,6,48,72.73,50.0,14,1,1,0,Win,26,15,N/A,1984-06-16,40,Pakistan,Ahmedabad,Away,7,4,5,12,36,False
+385,2019-06-11,Meetu Sharma,Hariyana Steelers,Telugu Titans,Raider,15,9,5,5,9,10,59,60.0,100.0,19,2,0,1,Win,37,31,Meetu Sharma,2001-11-09,23,Bangladesh,Kolkata,Away,2,3,3,9,76,False
+386,2019-09-05,Maninder Singh,Bengal Warriors,Telugu Titans,Defender,12,11,13,1,11,2,35,91.67,7.69,13,1,0,1,Win,25,17,N/A,2002-11-06,22,India,Patna,Away,1,5,0,3,99,False
+387,2024-03-15,Rahul Chaudhari,Jaipur Pink Panthers,Telugu Titans,All-Rounder,9,0,3,0,0,0,49,0.0,0.0,0,0,1,1,Loss,38,20,N/A,1990-02-23,35,Bangladesh,Jaipur,Home,6,0,1,8,25,False
+388,2020-12-30,Ankit,Patna Pirates,Jaipur Pink Panthers,All-Rounder,19,13,8,8,13,16,52,68.42,100.0,29,1,1,1,Win,26,20,Ankit,1998-01-08,27,Nepal,Kolkata,Away,10,1,1,11,80,False
+389,2023-08-26,Jeeva Kumar,Tamil Thalaivas,Jaipur Pink Panthers,Raider,6,1,9,6,1,12,32,16.67,66.67,13,1,1,1,Loss,22,20,N/A,1995-12-17,29,Pakistan,Chandigarh,Away,10,0,4,14,75,False
+390,2024-11-18,Prashanth Kumar Rai,Patna Pirates,Hariyana Steelers,All-Rounder,20,4,12,10,4,20,37,20.0,83.33,24,0,1,1,Win,30,18,N/A,1995-02-15,30,Pakistan,Mumbai,Away,12,5,5,3,88,False
+391,2019-08-17,Arjun Patil,Bengal Warriors,U Mumba,Raider,20,7,7,4,7,8,38,35.0,57.14,15,2,0,1,Win,28,35,Arjun Patil,2004-11-19,20,Nepal,Hyderabad,Away,7,0,4,7,89,False
+392,2025-05-07,Vishal Bhardwaj,Tamil Thalaivas,Hariyana Steelers,Raider,19,6,11,7,6,14,40,31.58,63.64,20,0,0,1,Win,31,18,Vishal Bhardwaj,2005-05-10,20,Bangladesh,Jaipur,Away,11,2,4,13,41,False
+393,2022-04-09,Parshant Kumar,Bengal Warriors,Dabang Delhi,Raider,17,13,15,9,13,18,37,76.47,60.0,31,3,0,1,Loss,35,16,Parshant Kumar,1998-05-07,27,Pakistan,Delhi,Away,1,1,5,9,75,False
+394,2021-06-23,Sumit Sangwan,UP Yoddha,Dabang Delhi,Defender,22,19,12,10,19,20,52,86.36,83.33,39,1,0,1,Loss,35,34,N/A,1987-04-16,38,Bangladesh,Patna,Away,10,5,4,11,34,False
+395,2020-09-12,Vinod Kumar,Gujarat Fortunegiants,Hariyana Steelers,All-Rounder,15,12,5,5,12,10,44,80.0,100.0,22,0,0,0,Loss,23,32,Vinod Kumar,1995-02-11,30,Bangladesh,Delhi,Away,4,5,0,9,75,False
+396,2025-05-20,Devank,Jaipur Pink Panthers,UP Yoddha,Raider,7,1,7,1,1,2,56,14.29,14.29,3,3,0,1,Loss,25,20,N/A,1986-07-26,38,Sri Lanka,Lucknow,Away,4,4,5,13,77,False
+397,2020-10-09,Ankit,Patna Pirates,Telugu Titans,All-Rounder,13,10,11,2,10,4,59,76.92,18.18,14,0,1,1,Win,33,18,N/A,1996-09-15,28,Pakistan,Chandigarh,Away,5,1,2,10,94,False
+398,2023-02-17,Rohit Banne,Bengal Warriors,Patna Pirates,Defender,7,4,12,12,4,24,52,57.14,100.0,28,0,0,1,Win,32,31,N/A,1997-11-01,27,Pakistan,Lucknow,Away,11,0,5,3,28,False
+399,2022-10-08,Shankar Gadai,Gujarat Fortunegiants,U Mumba,Raider,14,10,9,5,10,10,52,71.43,55.56,20,3,0,1,Loss,36,30,Shankar Gadai,1999-01-03,26,India,Delhi,Away,10,1,0,7,47,False
+400,2020-05-06,Ankit,Hariyana Steelers,Bengal Warriors,Defender,14,9,7,6,9,12,44,64.29,85.71,21,2,1,1,Loss,34,22,Ankit,2002-06-14,22,Sri Lanka,Patna,Away,12,2,0,10,64,False
+401,2021-11-20,Abozar Mighani,UP Yoddha,Tamil Thalaivas,All-Rounder,6,6,4,3,6,6,31,100.0,75.0,12,0,0,1,Win,25,35,Abozar Mighani,1999-12-09,25,Bangladesh,Jaipur,Away,10,1,5,3,42,False
+402,2021-03-01,Manjeet,Hariyana Steelers,Bengal Warriors,Raider,9,3,5,4,3,8,45,33.33,80.0,11,0,1,1,Win,28,19,Manjeet,1998-03-11,27,Pakistan,Jaipur,Away,9,3,5,8,35,False
+403,2022-06-20,Mohit Nandal,Hariyana Steelers,Telugu Titans,All-Rounder,13,7,14,3,7,6,36,53.85,21.43,13,1,1,0,Win,22,22,Mohit Nandal,1989-01-26,36,Sri Lanka,Hyderabad,Away,12,3,5,10,58,False
+404,2022-03-05,Rajesh Narwal,Hariyana Steelers,Jaipur Pink Panthers,Raider,21,2,10,2,2,4,52,9.52,20.0,6,2,0,1,Loss,32,26,Rajesh Narwal,1988-01-02,37,Pakistan,Kolkata,Away,7,3,1,13,92,False
+405,2023-01-05,Akshay Bhoir,Bengal Warriors,Tamil Thalaivas,Raider,22,6,15,15,6,30,49,27.27,100.0,36,1,0,0,Win,34,30,N/A,1988-06-14,36,India,Jaipur,Away,2,0,0,5,30,False
+406,2018-04-07,Vaibhav Garje,Bengal Warriors,Dabang Delhi,Raider,12,10,8,8,10,16,39,83.33,100.0,26,0,0,0,Win,35,18,Vaibhav Garje,1994-01-04,31,Sri Lanka,Mumbai,Away,6,3,3,4,84,False
+407,2019-02-09,Ravinder,Patna Pirates,U Mumba,Raider,6,2,6,0,2,0,33,33.33,0.0,2,3,1,1,Win,23,22,Ravinder,1986-04-05,39,Nepal,Chennai,Away,5,1,4,3,76,False
+408,2022-04-08,Dipak,Dabang Delhi,UP Yoddha,All-Rounder,23,17,8,2,17,4,37,73.91,25.0,21,2,0,1,Win,29,16,Dipak,1989-07-24,35,Bangladesh,Delhi,Home,2,2,1,7,95,False
+409,2020-04-12,Prince D,Telugu Titans,Dabang Delhi,All-Rounder,6,2,10,10,2,20,58,33.33,100.0,22,2,0,0,Win,39,23,N/A,1984-06-15,40,Sri Lanka,Jaipur,Away,8,5,4,5,86,False
+410,2024-10-11,Sandeep Kumar,Dabang Delhi,Tamil Thalaivas,Defender,22,22,6,5,22,10,40,100.0,83.33,32,0,0,1,Win,32,21,N/A,2001-04-02,24,Nepal,Patna,Away,5,2,4,11,64,False
+411,2021-10-25,Pardeep Narwal,UP Yoddha,Jaipur Pink Panthers,Raider,6,1,15,13,1,26,51,16.67,86.67,27,3,0,0,Win,39,32,N/A,2001-08-09,23,Sri Lanka,Kolkata,Away,7,3,1,10,92,False
+412,2022-04-09,Sandeep Kumar,Dabang Delhi,Hariyana Steelers,Defender,23,13,5,4,13,8,45,56.52,80.0,21,0,1,1,Loss,26,34,N/A,1993-06-01,32,India,Chennai,Away,4,5,3,3,80,False
+413,2021-11-13,Tushar,U Mumba,UP Yoddha,All-Rounder,11,9,10,4,9,8,46,81.82,40.0,17,2,0,1,Loss,27,19,Tushar,1995-09-19,29,Nepal,Ahmedabad,Away,9,1,5,15,47,False
+414,2019-09-06,Nitin Kumar,Bengal Warriors,UP Yoddha,Defender,18,15,11,4,15,8,36,83.33,36.36,23,0,0,1,Loss,24,21,N/A,2004-11-06,20,Nepal,Chennai,Away,2,5,4,14,68,False
+415,2020-09-26,Deepak Singh,Jaipur Pink Panthers,Dabang Delhi,Defender,6,5,11,0,5,0,33,83.33,0.0,5,3,0,1,Win,30,15,Deepak Singh,2004-05-29,21,India,Hyderabad,Away,3,3,3,6,57,False
+416,2018-02-21,Sahil,Hariyana Steelers,Dabang Delhi,All-Rounder,11,11,11,8,11,16,35,100.0,72.73,27,3,1,1,Loss,38,31,N/A,1995-01-26,30,Nepal,Bengaluru,Away,9,3,1,9,82,False
+417,2018-01-16,Surender Gill,UP Yoddha,Tamil Thalaivas,Raider,20,12,4,2,12,4,41,60.0,50.0,16,3,1,0,Loss,31,15,Surender Gill,2001-09-14,23,Bangladesh,Chandigarh,Away,9,4,4,7,82,False
+418,2024-04-05,Vikas Kandola,Hariyana Steelers,UP Yoddha,All-Rounder,19,5,5,0,5,0,45,26.32,0.0,5,1,0,0,Loss,37,26,Vikas Kandola,1997-06-02,28,Sri Lanka,Chennai,Away,12,3,1,14,54,False
+419,2023-07-08,Sandeep Kandola,Telugu Titans,Tamil Thalaivas,Raider,25,25,13,3,25,6,39,100.0,23.08,31,2,1,0,Win,26,23,Sandeep Kandola,1991-09-19,33,Bangladesh,Chandigarh,Away,9,5,4,8,77,False
+420,2019-10-17,Nehal Desai,U Mumba,UP Yoddha,Raider,15,10,6,6,10,12,50,66.67,100.0,22,3,0,0,Loss,34,22,N/A,1994-12-28,30,Bangladesh,Lucknow,Away,10,4,4,8,97,False
+421,2023-12-20,Ashu Singh,UP Yoddha,Jaipur Pink Panthers,Defender,12,7,9,0,7,0,38,58.33,0.0,7,1,0,1,Loss,35,18,Ashu Singh,1998-07-29,26,Nepal,Patna,Away,6,2,2,15,97,False
+422,2020-10-01,Arjun Patil,Bengal Warriors,Telugu Titans,Defender,20,17,4,4,17,8,37,85.0,100.0,25,1,1,1,Loss,21,27,Arjun Patil,2002-10-23,22,India,Bengaluru,Away,12,5,3,10,42,False
+423,2019-06-25,Nitin,Telugu Titans,UP Yoddha,Raider,17,11,6,2,11,4,57,64.71,33.33,15,2,0,0,Loss,33,26,N/A,1998-01-27,27,Nepal,Hyderabad,Home,4,2,4,14,41,False
+424,2019-01-07,Prashanth Kumar Rai,Patna Pirates,Dabang Delhi,All-Rounder,22,16,8,1,16,2,49,72.73,12.5,18,3,0,0,Loss,36,34,Prashanth Kumar Rai,1993-10-24,31,Sri Lanka,Chennai,Away,9,1,5,11,21,False
+425,2020-02-08,Amit Hooda,Dabang Delhi,Bengal Warriors,Raider,13,3,6,6,3,12,48,23.08,100.0,15,0,0,1,Loss,40,25,N/A,1986-04-22,39,Bangladesh,Patna,Away,9,4,4,7,74,False
+426,2025-03-09,M Abishek,Tamil Thalaivas,Telugu Titans,Raider,17,1,3,3,1,6,50,5.88,100.0,7,1,1,0,Loss,28,35,N/A,1999-05-21,26,Pakistan,Mumbai,Away,1,1,5,11,34,False
+427,2022-05-17,Mohammadreza Chiyaneh,Patna Pirates,Gujarat Fortunegiants,All-Rounder,24,18,12,10,18,20,55,75.0,83.33,38,1,1,1,Win,39,29,Mohammadreza Chiyaneh,1990-08-06,34,Bangladesh,Patna,Home,12,2,1,14,21,False
+428,2021-01-27,Surender Nada,Patna Pirates,Tamil Thalaivas,Raider,19,7,8,3,7,6,55,36.84,37.5,13,0,0,0,Loss,22,19,Surender Nada,2000-06-22,24,Bangladesh,Mumbai,Away,9,0,0,9,76,False
+429,2022-08-14,Monu,Patna Pirates,U Mumba,All-Rounder,20,8,10,9,8,18,39,40.0,90.0,26,3,0,1,Loss,32,24,Monu,2000-11-13,24,Pakistan,Kolkata,Away,3,3,2,10,69,False
+430,2024-02-21,Rinku Sharma,U Mumba,Hariyana Steelers,All-Rounder,25,25,15,5,25,10,49,100.0,33.33,35,2,0,1,Win,35,20,Rinku Sharma,2004-02-14,21,India,Chandigarh,Away,5,1,0,6,30,False
+431,2024-10-13,Akash Pikalmunde,Bengal Warriors,Telugu Titans,All-Rounder,11,10,4,3,10,6,53,90.91,75.0,16,3,1,0,Win,25,28,Akash Pikalmunde,1996-10-10,28,Bangladesh,Kolkata,Home,7,2,2,3,88,False
+432,2020-06-09,Vinay,Hariyana Steelers,U Mumba,Defender,6,5,15,2,5,4,34,83.33,13.33,9,1,0,1,Win,29,32,N/A,2005-02-02,20,Bangladesh,Bengaluru,Away,11,4,5,15,65,False
+433,2022-08-11,Devank,Jaipur Pink Panthers,UP Yoddha,Defender,17,16,8,8,16,16,46,94.12,100.0,32,1,0,1,Win,36,17,N/A,1995-04-14,30,Pakistan,Chandigarh,Away,3,2,5,4,22,False
+434,2023-12-14,Karamvir,Patna Pirates,UP Yoddha,Defender,19,4,9,0,4,0,39,21.05,0.0,4,0,0,0,Loss,40,20,Karamvir,2000-09-29,24,Sri Lanka,Lucknow,Away,2,3,1,9,66,False
+435,2024-05-23,Tushar,Jaipur Pink Panthers,Tamil Thalaivas,Defender,18,12,11,4,12,8,52,66.67,36.36,20,2,1,1,Loss,26,34,Tushar,1992-08-01,32,India,Lucknow,Away,2,5,4,13,48,False
+436,2022-08-11,Guman Singh,U Mumba,Telugu Titans,All-Rounder,21,12,6,0,12,0,48,57.14,0.0,12,2,0,1,Win,37,25,Guman Singh,2003-12-02,21,Sri Lanka,Jaipur,Away,10,3,5,7,26,False
+437,2022-10-29,Ajith Kumar,Jaipur Pink Panthers,UP Yoddha,Defender,11,10,15,15,10,30,37,90.91,100.0,40,0,1,0,Loss,31,22,N/A,2005-02-21,20,Pakistan,Mumbai,Away,4,1,5,14,85,False
+438,2019-05-02,Guman Singh,U Mumba,Patna Pirates,Defender,14,4,3,2,4,4,34,28.57,66.67,8,0,0,0,Loss,26,24,Guman Singh,1989-04-05,36,Nepal,Delhi,Away,9,4,3,6,23,False
+439,2024-10-24,Siddharth,Gujarat Fortunegiants,Jaipur Pink Panthers,All-Rounder,11,7,14,14,7,28,44,63.64,100.0,35,1,1,1,Loss,27,19,N/A,1998-06-29,26,Nepal,Hyderabad,Away,4,2,1,3,24,False
+440,2019-01-07,Rohit Banne,Bengal Warriors,UP Yoddha,All-Rounder,7,3,6,1,3,2,31,42.86,16.67,5,2,1,1,Loss,25,33,N/A,1998-08-08,26,India,Kolkata,Home,7,2,2,10,67,False
+441,2018-11-22,Anil,Gujarat Fortunegiants,Dabang Delhi,All-Rounder,6,5,9,6,5,12,47,83.33,66.67,17,2,1,0,Loss,24,25,Anil,1987-06-19,37,Bangladesh,Ahmedabad,Home,12,5,5,6,59,False
+442,2018-04-25,Ankit,Patna Pirates,Dabang Delhi,Raider,17,1,7,4,1,8,51,5.88,57.14,9,2,1,0,Loss,20,31,Ankit,2003-11-11,21,Pakistan,Lucknow,Away,7,2,2,10,82,False
+443,2020-07-30,Abhijeet Malik,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,22,22,3,2,22,4,56,100.0,66.67,26,2,1,1,Win,37,21,N/A,1986-08-16,38,Sri Lanka,Chandigarh,Away,1,3,3,12,93,False
+444,2019-03-31,Amit Hooda,Dabang Delhi,Telugu Titans,All-Rounder,20,14,12,12,14,24,39,70.0,100.0,38,0,0,0,Loss,30,30,N/A,2001-10-07,23,Bangladesh,Delhi,Home,1,1,0,7,57,False
+445,2021-01-02,Amit Hooda,Dabang Delhi,Hariyana Steelers,Defender,18,17,4,1,17,2,55,94.44,25.0,19,3,0,0,Win,30,20,Amit Hooda,1988-07-09,36,Nepal,Kolkata,Away,1,3,5,5,26,False
+446,2018-08-30,Nitin,Telugu Titans,U Mumba,All-Rounder,19,11,14,1,11,2,35,57.89,7.14,13,2,1,0,Loss,37,23,Nitin,2004-03-14,21,Bangladesh,Patna,Away,5,3,0,7,32,False
+447,2023-06-18,Ankit,Patna Pirates,UP Yoddha,All-Rounder,8,5,9,1,5,2,54,62.5,11.11,7,1,1,1,Win,35,33,N/A,1989-08-14,35,Sri Lanka,Mumbai,Away,2,5,2,8,33,False
+448,2023-02-09,Abhishek Singh,Telugu Titans,Tamil Thalaivas,Raider,8,6,7,0,6,0,51,75.0,0.0,6,2,1,0,Win,36,18,Abhishek Singh,1987-04-25,38,Pakistan,Chennai,Away,3,3,5,13,74,False
+449,2022-11-10,Gulveer Singh,UP Yoddha,Bengal Warriors,All-Rounder,25,25,4,4,25,8,56,100.0,100.0,33,0,1,0,Win,27,17,Gulveer Singh,1994-04-30,31,Sri Lanka,Chennai,Away,6,5,3,11,86,False
+450,2024-07-22,Harsh,Hariyana Steelers,U Mumba,Raider,6,1,7,6,1,12,32,16.67,85.71,13,1,0,0,Loss,24,17,N/A,1984-07-17,40,Nepal,Jaipur,Away,8,0,5,10,70,False
+451,2025-01-01,Sahul Kumar,Jaipur Pink Panthers,Patna Pirates,Defender,22,11,9,5,11,10,53,50.0,55.56,21,1,0,1,Win,37,17,N/A,1985-07-02,39,India,Patna,Away,8,4,1,15,89,False
+452,2018-03-11,Siddharth Desai,Telugu Titans,U Mumba,Defender,22,12,5,5,12,10,60,54.55,100.0,22,3,0,0,Win,40,20,N/A,1999-02-10,26,Nepal,Patna,Away,3,2,2,8,98,False
+453,2022-09-22,Naresh,Hariyana Steelers,UP Yoddha,All-Rounder,15,4,15,8,4,16,59,26.67,53.33,20,2,0,0,Win,28,18,N/A,1995-07-10,29,Nepal,Delhi,Away,2,4,4,14,71,False
+454,2019-06-26,Ankit,Hariyana Steelers,Tamil Thalaivas,Defender,19,9,12,0,9,0,34,47.37,0.0,9,3,1,1,Win,38,16,Ankit,1988-12-31,36,Pakistan,Hyderabad,Away,3,3,3,9,93,False
+455,2020-01-31,Sahil,Hariyana Steelers,Bengal Warriors,All-Rounder,16,12,9,3,12,6,49,75.0,33.33,18,3,1,1,Loss,29,19,N/A,1990-03-02,35,Sri Lanka,Jaipur,Away,4,4,3,3,56,False
+456,2021-10-07,Pawan Sehrawat,Telugu Titans,UP Yoddha,Raider,9,0,9,5,0,10,45,0.0,55.56,10,0,0,0,Loss,32,35,Pawan Sehrawat,1994-05-17,31,Nepal,Patna,Away,7,0,5,3,42,False
+457,2020-03-22,Rakesh Narwal,Hariyana Steelers,Jaipur Pink Panthers,All-Rounder,24,3,13,10,3,20,40,12.5,76.92,23,2,0,1,Win,36,31,N/A,1990-06-23,34,India,Mumbai,Away,9,4,1,5,31,False
+458,2018-09-15,Surinder Singh,U Mumba,Telugu Titans,Raider,19,1,15,1,1,2,39,5.26,6.67,3,2,1,1,Loss,39,27,Surinder Singh,1989-01-01,36,India,Chandigarh,Away,6,5,4,10,48,False
+459,2025-04-22,Ravinder,Patna Pirates,Jaipur Pink Panthers,Raider,11,7,15,0,7,0,33,63.64,0.0,7,1,0,0,Win,37,24,Ravinder,1992-07-05,32,Nepal,Lucknow,Away,9,2,0,7,56,False
+460,2018-05-21,Tushar,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,20,12,8,7,12,14,51,60.0,87.5,26,1,1,0,Win,28,32,N/A,1997-04-26,28,India,Hyderabad,Away,6,4,3,10,20,False
+461,2018-05-09,Rohit Gulia,Hariyana Steelers,Patna Pirates,Defender,23,22,7,6,22,12,52,95.65,85.71,34,3,1,1,Loss,38,32,Rohit Gulia,1984-07-20,40,India,Jaipur,Away,10,4,1,12,68,False
+462,2022-05-25,K. Prapanjan,Tamil Thalaivas,U Mumba,Raider,16,8,3,2,8,4,47,50.0,66.67,12,1,1,0,Win,34,22,K. Prapanjan,2004-07-02,20,Sri Lanka,Patna,Away,10,4,0,8,29,False
+463,2022-06-23,Mohit,Dabang Delhi,Jaipur Pink Panthers,All-Rounder,25,8,15,0,8,0,39,32.0,0.0,8,1,1,1,Win,31,32,N/A,1989-03-19,36,Pakistan,Hyderabad,Away,6,3,0,9,30,False
+464,2020-06-24,Reza Katoulinezhad,Jaipur Pink Panthers,Tamil Thalaivas,Raider,21,7,12,0,7,0,38,33.33,0.0,7,3,1,0,Win,26,21,Reza Katoulinezhad,2003-05-12,22,Pakistan,Ahmedabad,Away,4,3,3,3,23,False
+465,2022-02-03,Rohit Gulia,Patna Pirates,Tamil Thalaivas,Defender,23,8,3,2,8,4,39,34.78,66.67,12,3,0,1,Loss,38,30,Rohit Gulia,2004-11-24,20,Pakistan,Chandigarh,Away,12,4,5,15,37,False
+466,2020-07-24,Mahipal,UP Yoddha,Patna Pirates,Raider,24,14,10,9,14,18,32,58.33,90.0,32,1,1,1,Loss,29,30,N/A,1988-01-23,37,Pakistan,Hyderabad,Away,5,4,2,13,22,False
+467,2018-07-12,Mujtaba,Telugu Titans,Dabang Delhi,Raider,10,4,3,2,4,4,57,40.0,66.67,8,3,1,0,Win,31,24,Mujtaba,1991-02-20,34,Sri Lanka,Ahmedabad,Away,4,5,4,4,61,False
+468,2019-01-24,Shivam,U Mumba,Telugu Titans,Raider,13,13,9,7,13,14,56,100.0,77.78,27,3,0,1,Loss,22,35,N/A,1987-06-19,37,Bangladesh,Patna,Away,3,5,4,5,65,False
+469,2023-03-13,Mehul Kumar,Gujarat Fortunegiants,Tamil Thalaivas,Raider,18,14,8,1,14,2,30,77.78,12.5,16,1,1,1,Win,23,18,N/A,1999-04-08,26,Bangladesh,Patna,Away,3,3,2,9,65,False
+470,2024-07-20,Ankush,U Mumba,UP Yoddha,Raider,15,2,10,6,2,12,35,13.33,60.0,14,3,0,1,Loss,27,34,Ankush,1986-02-08,39,Pakistan,Ahmedabad,Away,12,3,4,3,70,False
+471,2023-04-04,Siddharth Desai,Telugu Titans,Dabang Delhi,Raider,16,4,10,9,4,18,32,25.0,90.0,22,2,0,0,Win,22,28,N/A,2005-02-09,20,Sri Lanka,Hyderabad,Home,6,1,2,15,43,False
+472,2019-09-04,Siddharth,Gujarat Fortunegiants,Patna Pirates,All-Rounder,5,1,10,8,1,16,34,20.0,80.0,17,0,0,0,Loss,20,21,N/A,1996-11-11,28,Pakistan,Bengaluru,Away,3,2,2,11,34,False
+473,2018-09-11,Vikas Kandola,Hariyana Steelers,Dabang Delhi,Raider,10,5,5,3,5,6,40,50.0,60.0,11,2,0,0,Win,31,23,N/A,1985-07-29,39,Sri Lanka,Chandigarh,Home,7,3,0,6,39,False
+474,2019-12-29,Vikas Jaglan,Patna Pirates,Gujarat Fortunegiants,All-Rounder,9,7,12,9,7,18,43,77.78,75.0,25,1,0,0,Loss,36,28,Vikas Jaglan,2001-06-03,24,India,Chandigarh,Away,2,2,5,5,66,False
+475,2018-09-05,Ankit,Patna Pirates,Dabang Delhi,Raider,13,11,6,5,11,10,51,84.62,83.33,21,0,1,1,Loss,29,21,N/A,1993-11-14,31,India,Bengaluru,Away,1,0,5,11,29,False
+476,2018-06-06,Adarsh T,Telugu Titans,U Mumba,Defender,21,20,15,3,20,6,45,95.24,20.0,26,3,0,1,Loss,28,18,N/A,1985-11-07,39,Nepal,Mumbai,Away,11,4,1,9,92,False
+477,2019-11-19,Soleiman Pahlevani,Bengal Warriors,UP Yoddha,All-Rounder,11,2,3,2,2,4,33,18.18,66.67,6,3,0,1,Win,29,25,N/A,2001-05-08,24,Bangladesh,Kolkata,Home,2,4,5,12,72,False
+478,2019-09-28,Vijay,Dabang Delhi,UP Yoddha,Raider,25,15,5,2,15,4,35,60.0,40.0,19,0,1,1,Loss,30,35,N/A,1989-06-30,35,Pakistan,Patna,Away,11,2,0,11,78,False
+479,2020-07-26,Harendra,UP Yoddha,Gujarat Fortunegiants,Raider,5,0,6,2,0,4,57,0.0,33.33,4,1,0,0,Win,37,31,N/A,2000-07-01,24,India,Jaipur,Away,11,5,1,14,59,False
+480,2022-04-16,Surinder Singh,U Mumba,Gujarat Fortunegiants,All-Rounder,19,13,6,6,13,12,41,68.42,100.0,25,1,1,1,Loss,28,20,N/A,1988-02-12,37,India,Patna,Away,12,2,2,5,62,False
+481,2018-11-12,Shankar Gadai,Gujarat Fortunegiants,Tamil Thalaivas,Defender,21,19,11,3,19,6,37,90.48,27.27,25,1,0,1,Loss,29,18,Shankar Gadai,2002-09-28,22,Bangladesh,Lucknow,Away,4,3,5,14,57,False
+482,2023-08-28,Prince,U Mumba,Dabang Delhi,All-Rounder,21,12,12,5,12,10,52,57.14,41.67,22,0,0,0,Loss,30,15,Prince,1986-01-10,39,Bangladesh,Chandigarh,Away,4,2,1,4,41,False
+483,2020-02-18,Rajveer,Patna Pirates,Telugu Titans,Defender,7,7,13,0,7,0,42,100.0,0.0,7,2,1,1,Loss,21,30,N/A,2004-04-20,21,Nepal,Mumbai,Away,5,5,3,9,24,False
+484,2019-06-02,Sagar,Tamil Thalaivas,UP Yoddha,Raider,6,2,6,2,2,4,36,33.33,33.33,6,0,1,0,Win,37,33,N/A,1988-09-23,36,Pakistan,Chandigarh,Away,5,2,3,12,64,False
+485,2024-11-01,Ashish,U Mumba,Bengal Warriors,Defender,12,6,5,5,6,10,47,50.0,100.0,16,0,0,0,Loss,22,17,Ashish,1992-03-31,33,Sri Lanka,Hyderabad,Away,6,2,5,13,56,False
+486,2024-10-11,Harendra,UP Yoddha,Bengal Warriors,All-Rounder,21,6,9,0,6,0,32,28.57,0.0,6,0,0,1,Win,34,30,Harendra,1988-09-12,36,Nepal,Chennai,Away,1,3,0,11,60,False
+487,2018-07-02,Prince,U Mumba,Gujarat Fortunegiants,All-Rounder,15,8,6,3,8,6,33,53.33,50.0,14,2,1,0,Win,33,15,Prince,2001-05-20,24,Nepal,Delhi,Away,2,4,4,10,40,False
+488,2021-03-08,Shubham Kumar,UP Yoddha,Jaipur Pink Panthers,All-Rounder,7,7,6,1,7,2,59,100.0,16.67,9,2,1,1,Win,40,28,Shubham Kumar,1998-08-24,26,Pakistan,Hyderabad,Away,6,0,4,8,93,False
+489,2023-09-05,Pardeep Narwal,UP Yoddha,Dabang Delhi,All-Rounder,6,6,13,13,6,26,58,100.0,100.0,32,3,1,1,Loss,33,27,Pardeep Narwal,1992-10-11,32,Bangladesh,Chandigarh,Away,8,5,5,5,53,False
+490,2018-06-30,Neeraj Kumar,Patna Pirates,Telugu Titans,All-Rounder,16,12,13,3,12,6,35,75.0,23.08,18,1,0,0,Win,32,34,N/A,1991-02-24,34,Nepal,Delhi,Away,7,0,2,15,83,False
+491,2023-08-01,Durgesh,Telugu Titans,Gujarat Fortunegiants,Defender,21,1,5,0,1,0,56,4.76,0.0,1,3,0,1,Win,34,16,Durgesh,1999-11-08,25,Nepal,Ahmedabad,Away,8,1,1,8,62,False
+492,2021-06-14,Shankar Gadai,Gujarat Fortunegiants,Bengal Warriors,Raider,7,1,6,1,1,2,39,14.29,16.67,3,1,0,1,Win,40,22,N/A,1997-02-23,28,Bangladesh,Lucknow,Away,11,5,2,12,75,False
+493,2020-10-23,Sahil Gulia,Tamil Thalaivas,Bengal Warriors,Raider,14,4,14,8,4,16,31,28.57,57.14,20,2,1,0,Loss,25,23,Sahil Gulia,1998-07-02,26,Nepal,Chandigarh,Away,5,5,1,7,90,False
+494,2022-05-27,Himanshu Singh,Tamil Thalaivas,Patna Pirates,All-Rounder,19,15,10,8,15,16,39,78.95,80.0,31,0,0,1,Loss,25,19,N/A,1991-04-21,34,Sri Lanka,Lucknow,Away,6,3,5,11,47,False
+495,2022-05-01,Rinku Sharma,U Mumba,Dabang Delhi,All-Rounder,16,10,14,0,10,0,44,62.5,0.0,10,3,1,0,Win,21,29,Rinku Sharma,1995-06-09,29,Pakistan,Delhi,Away,10,4,5,13,82,False
+496,2021-03-18,Narender,Tamil Thalaivas,Patna Pirates,All-Rounder,15,9,9,6,9,12,35,60.0,66.67,21,0,1,1,Loss,29,29,N/A,1999-01-06,26,Sri Lanka,Bengaluru,Away,12,4,0,9,82,False
+497,2023-06-05,Anil,Gujarat Fortunegiants,Telugu Titans,Raider,8,5,15,14,5,28,54,62.5,93.33,33,0,1,0,Loss,20,32,Anil,1987-07-28,37,Bangladesh,Ahmedabad,Home,5,0,2,3,28,False
+498,2020-04-27,Neeraj Kumar,Patna Pirates,U Mumba,Raider,17,9,13,10,9,20,46,52.94,76.92,29,3,1,1,Win,28,19,Neeraj Kumar,2003-06-30,21,Sri Lanka,Jaipur,Away,6,0,5,5,44,False
+499,2019-05-31,Shivam,Gujarat Fortunegiants,Telugu Titans,Defender,10,7,9,9,7,18,50,70.0,100.0,25,3,0,0,Loss,34,28,Shivam,1990-08-22,34,Pakistan,Chennai,Away,5,3,1,6,53,False
+500,2022-09-20,Balaji D,Bengal Warriors,Dabang Delhi,Defender,23,2,8,1,2,2,56,8.7,12.5,4,0,1,0,Loss,30,20,N/A,1995-09-23,29,India,Patna,Away,1,3,1,4,29,False
+501,2025-04-08,Sunil,Hariyana Steelers,Patna Pirates,All-Rounder,5,5,7,2,5,4,41,100.0,28.57,9,0,0,1,Win,35,27,Sunil,1992-01-25,33,Nepal,Chandigarh,Home,6,2,1,9,47,False
+502,2018-11-27,Mohit,Dabang Delhi,Jaipur Pink Panthers,Raider,22,15,5,0,15,0,31,68.18,0.0,15,3,1,1,Win,39,19,Mohit,1999-04-17,26,Pakistan,Hyderabad,Away,12,5,2,9,68,False
+503,2018-05-17,Pardeep Narwal,UP Yoddha,Patna Pirates,Defender,12,10,3,0,10,0,31,83.33,0.0,10,1,1,1,Win,30,25,Pardeep Narwal,1988-06-14,36,Sri Lanka,Jaipur,Away,6,3,3,7,73,False
+504,2024-03-28,Ravi Kumar,Dabang Delhi,Bengal Warriors,Defender,22,9,10,6,9,12,41,40.91,60.0,21,3,1,0,Loss,26,29,Ravi Kumar,1988-02-12,37,Pakistan,Ahmedabad,Away,12,5,5,7,84,False
+505,2024-12-10,Amit Hooda,Dabang Delhi,Tamil Thalaivas,Raider,7,2,7,0,2,0,44,28.57,0.0,2,1,1,1,Loss,34,29,N/A,1987-06-02,38,Sri Lanka,Hyderabad,Away,10,5,5,7,34,False
+506,2019-01-22,K Prapanjan,Hariyana Steelers,Dabang Delhi,All-Rounder,21,13,15,0,13,0,50,61.9,0.0,13,3,1,0,Win,30,18,N/A,1998-12-19,26,Pakistan,Ahmedabad,Away,9,4,5,6,96,False
+507,2024-11-23,Sandeep Kumar,Dabang Delhi,Tamil Thalaivas,Raider,12,11,3,3,11,6,36,91.67,100.0,17,2,1,0,Win,23,26,Sandeep Kumar,1995-05-01,30,Sri Lanka,Delhi,Home,3,5,4,7,51,False
+508,2023-08-25,Rohit Banne,Bengal Warriors,UP Yoddha,Raider,18,6,15,2,6,4,44,33.33,13.33,10,0,0,1,Loss,33,20,Rohit Banne,1995-10-09,29,Nepal,Kolkata,Home,4,5,5,13,53,False
+509,2021-01-24,Rohit Gulia,Patna Pirates,Dabang Delhi,Raider,17,10,11,6,10,12,35,58.82,54.55,22,1,1,1,Win,31,32,Rohit Gulia,2003-12-22,21,Sri Lanka,Chandigarh,Away,8,1,3,10,24,False
+510,2025-01-20,Guman Singh,U Mumba,Telugu Titans,Raider,14,7,11,11,7,22,59,50.0,100.0,29,1,1,1,Win,22,24,Guman Singh,1988-04-20,37,Sri Lanka,Ahmedabad,Away,5,1,0,9,62,False
+511,2019-12-19,Abhijeet Malik,Jaipur Pink Panthers,Bengal Warriors,Raider,11,6,8,4,6,8,40,54.55,50.0,14,0,1,0,Win,26,35,Abhijeet Malik,1991-12-11,33,Pakistan,Bengaluru,Away,10,3,2,7,30,False
+512,2024-09-09,Ankit,Patna Pirates,Gujarat Fortunegiants,Raider,25,24,4,4,24,8,55,96.0,100.0,32,2,1,1,Win,38,34,N/A,1989-10-31,35,Nepal,Delhi,Away,4,1,4,11,59,False
+513,2024-08-02,Sandeep Kandola,Telugu Titans,UP Yoddha,Defender,17,13,15,3,13,6,36,76.47,20.0,19,1,1,1,Win,23,33,Sandeep Kandola,1996-10-08,28,India,Chandigarh,Away,2,0,1,11,78,False
+514,2025-01-13,Manjeet,Hariyana Steelers,Tamil Thalaivas,Defender,12,8,3,3,8,6,39,66.67,100.0,14,1,1,1,Loss,28,29,N/A,2001-05-09,24,Sri Lanka,Kolkata,Away,7,2,5,13,52,False
+515,2019-06-07,Vaibhav Garje,Bengal Warriors,UP Yoddha,All-Rounder,17,1,5,2,1,4,51,5.88,40.0,5,2,1,0,Loss,30,29,N/A,2005-04-27,20,Bangladesh,Jaipur,Away,7,1,5,15,59,False
+516,2019-09-04,Ajinkya Pawar,Tamil Thalaivas,Telugu Titans,Raider,7,3,7,7,3,14,45,42.86,100.0,17,3,0,1,Loss,25,25,Ajinkya Pawar,1997-06-14,27,India,Jaipur,Away,5,3,0,10,52,False
+517,2021-09-08,Abhijeet Malik,Jaipur Pink Panthers,UP Yoddha,Defender,21,14,7,6,14,12,35,66.67,85.71,26,1,0,1,Loss,36,29,N/A,1986-10-18,38,Nepal,Lucknow,Away,8,0,5,4,77,False
+518,2023-07-30,Rajnish,Telugu Titans,Bengal Warriors,All-Rounder,12,1,10,8,1,16,55,8.33,80.0,17,0,1,0,Win,20,35,N/A,2004-12-10,20,Pakistan,Delhi,Away,9,5,3,13,73,False
+519,2021-05-27,Vinay,Telugu Titans,UP Yoddha,Defender,16,8,5,3,8,6,32,50.0,60.0,14,0,0,0,Win,22,23,Vinay,1995-09-05,29,Sri Lanka,Ahmedabad,Away,4,2,3,5,65,False
+520,2019-12-30,Nitin Kumar,Bengal Warriors,Dabang Delhi,Raider,6,4,6,2,4,4,36,66.67,33.33,8,2,0,1,Win,38,22,Nitin Kumar,2004-07-28,20,Pakistan,Patna,Away,10,4,4,3,52,False
+521,2025-04-09,Nehal,UP Yoddha,Patna Pirates,Raider,11,5,6,5,5,10,50,45.45,83.33,15,1,1,0,Win,32,32,Nehal,2001-10-06,23,Pakistan,Lucknow,Home,3,4,2,13,40,False
+522,2021-08-14,Meetu Sharma,Hariyana Steelers,UP Yoddha,Raider,11,9,14,7,9,14,44,81.82,50.0,23,3,0,0,Win,32,20,Meetu Sharma,1993-02-27,32,Bangladesh,Patna,Away,11,2,4,6,80,False
+523,2024-01-20,Deepak Niwas Hooda,Bengal Warriors,Hariyana Steelers,Raider,6,5,3,2,5,4,58,83.33,66.67,9,3,1,0,Loss,25,15,N/A,1993-07-01,31,Pakistan,Ahmedabad,Away,8,0,0,15,56,False
+524,2018-02-03,Himanshu Singh,Tamil Thalaivas,Telugu Titans,Raider,8,7,7,2,7,4,47,87.5,28.57,11,2,1,0,Win,29,18,N/A,1993-09-30,31,Sri Lanka,Patna,Away,11,5,0,8,34,False
+525,2020-11-06,Ankit,UP Yoddha,Bengal Warriors,Raider,10,10,12,5,10,10,47,100.0,41.67,20,2,1,1,Win,39,23,Ankit,1988-08-12,36,Pakistan,Jaipur,Away,6,3,4,12,34,False
+526,2024-08-13,Sahil Gulia,Tamil Thalaivas,UP Yoddha,Raider,8,4,12,7,4,14,34,50.0,58.33,18,0,0,1,Loss,23,32,N/A,2002-09-21,22,India,Ahmedabad,Away,10,4,1,5,56,False
+527,2023-06-25,Jaideep Dahiya,Hariyana Steelers,Bengal Warriors,All-Rounder,5,4,3,3,4,6,32,80.0,100.0,10,0,1,1,Loss,35,31,Jaideep Dahiya,1985-09-13,39,Sri Lanka,Lucknow,Away,6,0,2,12,100,False
+528,2023-07-23,Tushar,U Mumba,Jaipur Pink Panthers,Raider,10,1,13,5,1,10,60,10.0,38.46,11,0,0,0,Win,23,25,N/A,1997-02-25,28,Pakistan,Hyderabad,Away,5,1,0,6,51,False
+529,2023-08-18,Himanshu Singh,Tamil Thalaivas,Hariyana Steelers,Defender,11,5,4,3,5,6,32,45.45,75.0,11,3,0,0,Loss,29,25,Himanshu Singh,2001-11-05,23,India,Lucknow,Away,2,2,1,7,98,False
+530,2022-09-06,Nitin Kumar,Bengal Warriors,Gujarat Fortunegiants,All-Rounder,5,0,14,4,0,8,59,0.0,28.57,8,1,0,1,Win,28,34,N/A,1986-05-16,39,Sri Lanka,Chandigarh,Away,1,5,3,12,56,False
+531,2022-10-23,Heidarali Ekrami,U Mumba,UP Yoddha,Raider,18,16,9,1,16,2,58,88.89,11.11,18,1,0,1,Loss,35,33,Heidarali Ekrami,1988-01-20,37,Nepal,Kolkata,Away,6,2,2,3,61,False
+532,2022-10-26,Manjeet,Dabang Delhi,Gujarat Fortunegiants,Defender,5,4,15,12,4,24,38,80.0,80.0,28,3,1,1,Win,34,18,Manjeet,1988-06-04,37,India,Hyderabad,Away,10,0,0,9,63,False
+533,2020-07-20,Shivam,U Mumba,Patna Pirates,Raider,15,9,6,1,9,2,54,60.0,16.67,11,2,0,0,Loss,39,17,N/A,2001-09-10,23,Nepal,Chandigarh,Away,5,1,4,10,29,False
+534,2018-11-27,Sourabh Nandal,Bengal Warriors,Telugu Titans,Raider,5,0,4,4,0,8,38,0.0,100.0,8,3,1,0,Loss,38,28,Sourabh Nandal,1988-01-09,37,Nepal,Chennai,Away,6,4,0,11,99,False
+535,2020-07-14,Ashu Malik,Dabang Delhi,Tamil Thalaivas,Defender,19,15,15,9,15,18,55,78.95,60.0,33,3,1,1,Loss,28,22,Ashu Malik,1992-05-06,33,Nepal,Delhi,Home,1,1,4,3,97,False
+536,2019-06-19,Vishal,Dabang Delhi,Gujarat Fortunegiants,All-Rounder,17,2,6,2,2,4,55,11.76,33.33,6,1,0,1,Loss,40,31,N/A,2001-11-11,23,Pakistan,Bengaluru,Away,3,3,3,13,56,False
+537,2023-05-25,Vijay,Dabang Delhi,Hariyana Steelers,Defender,9,1,10,3,1,6,48,11.11,30.0,7,1,0,0,Loss,23,27,N/A,2005-01-06,20,Sri Lanka,Jaipur,Away,12,0,5,13,39,False
+538,2024-11-13,Pawan Sehrawat,Telugu Titans,UP Yoddha,Defender,16,0,4,0,0,0,43,0.0,0.0,0,2,0,0,Win,22,21,N/A,1997-10-23,27,Bangladesh,Jaipur,Away,8,2,3,12,75,False
+539,2018-11-29,Nehal Desai,U Mumba,Tamil Thalaivas,Raider,18,15,3,0,15,0,40,83.33,0.0,15,2,0,1,Win,23,25,N/A,1987-12-18,37,Pakistan,Patna,Away,1,2,1,9,88,False
+540,2018-06-02,Deepak Niwas Hooda,Bengal Warriors,Telugu Titans,Raider,18,18,6,4,18,8,38,100.0,66.67,26,0,0,0,Win,30,27,Deepak Niwas Hooda,1985-11-28,39,Sri Lanka,Chennai,Away,5,5,1,15,21,False
+541,2020-02-24,Neeraj Narwal,Dabang Delhi,Tamil Thalaivas,Raider,13,8,6,1,8,2,41,61.54,16.67,10,1,1,1,Loss,30,29,Neeraj Narwal,1991-05-29,34,Pakistan,Mumbai,Away,3,0,1,9,54,False
+542,2022-09-13,Abhijeet Malik,Jaipur Pink Panthers,Patna Pirates,Raider,10,1,6,2,1,4,35,10.0,33.33,5,1,0,0,Win,36,28,N/A,1985-12-18,39,Pakistan,Delhi,Away,2,5,3,9,84,False
+543,2019-10-26,Ajith Kumar,Jaipur Pink Panthers,Telugu Titans,Raider,7,1,9,8,1,16,58,14.29,88.89,17,0,0,0,Win,21,35,Ajith Kumar,1987-05-05,38,Nepal,Patna,Away,10,4,0,7,88,False
+544,2025-01-09,Deepak Singh,Jaipur Pink Panthers,Hariyana Steelers,Raider,16,0,9,1,0,2,38,0.0,11.11,2,0,1,0,Loss,37,31,N/A,1987-09-20,37,Pakistan,Jaipur,Home,11,5,2,7,62,False
+545,2023-12-20,Sunil Kumar,Jaipur Pink Panthers,Dabang Delhi,Defender,20,18,3,1,18,2,51,90.0,33.33,20,3,1,0,Win,33,32,N/A,1994-09-29,30,Sri Lanka,Hyderabad,Away,6,2,5,11,56,False
+546,2020-07-25,Sandeep Kumar,Dabang Delhi,Patna Pirates,Defender,21,20,5,4,20,8,58,95.24,80.0,28,2,1,1,Win,37,16,Sandeep Kumar,1998-06-03,27,Pakistan,Bengaluru,Away,1,2,3,5,30,False
+547,2021-06-12,Nehal Desai,U Mumba,Bengal Warriors,All-Rounder,15,6,3,3,6,6,58,40.0,100.0,12,3,1,1,Loss,39,26,N/A,1993-07-26,31,Sri Lanka,Lucknow,Away,5,2,3,10,50,False
+548,2019-12-12,Sumit,Dabang Delhi,U Mumba,Raider,15,14,6,5,14,10,51,93.33,83.33,24,0,0,0,Loss,27,24,N/A,1999-02-22,26,Sri Lanka,Mumbai,Away,4,3,0,14,81,False
+549,2020-01-18,Prince D,Telugu Titans,Jaipur Pink Panthers,All-Rounder,24,5,9,9,5,18,46,20.83,100.0,23,3,0,0,Win,21,33,N/A,2000-06-26,24,Sri Lanka,Jaipur,Away,1,1,0,5,34,False
+550,2023-02-28,Sandeep Kandola,Telugu Titans,U Mumba,All-Rounder,5,4,11,2,4,4,38,80.0,18.18,8,1,1,0,Win,38,24,Sandeep Kandola,1988-02-09,37,Nepal,Delhi,Away,9,4,4,12,45,False
+551,2018-10-26,Ashish,Tamil Thalaivas,Hariyana Steelers,All-Rounder,6,1,14,0,1,0,42,16.67,0.0,1,3,1,1,Loss,23,26,Ashish,2002-05-26,23,Nepal,Delhi,Away,3,1,3,12,83,False
+552,2021-03-28,Shivam,U Mumba,Dabang Delhi,All-Rounder,20,2,15,5,2,10,41,10.0,33.33,12,0,1,1,Win,28,20,Shivam,1986-11-27,38,India,Chennai,Away,3,5,3,12,89,False
+553,2019-12-23,Ankush,U Mumba,Tamil Thalaivas,Defender,13,0,15,13,0,26,39,0.0,86.67,26,0,0,0,Loss,36,32,Ankush,1987-10-28,37,Sri Lanka,Chandigarh,Away,6,0,5,13,21,False
+554,2023-01-27,Arun,Tamil Thalaivas,Hariyana Steelers,Defender,21,3,3,2,3,4,51,14.29,66.67,7,2,0,0,Loss,30,24,Arun,1987-10-07,37,India,Ahmedabad,Away,7,1,2,11,92,False
+555,2019-05-13,Jaideep Dahiya,Hariyana Steelers,Gujarat Fortunegiants,Raider,14,6,14,14,6,28,46,42.86,100.0,34,0,0,0,Loss,23,23,Jaideep Dahiya,2000-10-02,24,Sri Lanka,Delhi,Away,10,0,1,14,24,False
+556,2023-10-09,Karamvir,Patna Pirates,Gujarat Fortunegiants,Raider,9,5,12,8,5,16,58,55.56,66.67,21,3,0,1,Loss,22,17,Karamvir,1988-01-19,37,Nepal,Lucknow,Away,8,0,1,15,25,False
+557,2024-09-20,Deepak Niwas Hooda,Bengal Warriors,Gujarat Fortunegiants,All-Rounder,16,12,15,6,12,12,43,75.0,40.0,24,3,1,1,Loss,23,31,N/A,1987-10-25,37,Bangladesh,Ahmedabad,Away,8,1,4,3,38,False
+558,2020-08-29,Sandeep Kumar,Dabang Delhi,UP Yoddha,Defender,8,8,6,3,8,6,56,100.0,50.0,14,2,1,0,Loss,34,18,N/A,1989-02-04,36,India,Patna,Away,8,4,5,14,57,False
+559,2023-09-02,Anil,Gujarat Fortunegiants,Jaipur Pink Panthers,Raider,12,10,3,0,10,0,52,83.33,0.0,10,3,0,0,Win,22,33,N/A,2001-07-04,23,Nepal,Patna,Away,2,5,3,15,23,False
+560,2023-07-11,Parvesh Bhainswal,Gujarat Fortunegiants,Jaipur Pink Panthers,Defender,24,5,13,10,5,20,52,20.83,76.92,25,1,1,1,Win,25,32,N/A,2003-02-13,22,India,Bengaluru,Away,4,1,3,13,39,False
+561,2020-01-22,Balaji D,Bengal Warriors,Dabang Delhi,All-Rounder,16,2,14,8,2,16,52,12.5,57.14,18,3,1,0,Loss,26,34,Balaji D,1986-06-24,38,Bangladesh,Kolkata,Home,2,0,5,7,56,False
+562,2023-03-05,Surinder Singh,U Mumba,Dabang Delhi,Defender,22,9,6,6,9,12,39,40.91,100.0,21,1,0,1,Win,24,19,Surinder Singh,1988-07-19,36,Sri Lanka,Chandigarh,Away,1,1,4,8,96,False
+563,2022-12-14,Mahipal,UP Yoddha,U Mumba,Defender,14,9,11,1,9,2,46,64.29,9.09,11,1,1,0,Loss,35,31,N/A,1991-07-07,33,Sri Lanka,Delhi,Away,5,2,1,11,24,False
+564,2023-11-17,Rathan K,UP Yoddha,U Mumba,All-Rounder,21,12,3,2,12,4,57,57.14,66.67,16,3,0,1,Win,37,15,N/A,2003-01-31,22,Pakistan,Mumbai,Away,1,3,2,9,23,False
+565,2019-10-02,Ankit Beniwal,Tamil Thalaivas,Gujarat Fortunegiants,Raider,18,15,10,4,15,8,37,83.33,40.0,23,1,1,0,Loss,39,32,Ankit Beniwal,1985-10-12,39,Bangladesh,Lucknow,Away,12,5,5,14,92,False
+566,2021-08-30,Vikas Kandola,Hariyana Steelers,Jaipur Pink Panthers,Raider,19,13,3,1,13,2,45,68.42,33.33,15,3,0,0,Loss,25,19,Vikas Kandola,2002-06-17,22,India,Delhi,Away,3,3,3,8,37,False
+567,2018-07-06,Siddhant Bhosale,U Mumba,UP Yoddha,All-Rounder,16,16,3,1,16,2,31,100.0,33.33,18,2,0,1,Win,21,32,Siddhant Bhosale,1995-09-16,29,Pakistan,Chandigarh,Away,7,0,2,9,49,False
+568,2025-03-31,Mehul Kumar,Gujarat Fortunegiants,U Mumba,All-Rounder,13,2,7,3,2,6,41,15.38,42.86,8,0,0,1,Loss,31,22,Mehul Kumar,1993-09-20,31,India,Ahmedabad,Home,3,0,0,11,50,False
+569,2019-12-12,Sachin Tanwar,Patna Pirates,UP Yoddha,Raider,21,19,4,3,19,6,60,90.48,75.0,25,0,1,1,Win,21,20,N/A,2003-04-25,22,Nepal,Chennai,Away,8,4,3,8,89,False
+570,2018-08-30,Vikas Jaglan,Patna Pirates,U Mumba,Defender,24,16,14,5,16,10,37,66.67,35.71,26,0,0,0,Loss,23,28,Vikas Jaglan,1999-01-27,26,Pakistan,Kolkata,Away,6,3,2,12,44,False
+571,2021-12-27,Vishal Bhardwaj,Tamil Thalaivas,Patna Pirates,Defender,18,3,15,14,3,28,49,16.67,93.33,31,1,0,0,Win,30,19,Vishal Bhardwaj,1988-07-19,36,Pakistan,Kolkata,Away,7,1,3,5,89,False
+572,2021-12-25,Arjun Deshwal,Jaipur Pink Panthers,Telugu Titans,Defender,13,4,13,0,4,0,31,30.77,0.0,4,2,0,0,Loss,38,28,N/A,1993-10-24,31,Sri Lanka,Kolkata,Away,9,4,0,13,68,False
+573,2024-07-17,Abhijeet Malik,Jaipur Pink Panthers,Gujarat Fortunegiants,All-Rounder,8,5,15,7,5,14,54,62.5,46.67,19,1,0,1,Loss,37,31,N/A,1988-04-20,37,India,Jaipur,Home,8,2,2,4,83,False
+574,2023-03-22,Prince,U Mumba,Patna Pirates,All-Rounder,12,2,9,0,2,0,48,16.67,0.0,2,1,0,0,Win,21,23,N/A,1998-02-11,27,Pakistan,Mumbai,Home,5,5,2,15,52,False
+575,2020-12-22,Arpit Saroha,Tamil Thalaivas,Hariyana Steelers,All-Rounder,14,9,8,3,9,6,35,64.29,37.5,15,2,0,0,Loss,21,17,N/A,1993-02-22,32,Sri Lanka,Bengaluru,Away,11,4,1,12,31,False
+576,2021-01-03,Surjeet Singh,Telugu Titans,Tamil Thalaivas,Defender,21,2,12,5,2,10,56,9.52,41.67,12,1,0,0,Loss,40,25,Surjeet Singh,1988-04-25,37,Bangladesh,Lucknow,Away,4,0,5,8,37,False
+577,2024-07-02,Sahil,Dabang Delhi,Bengal Warriors,Raider,16,16,5,1,16,2,56,100.0,20.0,18,1,0,1,Loss,38,35,Sahil,1993-04-07,32,Pakistan,Lucknow,Away,11,5,3,12,82,False
+578,2023-05-07,Akshay Bhoir,Bengal Warriors,U Mumba,Raider,12,10,4,1,10,2,34,83.33,25.0,12,3,0,0,Loss,37,25,Akshay Bhoir,1995-08-04,29,Sri Lanka,Patna,Away,8,2,2,4,25,False
+579,2019-10-22,Vishal,Dabang Delhi,Telugu Titans,Raider,5,1,5,1,1,2,58,20.0,20.0,3,0,0,0,Loss,21,21,N/A,2004-04-10,21,Sri Lanka,Chennai,Away,3,2,0,11,36,False
+580,2021-12-16,Jaideep Dahiya,Hariyana Steelers,Gujarat Fortunegiants,Raider,22,2,9,8,2,16,30,9.09,88.89,18,1,1,1,Loss,26,25,Jaideep Dahiya,2001-05-06,24,India,Chennai,Away,1,0,5,8,49,False
+581,2021-06-04,Pardeep Narwal,UP Yoddha,Dabang Delhi,Raider,13,13,12,12,13,24,59,100.0,100.0,37,1,1,0,Win,20,32,N/A,2004-02-03,21,India,Chandigarh,Away,10,3,4,15,75,False
+582,2019-11-17,Maninder Singh,Bengal Warriors,Hariyana Steelers,Raider,10,3,5,3,3,6,59,30.0,60.0,9,1,0,0,Win,29,31,Maninder Singh,1987-07-09,37,India,Ahmedabad,Away,8,3,3,12,39,False
+583,2024-02-25,Vishal Bhardwaj,Tamil Thalaivas,Jaipur Pink Panthers,All-Rounder,11,4,9,7,4,14,59,36.36,77.78,18,2,0,0,Win,29,23,Vishal Bhardwaj,1994-06-14,30,Sri Lanka,Hyderabad,Away,9,0,3,8,69,False
+584,2023-06-21,Ankit,Patna Pirates,Bengal Warriors,All-Rounder,19,15,13,8,15,16,32,78.95,61.54,31,2,1,0,Win,31,31,N/A,1984-08-10,40,Bangladesh,Bengaluru,Away,11,1,1,7,86,False
+585,2023-09-06,Vaibhav Garje,Bengal Warriors,Hariyana Steelers,All-Rounder,16,11,13,11,11,22,55,68.75,84.62,33,3,1,0,Win,26,21,N/A,1985-12-03,39,Nepal,Ahmedabad,Away,11,1,5,11,65,False
+586,2020-10-25,Sagar,Tamil Thalaivas,U Mumba,Raider,16,7,14,2,7,4,48,43.75,14.29,11,2,1,0,Loss,23,21,Sagar,2000-02-15,25,Pakistan,Chennai,Home,2,3,5,3,51,False
+587,2019-01-03,Rathan K,UP Yoddha,Hariyana Steelers,Defender,5,2,8,3,2,6,31,40.0,37.5,8,3,1,1,Loss,35,20,Rathan K,1984-07-23,40,Sri Lanka,Bengaluru,Away,5,2,4,13,82,False
+588,2020-03-28,Rohit Gulia,Patna Pirates,Dabang Delhi,Raider,16,13,13,13,13,26,31,81.25,100.0,39,0,0,0,Win,30,17,N/A,1990-11-17,34,Bangladesh,Kolkata,Away,8,4,4,4,26,False
+589,2021-08-19,Pardeep Narwal,UP Yoddha,Jaipur Pink Panthers,Defender,11,0,15,5,0,10,40,0.0,33.33,10,1,1,1,Win,34,16,N/A,1985-01-10,40,Sri Lanka,Hyderabad,Away,8,1,0,11,33,False
+590,2025-04-14,Adarsh T,Telugu Titans,U Mumba,All-Rounder,12,12,8,6,12,12,35,100.0,75.0,24,2,1,0,Loss,22,24,N/A,1994-02-04,31,Sri Lanka,Hyderabad,Home,1,0,1,10,84,False
+591,2022-06-28,M Abishek,Tamil Thalaivas,Dabang Delhi,Defender,7,2,15,4,2,8,30,28.57,26.67,10,2,0,1,Loss,28,21,N/A,2004-10-11,20,Bangladesh,Hyderabad,Away,8,2,2,9,32,False
+592,2019-08-06,Pawan Sehrawat,Telugu Titans,Hariyana Steelers,Defender,18,1,7,3,1,6,34,5.56,42.86,7,1,1,0,Loss,22,33,N/A,1987-04-02,38,Bangladesh,Kolkata,Away,7,4,1,11,33,False
+593,2023-11-15,Amit Kumar,Gujarat Fortunegiants,Bengal Warriors,Defender,18,16,12,4,16,8,52,88.89,33.33,24,2,0,0,Win,22,25,Amit Kumar,1990-03-10,35,Bangladesh,Bengaluru,Away,7,2,4,15,32,False
+594,2024-09-05,Siddhant Bhosale,U Mumba,Jaipur Pink Panthers,Raider,11,11,13,9,11,18,56,100.0,69.23,29,0,1,1,Loss,27,19,N/A,1998-02-04,27,Pakistan,Ahmedabad,Away,11,4,4,13,41,False
+595,2018-09-30,Abinesh Nadarajan,Tamil Thalaivas,Bengal Warriors,All-Rounder,7,3,4,0,3,0,44,42.86,0.0,3,0,0,0,Loss,24,18,Abinesh Nadarajan,1997-01-27,28,Bangladesh,Mumbai,Away,10,5,2,7,96,False
+596,2022-03-15,Ankit,Hariyana Steelers,Telugu Titans,All-Rounder,7,3,8,4,3,8,58,42.86,50.0,11,2,1,1,Win,34,20,N/A,1990-07-26,34,India,Chandigarh,Home,7,1,0,13,59,False
+597,2018-02-16,Rakesh,Gujarat Fortunegiants,Dabang Delhi,Raider,7,4,6,6,4,12,54,57.14,100.0,16,3,0,1,Win,35,32,Rakesh,1993-11-24,31,Pakistan,Mumbai,Away,3,1,1,3,85,False
+598,2019-11-18,Ankit,UP Yoddha,Gujarat Fortunegiants,Raider,16,6,12,3,6,6,39,37.5,25.0,12,2,1,0,Win,38,30,N/A,1993-03-12,32,Pakistan,Jaipur,Away,9,4,4,13,58,False
+599,2023-08-19,Rohit Gulia,Hariyana Steelers,Patna Pirates,All-Rounder,16,9,8,4,9,8,46,56.25,50.0,17,1,0,0,Loss,39,30,Rohit Gulia,1995-08-29,29,Nepal,Lucknow,Away,5,3,3,11,91,False
+600,2020-10-24,Kiran Lal,UP Yoddha,Jaipur Pink Panthers,Raider,22,2,10,10,2,20,36,9.09,100.0,22,2,0,1,Loss,39,17,Kiran Lal,1995-03-22,30,Nepal,Jaipur,Away,7,2,4,15,23,False
+601,2024-09-08,Surender Gill,UP Yoddha,Tamil Thalaivas,Defender,9,4,6,1,4,2,45,44.44,16.67,6,1,1,0,Win,35,33,N/A,2002-11-23,22,Bangladesh,Patna,Away,5,5,0,7,87,False
+602,2024-08-18,K. Shanmugam,Gujarat Fortunegiants,Patna Pirates,All-Rounder,7,3,4,3,3,6,35,42.86,75.0,9,3,0,1,Loss,37,31,K. Shanmugam,2003-08-03,21,Nepal,Ahmedabad,Home,2,2,0,11,70,False
+603,2024-08-15,Ravinder,Patna Pirates,Telugu Titans,All-Rounder,24,7,4,1,7,2,57,29.17,25.0,9,2,0,0,Win,22,35,Ravinder,1984-07-26,40,Bangladesh,Delhi,Away,2,0,0,5,70,False
+604,2019-12-05,Sahil,Dabang Delhi,Telugu Titans,All-Rounder,11,9,5,2,9,4,42,81.82,40.0,13,3,0,1,Loss,40,35,Sahil,1993-09-26,31,Nepal,Hyderabad,Away,8,1,1,4,84,False
+605,2018-05-22,Amit Sheoran,Bengal Warriors,U Mumba,All-Rounder,22,21,10,2,21,4,47,95.45,20.0,25,0,1,0,Win,33,28,N/A,1996-11-19,28,Nepal,Hyderabad,Away,3,3,3,11,61,False
+606,2024-11-06,Vishal Bhardwaj,Tamil Thalaivas,Telugu Titans,Defender,20,14,9,4,14,8,32,70.0,44.44,22,0,0,0,Loss,34,34,N/A,2004-02-09,21,India,Chandigarh,Away,7,1,3,5,82,False
+607,2018-10-14,Vinod Kumar,Gujarat Fortunegiants,Dabang Delhi,All-Rounder,8,8,9,1,8,2,33,100.0,11.11,10,2,1,1,Win,33,19,N/A,1998-03-24,27,Bangladesh,Lucknow,Away,8,4,5,8,81,False
+608,2022-03-11,Amit Sheoran,Bengal Warriors,Telugu Titans,All-Rounder,14,6,13,8,6,16,35,42.86,61.54,22,1,1,0,Loss,24,29,N/A,2004-06-06,20,Nepal,Ahmedabad,Away,1,0,2,3,75,False
+609,2019-03-13,Mujtaba,Telugu Titans,Hariyana Steelers,Defender,8,5,3,2,5,4,38,62.5,66.67,9,0,1,1,Win,33,34,N/A,1986-07-26,38,Bangladesh,Lucknow,Away,2,4,0,4,20,False
+610,2024-02-29,Ujjval,Jaipur Pink Panthers,Patna Pirates,Defender,14,12,9,8,12,16,33,85.71,88.89,28,0,1,0,Win,37,15,Ujjval,1989-09-09,35,Nepal,Chennai,Away,11,2,1,15,48,False
+611,2021-12-22,Rajnish,Telugu Titans,U Mumba,All-Rounder,5,4,14,8,4,16,30,80.0,57.14,20,1,1,0,Loss,22,35,N/A,1988-03-17,37,Bangladesh,Ahmedabad,Away,9,2,1,8,86,False
+612,2024-03-06,Rajnish,Telugu Titans,Bengal Warriors,Raider,6,1,11,2,1,4,31,16.67,18.18,5,3,0,1,Win,25,15,Rajnish,2002-03-03,23,Sri Lanka,Patna,Away,2,3,3,4,29,False
+613,2022-08-04,Shivam,Gujarat Fortunegiants,Telugu Titans,Raider,23,8,13,1,8,2,50,34.78,7.69,10,2,0,0,Win,32,16,Shivam,1986-11-19,38,Pakistan,Jaipur,Away,11,2,4,14,30,False
+614,2022-02-10,Mohit,Telugu Titans,Tamil Thalaivas,All-Rounder,25,19,12,9,19,18,49,76.0,75.0,37,0,0,0,Win,21,27,Mohit,1985-11-24,39,Bangladesh,Ahmedabad,Away,7,5,5,9,57,False
+615,2024-12-04,Arjun Deshwal,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,13,6,14,6,6,12,60,46.15,42.86,18,3,1,1,Loss,30,24,N/A,1997-12-11,27,India,Delhi,Away,11,1,0,7,39,False
+616,2023-06-27,Abhijeet Malik,Jaipur Pink Panthers,U Mumba,Defender,16,16,14,7,16,14,50,100.0,50.0,30,0,1,0,Win,21,29,Abhijeet Malik,1992-07-07,32,Sri Lanka,Ahmedabad,Away,7,0,1,8,95,False
+617,2020-04-08,Ravi Kumar,Dabang Delhi,Gujarat Fortunegiants,All-Rounder,12,7,8,5,7,10,41,58.33,62.5,17,0,0,0,Win,31,17,N/A,1998-11-16,26,Nepal,Patna,Away,12,2,1,3,44,False
+618,2022-12-02,Rohit Banne,Bengal Warriors,Telugu Titans,Defender,16,6,7,1,6,2,52,37.5,14.29,8,0,0,1,Win,39,31,Rohit Banne,1998-11-26,26,Nepal,Hyderabad,Away,2,0,0,3,75,False
+619,2020-04-29,Balaji D,Bengal Warriors,Telugu Titans,Raider,9,5,6,1,5,2,30,55.56,16.67,7,2,0,1,Loss,22,17,Balaji D,1994-10-07,30,Nepal,Kolkata,Home,1,3,0,9,37,False
+620,2023-10-25,Surender Nada,Patna Pirates,Telugu Titans,Raider,25,1,12,10,1,20,58,4.0,83.33,21,0,0,0,Loss,29,31,N/A,1998-12-01,26,Nepal,Mumbai,Away,9,2,5,13,95,False
+621,2023-01-23,Anand Tomar,Jaipur Pink Panthers,Gujarat Fortunegiants,All-Rounder,13,10,6,2,10,4,57,76.92,33.33,14,0,1,0,Win,21,27,N/A,1999-02-24,26,Pakistan,Lucknow,Away,1,2,3,7,71,False
+622,2018-10-11,Arjun Deshwal,Jaipur Pink Panthers,Hariyana Steelers,All-Rounder,7,6,14,0,6,0,33,85.71,0.0,6,1,1,1,Loss,20,26,Arjun Deshwal,2000-04-17,25,Nepal,Delhi,Away,4,3,1,12,84,False
+623,2020-09-25,Durgesh,Telugu Titans,Jaipur Pink Panthers,All-Rounder,24,10,14,13,10,26,50,41.67,92.86,36,3,0,1,Loss,30,19,Durgesh,2004-03-08,21,India,Jaipur,Away,8,5,3,12,28,False
+624,2022-07-30,Vikas Kandola,Hariyana Steelers,Patna Pirates,All-Rounder,22,22,13,6,22,12,47,100.0,46.15,34,2,0,1,Loss,34,31,Vikas Kandola,1992-03-19,33,Sri Lanka,Jaipur,Away,8,2,2,15,43,False
+625,2020-12-17,K. Prapanjan,Tamil Thalaivas,Gujarat Fortunegiants,Raider,5,1,15,0,1,0,53,20.0,0.0,1,2,0,0,Win,27,19,N/A,1991-05-31,34,Sri Lanka,Ahmedabad,Away,7,1,0,7,35,False
+626,2021-10-17,Shubham Shinde,Bengal Warriors,Gujarat Fortunegiants,Defender,21,2,7,2,2,4,48,9.52,28.57,6,2,1,0,Win,34,20,N/A,2005-03-09,20,Pakistan,Mumbai,Away,4,3,2,4,85,False
+627,2024-03-06,Surjeet Singh,Telugu Titans,Dabang Delhi,Raider,16,4,10,5,4,10,59,25.0,50.0,14,1,0,1,Loss,27,32,Surjeet Singh,1998-03-10,27,Bangladesh,Jaipur,Away,5,3,2,14,31,False
+628,2021-03-29,Rahul Chaudhari,Jaipur Pink Panthers,UP Yoddha,Defender,16,2,13,12,2,24,56,12.5,92.31,26,0,0,0,Loss,22,16,Rahul Chaudhari,1999-09-16,25,Sri Lanka,Mumbai,Away,9,0,3,5,30,False
+629,2023-10-27,Ankit,Patna Pirates,Bengal Warriors,Defender,8,3,11,11,3,22,42,37.5,100.0,25,2,0,0,Loss,37,23,N/A,1998-01-24,27,Sri Lanka,Chandigarh,Away,9,4,5,15,85,False
+630,2022-03-06,M Abishek,Tamil Thalaivas,U Mumba,Defender,21,12,11,10,12,20,50,57.14,90.91,32,0,1,1,Loss,33,34,N/A,2001-04-03,24,India,Hyderabad,Away,10,4,3,6,63,False
+631,2024-10-01,Naresh,Hariyana Steelers,Patna Pirates,All-Rounder,9,2,5,1,2,2,57,22.22,20.0,4,1,0,1,Win,40,33,Naresh,2003-04-10,22,Bangladesh,Ahmedabad,Away,11,2,5,9,37,False
+632,2023-08-21,Shivam,Gujarat Fortunegiants,Tamil Thalaivas,All-Rounder,16,14,15,0,14,0,32,87.5,0.0,14,0,0,0,Loss,27,28,N/A,1991-06-30,33,Sri Lanka,Jaipur,Away,10,2,1,13,87,False
+633,2023-12-19,Nitin Rawal,Jaipur Pink Panthers,Dabang Delhi,Raider,23,19,11,10,19,20,45,82.61,90.91,39,0,1,1,Win,21,18,N/A,2003-10-26,21,Bangladesh,Patna,Away,6,3,4,10,46,False
+634,2023-04-05,K Prapanjan,Hariyana Steelers,Telugu Titans,Defender,7,7,4,3,7,6,51,100.0,75.0,13,2,0,0,Win,32,33,K Prapanjan,1987-10-06,37,Bangladesh,Lucknow,Away,5,1,5,3,64,False
+635,2018-09-28,Sunil Kumar,Jaipur Pink Panthers,Tamil Thalaivas,Raider,23,22,7,6,22,12,48,95.65,85.71,34,3,1,0,Loss,28,32,N/A,1993-10-22,31,Bangladesh,Kolkata,Away,2,1,4,11,98,False
+636,2025-04-24,Nehal Desai,U Mumba,Telugu Titans,Raider,25,11,7,4,11,8,38,44.0,57.14,19,1,1,0,Loss,34,25,Nehal Desai,2000-04-25,25,Nepal,Chandigarh,Away,6,1,2,10,74,False
+637,2025-04-10,Mohit,Telugu Titans,Bengal Warriors,Defender,19,5,9,6,5,12,45,26.32,66.67,17,0,0,0,Win,22,20,N/A,2004-08-19,20,Nepal,Patna,Away,9,0,1,9,39,False
+638,2019-10-12,Mohammadreza Chiyaneh,Patna Pirates,Telugu Titans,Defender,23,1,3,0,1,0,54,4.35,0.0,1,2,0,1,Win,29,27,Mohammadreza Chiyaneh,1987-02-06,38,Nepal,Bengaluru,Away,4,3,1,3,26,False
+639,2019-09-28,Parshant Kumar,Bengal Warriors,UP Yoddha,All-Rounder,19,17,4,4,17,8,60,89.47,100.0,25,3,1,1,Win,34,18,Parshant Kumar,1991-03-06,34,Sri Lanka,Hyderabad,Away,1,4,1,14,89,False
+640,2024-01-26,Siddhant Bhosale,U Mumba,Dabang Delhi,All-Rounder,6,4,15,4,4,8,38,66.67,26.67,12,3,0,0,Win,33,21,N/A,1998-04-12,27,Nepal,Ahmedabad,Away,6,5,3,11,65,False
+641,2023-01-15,Ankush,U Mumba,Patna Pirates,Raider,18,11,8,8,11,16,50,61.11,100.0,27,3,1,1,Loss,37,32,Ankush,2003-11-22,21,Pakistan,Hyderabad,Away,4,0,5,5,31,False
+642,2024-11-02,Prince D,Telugu Titans,UP Yoddha,Defender,20,6,13,4,6,8,49,30.0,30.77,14,2,0,1,Win,34,28,N/A,1994-04-09,31,Pakistan,Patna,Away,5,5,3,10,50,False
+643,2019-09-10,Rajesh Narwal,Hariyana Steelers,Dabang Delhi,Defender,14,6,3,0,6,0,35,42.86,0.0,6,3,0,1,Win,27,30,N/A,1999-01-07,26,Nepal,Bengaluru,Away,11,1,0,7,37,False
+644,2020-04-23,K. Prapanjan,Tamil Thalaivas,Dabang Delhi,Defender,6,2,13,11,2,22,33,33.33,84.62,24,1,1,1,Win,38,18,N/A,1988-08-02,36,Bangladesh,Patna,Away,9,5,1,7,34,False
+645,2020-05-31,Neeraj Kumar,Patna Pirates,U Mumba,Raider,7,3,10,6,3,12,44,42.86,60.0,15,3,0,1,Loss,33,29,Neeraj Kumar,2001-08-18,23,Sri Lanka,Delhi,Away,6,2,0,4,89,False
+646,2018-09-22,Manjeet,Dabang Delhi,Telugu Titans,Defender,13,10,15,3,10,6,36,76.92,20.0,16,2,1,0,Loss,40,34,Manjeet,2002-09-18,22,Sri Lanka,Chennai,Away,1,2,0,6,25,False
+647,2018-07-11,Pardeep Narwal,UP Yoddha,Tamil Thalaivas,Raider,9,9,15,8,9,16,54,100.0,53.33,25,3,0,1,Loss,23,25,Pardeep Narwal,1993-01-20,32,Sri Lanka,Delhi,Away,2,0,3,8,65,False
+648,2024-05-04,Aashish B,U Mumba,Patna Pirates,Defender,8,5,7,6,5,12,48,62.5,85.71,17,2,0,1,Win,23,16,N/A,1998-02-22,27,India,Ahmedabad,Away,6,1,3,6,89,False
+649,2024-07-22,Meetu Sharma,Hariyana Steelers,UP Yoddha,All-Rounder,7,2,8,5,2,10,43,28.57,62.5,12,1,1,1,Loss,39,29,N/A,2000-04-28,25,Nepal,Chennai,Away,9,2,1,3,84,False
+650,2023-10-04,Arpit Saroha,Tamil Thalaivas,U Mumba,All-Rounder,23,1,10,0,1,0,32,4.35,0.0,1,2,1,0,Loss,40,24,Arpit Saroha,1994-05-05,31,Nepal,Hyderabad,Away,10,4,1,11,72,False
+651,2024-05-17,Rahul Chaudhari,Jaipur Pink Panthers,Dabang Delhi,All-Rounder,17,14,13,9,14,18,47,82.35,69.23,32,0,1,1,Loss,28,27,Rahul Chaudhari,1998-06-14,26,Sri Lanka,Jaipur,Home,1,1,2,7,47,False
+652,2018-03-07,Sumit,Dabang Delhi,Bengal Warriors,Raider,16,0,3,2,0,4,31,0.0,66.67,4,2,0,0,Loss,32,34,Sumit,1989-08-11,35,Bangladesh,Chandigarh,Away,8,2,4,3,20,False
+653,2024-02-17,Parshant Kumar,Bengal Warriors,Telugu Titans,All-Rounder,22,4,4,0,4,0,56,18.18,0.0,4,0,1,1,Win,37,28,Parshant Kumar,2001-01-18,24,Bangladesh,Delhi,Away,1,1,3,15,71,False
+654,2018-04-28,Arpit Saroha,Tamil Thalaivas,Jaipur Pink Panthers,Defender,10,1,13,0,1,0,55,10.0,0.0,1,2,0,0,Win,21,28,Arpit Saroha,1991-05-09,34,Sri Lanka,Kolkata,Away,11,4,1,9,69,False
+655,2019-02-22,M Abishek,Tamil Thalaivas,Bengal Warriors,All-Rounder,16,14,13,1,14,2,49,87.5,7.69,16,1,0,0,Loss,28,20,N/A,2000-12-03,24,India,Kolkata,Away,1,5,1,8,45,False
+656,2021-08-27,Karamvir,Patna Pirates,Dabang Delhi,Raider,6,4,4,3,4,6,46,66.67,75.0,10,1,0,0,Win,21,34,N/A,1987-10-10,37,Nepal,Jaipur,Away,8,4,1,14,85,False
+657,2020-08-04,Ajinkya Kapre,Bengal Warriors,Telugu Titans,Defender,24,10,9,1,10,2,42,41.67,11.11,12,0,0,0,Win,20,28,N/A,1994-12-07,30,Sri Lanka,Lucknow,Away,8,2,0,15,61,False
+658,2024-11-02,Ujjval,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,16,2,8,4,2,8,42,12.5,50.0,10,3,1,0,Win,24,35,N/A,1989-06-15,35,Pakistan,Patna,Away,1,4,4,15,60,False
+659,2020-07-16,Prashanth Kumar Rai,Patna Pirates,Telugu Titans,All-Rounder,13,11,15,12,11,24,30,84.62,80.0,35,2,0,1,Win,20,19,N/A,1994-05-20,31,Nepal,Jaipur,Away,1,5,2,8,81,False
+660,2023-03-08,Abozar Mighani,UP Yoddha,Hariyana Steelers,Raider,15,12,3,3,12,6,58,80.0,100.0,18,2,1,0,Win,31,23,N/A,1984-07-30,40,India,Chennai,Away,4,2,5,8,89,False
+661,2022-10-06,Vaibhav Garje,Bengal Warriors,UP Yoddha,Raider,17,16,4,2,16,4,58,94.12,50.0,20,3,0,0,Loss,30,15,N/A,1991-10-20,33,Sri Lanka,Chandigarh,Away,9,4,2,10,83,False
+662,2019-10-16,Vinod Kumar,Gujarat Fortunegiants,UP Yoddha,Raider,7,4,12,3,4,6,31,57.14,25.0,10,1,0,1,Loss,31,28,N/A,1986-05-12,39,Pakistan,Delhi,Away,12,2,3,7,53,False
+663,2022-04-02,Himanshu Singh,Tamil Thalaivas,Dabang Delhi,Raider,24,18,15,1,18,2,30,75.0,6.67,20,2,1,1,Loss,37,27,N/A,1996-08-18,28,India,Patna,Away,9,3,4,7,51,False
+664,2021-11-13,Shubham Shinde,Bengal Warriors,Patna Pirates,Defender,19,2,14,13,2,26,38,10.53,92.86,28,1,1,0,Loss,37,17,N/A,1993-03-14,32,Bangladesh,Bengaluru,Away,7,3,5,7,40,False
+665,2025-03-02,Tushar,U Mumba,Dabang Delhi,Defender,6,2,8,4,2,8,60,33.33,50.0,10,3,1,0,Win,32,20,N/A,1992-05-17,33,Nepal,Chennai,Away,12,1,3,5,90,False
+666,2021-03-02,Manuj,Gujarat Fortunegiants,U Mumba,All-Rounder,12,6,7,3,6,6,35,50.0,42.86,12,3,0,0,Loss,25,27,N/A,2005-05-27,20,Bangladesh,Hyderabad,Away,6,5,3,10,25,False
+667,2022-02-08,Sandeep,Patna Pirates,Jaipur Pink Panthers,Defender,19,14,14,0,14,0,33,73.68,0.0,14,2,0,0,Loss,34,33,N/A,2003-08-27,21,Bangladesh,Chennai,Away,12,5,0,4,86,False
+668,2021-10-19,Abozar Mighani,UP Yoddha,Patna Pirates,Defender,15,12,11,2,12,4,31,80.0,18.18,16,2,0,0,Win,28,21,Abozar Mighani,1987-10-01,37,Pakistan,Ahmedabad,Away,1,3,3,6,44,False
+669,2022-02-19,Arpit Saroha,Tamil Thalaivas,Dabang Delhi,Raider,10,2,13,12,2,24,38,20.0,92.31,26,3,1,0,Loss,21,32,Arpit Saroha,1995-01-27,30,Pakistan,Mumbai,Away,7,5,2,15,92,False
+670,2021-05-12,Shankar Gadai,Gujarat Fortunegiants,Tamil Thalaivas,Defender,17,17,3,1,17,2,55,100.0,33.33,19,0,1,0,Win,29,32,Shankar Gadai,1991-01-01,34,Sri Lanka,Ahmedabad,Home,4,4,1,12,55,False
+671,2024-05-14,Prashanth Kumar Rai,Patna Pirates,U Mumba,Defender,15,6,9,4,6,8,46,40.0,44.44,14,1,0,1,Loss,29,15,Prashanth Kumar Rai,2004-01-17,21,Bangladesh,Bengaluru,Away,3,0,5,9,35,False
+672,2021-07-05,Vishal,Dabang Delhi,Telugu Titans,Defender,11,6,14,13,6,26,43,54.55,92.86,32,1,0,0,Win,32,25,N/A,1995-07-30,29,Pakistan,Kolkata,Away,4,3,1,4,94,False
+673,2019-11-14,Shubham Shinde,Bengal Warriors,Jaipur Pink Panthers,Defender,16,7,11,2,7,4,34,43.75,18.18,11,2,1,0,Loss,34,32,Shubham Shinde,1997-07-10,27,India,Ahmedabad,Away,8,4,4,11,96,False
+674,2025-04-16,K. Prapanjan,Tamil Thalaivas,Gujarat Fortunegiants,All-Rounder,5,2,5,3,2,6,51,40.0,60.0,8,0,0,0,Loss,21,22,N/A,1987-09-09,37,Pakistan,Kolkata,Away,8,0,3,10,35,False
+675,2022-08-01,Nitesh Kumar,UP Yoddha,Gujarat Fortunegiants,Defender,15,7,3,3,7,6,40,46.67,100.0,13,1,1,0,Win,38,22,N/A,2004-10-03,20,Bangladesh,Patna,Away,4,2,0,9,29,False
+676,2018-08-03,Adarsh T,Telugu Titans,Bengal Warriors,Raider,25,1,4,4,1,8,40,4.0,100.0,9,0,0,1,Loss,23,24,Adarsh T,1994-01-23,31,Bangladesh,Mumbai,Away,10,3,0,12,42,False
+677,2018-09-16,Sahil Gulia,Tamil Thalaivas,UP Yoddha,Raider,15,13,14,0,13,0,53,86.67,0.0,13,0,1,0,Win,40,26,N/A,1997-06-13,27,India,Lucknow,Away,10,5,2,15,28,False
+678,2022-10-16,Vaibhav Garje,Bengal Warriors,Dabang Delhi,Raider,7,1,6,4,1,8,46,14.29,66.67,9,0,0,0,Loss,23,28,N/A,1997-12-27,27,Sri Lanka,Hyderabad,Away,3,4,3,13,85,False
+679,2024-10-03,Jeeva Kumar,Tamil Thalaivas,Gujarat Fortunegiants,Defender,8,7,6,5,7,10,47,87.5,83.33,17,1,1,0,Win,37,25,Jeeva Kumar,1995-06-21,29,Nepal,Chandigarh,Away,11,0,3,4,66,False
+680,2019-06-14,Manjeet,Dabang Delhi,Telugu Titans,Defender,15,3,14,14,3,28,48,20.0,100.0,31,0,0,1,Loss,29,21,Manjeet,1990-10-20,34,Bangladesh,Patna,Away,4,2,5,15,27,False
+681,2021-01-04,Rajnish,Telugu Titans,Patna Pirates,Defender,8,7,9,3,7,6,39,87.5,33.33,13,0,1,0,Loss,36,16,Rajnish,2003-11-10,21,Sri Lanka,Patna,Away,10,5,4,11,70,False
+682,2022-02-11,Heidarali Ekrami,U Mumba,UP Yoddha,Raider,7,7,11,1,7,2,32,100.0,9.09,9,2,1,0,Win,37,35,N/A,1993-04-15,32,Sri Lanka,Chennai,Away,6,3,3,9,38,False
+683,2018-05-03,Prashanth Kumar Rai,Patna Pirates,Dabang Delhi,All-Rounder,14,0,9,5,0,10,31,0.0,55.56,10,2,1,0,Win,23,18,N/A,1986-01-01,39,Pakistan,Chandigarh,Away,12,3,2,6,74,False
+684,2025-04-28,Devank,Jaipur Pink Panthers,Bengal Warriors,All-Rounder,8,2,10,9,2,18,43,25.0,90.0,20,3,1,1,Win,23,35,N/A,1999-09-10,25,India,Chandigarh,Away,3,1,1,4,69,False
+685,2018-04-17,Sunil,Patna Pirates,U Mumba,Defender,5,2,9,8,2,16,37,40.0,88.89,18,0,1,0,Loss,37,27,Sunil,1988-03-03,37,Bangladesh,Bengaluru,Away,12,0,4,15,59,False
+686,2023-05-01,Balaji D,Bengal Warriors,Jaipur Pink Panthers,Raider,6,5,10,2,5,4,56,83.33,20.0,9,3,0,0,Win,38,17,N/A,2001-06-29,23,Sri Lanka,Hyderabad,Away,11,3,4,8,31,False
+687,2021-11-02,Tushar,Telugu Titans,Gujarat Fortunegiants,Defender,18,18,12,12,18,24,59,100.0,100.0,42,2,0,0,Win,36,34,Tushar,2003-06-30,21,India,Patna,Away,5,3,0,5,65,False
+688,2022-03-04,Vishal Bhardwaj,Tamil Thalaivas,U Mumba,Defender,5,0,9,0,0,0,53,0.0,0.0,0,1,0,0,Loss,37,24,Vishal Bhardwaj,1993-07-30,31,Pakistan,Lucknow,Away,3,5,1,10,24,False
+689,2021-11-26,Sumit Sangwan,UP Yoddha,Dabang Delhi,All-Rounder,18,11,3,3,11,6,55,61.11,100.0,17,2,0,0,Win,23,33,N/A,1987-03-30,38,Pakistan,Patna,Away,7,1,2,11,76,False
+690,2019-01-25,Sagar,Tamil Thalaivas,Hariyana Steelers,Defender,15,8,15,6,8,12,55,53.33,40.0,20,3,1,1,Loss,34,24,Sagar,1999-06-06,25,Sri Lanka,Ahmedabad,Away,1,5,2,6,76,False
+691,2021-01-04,Abinesh Nadarajan,Tamil Thalaivas,Hariyana Steelers,Defender,15,14,11,1,14,2,58,93.33,9.09,16,2,1,1,Win,35,23,N/A,1985-10-05,39,Bangladesh,Patna,Away,4,1,3,12,45,False
+692,2022-02-25,Himanshu,Tamil Thalaivas,Hariyana Steelers,All-Rounder,16,2,7,5,2,10,33,12.5,71.43,12,2,1,1,Win,33,30,Himanshu,1990-08-10,34,Pakistan,Ahmedabad,Away,10,1,5,7,45,False
+693,2023-06-29,Nitin Rawal,Jaipur Pink Panthers,UP Yoddha,Raider,22,17,10,3,17,6,33,77.27,30.0,23,1,1,1,Loss,40,33,N/A,1989-09-10,35,Sri Lanka,Chandigarh,Away,9,1,5,7,60,False
+694,2020-01-10,Aashish B,U Mumba,UP Yoddha,All-Rounder,11,10,10,5,10,10,40,90.91,50.0,20,3,1,0,Win,29,31,N/A,1995-04-09,30,Nepal,Chennai,Away,10,4,1,13,78,False
+695,2019-05-25,Arpit Saroha,Tamil Thalaivas,Patna Pirates,All-Rounder,23,20,14,8,20,16,46,86.96,57.14,36,1,1,0,Loss,34,27,N/A,1997-10-17,27,Bangladesh,Mumbai,Away,10,1,4,5,40,False
+696,2018-11-16,Ajith Kumar,Jaipur Pink Panthers,Gujarat Fortunegiants,Raider,20,4,9,6,4,12,43,20.0,66.67,16,3,0,0,Win,30,31,N/A,1997-08-08,27,Bangladesh,Delhi,Away,2,1,2,12,20,False
+697,2022-01-09,Nehal,UP Yoddha,U Mumba,Defender,6,2,3,2,2,4,43,33.33,66.67,6,0,1,0,Loss,38,16,N/A,2004-09-03,20,Pakistan,Hyderabad,Away,6,4,3,10,40,False
+698,2024-08-31,Durgesh,Telugu Titans,Jaipur Pink Panthers,Defender,18,10,8,8,10,16,41,55.56,100.0,26,0,0,1,Loss,40,35,Durgesh,1991-02-08,34,India,Patna,Away,5,2,0,5,48,False
+699,2018-07-20,Anand Tomar,Jaipur Pink Panthers,Patna Pirates,Raider,18,11,13,6,11,12,46,61.11,46.15,23,0,1,0,Win,34,18,Anand Tomar,1989-06-18,35,Pakistan,Lucknow,Away,8,4,5,3,83,False
+700,2018-06-30,Mohammadreza Chiyaneh,Patna Pirates,Dabang Delhi,All-Rounder,15,10,5,5,10,10,35,66.67,100.0,20,0,0,1,Win,34,27,Mohammadreza Chiyaneh,1995-05-25,30,India,Lucknow,Away,5,3,3,11,50,False
+701,2019-10-31,Neeraj Kumar,Patna Pirates,Bengal Warriors,Defender,15,0,7,0,0,0,58,0.0,0.0,0,3,0,0,Win,33,24,Neeraj Kumar,1991-11-08,33,India,Delhi,Away,11,4,4,7,80,False
+702,2019-10-10,Abhijeet Malik,Jaipur Pink Panthers,Tamil Thalaivas,Raider,12,12,9,8,12,16,35,100.0,88.89,28,1,1,0,Loss,20,28,N/A,2001-07-13,23,Nepal,Bengaluru,Away,8,5,0,7,84,False
+703,2020-03-19,Tushar,Jaipur Pink Panthers,Tamil Thalaivas,Raider,8,1,4,4,1,8,36,12.5,100.0,9,2,1,1,Loss,31,17,N/A,1995-09-27,29,India,Jaipur,Home,10,4,2,14,74,False
+704,2024-09-03,Mohammadreza Chiyaneh,Patna Pirates,Bengal Warriors,Raider,15,10,13,6,10,12,55,66.67,46.15,22,3,0,1,Loss,37,15,Mohammadreza Chiyaneh,2000-05-10,25,Pakistan,Delhi,Away,9,0,2,8,94,False
+705,2022-03-04,Prince D,Telugu Titans,Dabang Delhi,All-Rounder,14,0,8,7,0,14,38,0.0,87.5,14,3,1,0,Loss,32,16,N/A,1996-05-13,29,Nepal,Chandigarh,Away,1,0,5,5,46,False
+706,2022-08-31,Nehal Desai,U Mumba,Dabang Delhi,Raider,19,9,9,7,9,14,45,47.37,77.78,23,3,1,0,Loss,22,26,N/A,2000-02-25,25,India,Mumbai,Home,1,5,2,9,57,False
+707,2019-08-27,Ankit,Hariyana Steelers,U Mumba,Raider,21,1,12,5,1,10,51,4.76,41.67,11,2,1,1,Win,38,17,Ankit,1998-04-09,27,Pakistan,Patna,Away,10,5,1,3,81,False
+708,2021-09-12,Rajveer,Patna Pirates,Hariyana Steelers,Raider,6,5,15,14,5,28,51,83.33,93.33,33,0,1,1,Loss,22,21,N/A,1993-06-07,31,Sri Lanka,Jaipur,Away,3,5,2,3,78,False
+709,2024-06-15,Heidarali Ekrami,U Mumba,Telugu Titans,Defender,10,8,8,3,8,6,54,80.0,37.5,14,0,0,0,Win,38,20,N/A,2004-07-22,20,Bangladesh,Ahmedabad,Away,9,5,2,7,33,False
+710,2021-08-12,Dipak,Dabang Delhi,Tamil Thalaivas,Defender,14,13,13,6,13,12,54,92.86,46.15,25,2,1,1,Win,30,21,N/A,1996-05-17,29,Sri Lanka,Ahmedabad,Away,7,2,1,12,22,False
+711,2024-07-17,Sachin Narwal,Gujarat Fortunegiants,Tamil Thalaivas,All-Rounder,24,6,5,2,6,4,57,25.0,40.0,10,0,0,1,Loss,32,34,N/A,1989-01-31,36,India,Chennai,Away,7,4,3,5,84,False
+712,2024-10-03,Kiran Lal,UP Yoddha,Dabang Delhi,Defender,14,2,5,5,2,10,58,14.29,100.0,12,3,0,0,Win,23,34,Kiran Lal,1999-04-04,26,India,Bengaluru,Away,6,1,2,7,93,False
+713,2024-11-29,Ajith Kumar,Jaipur Pink Panthers,Bengal Warriors,All-Rounder,10,10,7,0,10,0,38,100.0,0.0,10,2,1,1,Loss,27,29,Ajith Kumar,1987-12-25,37,Sri Lanka,Kolkata,Away,6,1,0,3,54,False
+714,2020-10-06,Mahendra Rajput,Gujarat Fortunegiants,Dabang Delhi,Raider,20,9,9,4,9,8,51,45.0,44.44,17,0,1,1,Win,29,27,Mahendra Rajput,2001-08-07,23,Sri Lanka,Hyderabad,Away,12,3,4,14,98,False
+715,2021-03-03,Tushar,Telugu Titans,U Mumba,All-Rounder,16,10,5,2,10,4,36,62.5,40.0,14,1,0,1,Win,20,25,Tushar,1988-08-18,36,Sri Lanka,Patna,Away,8,3,3,9,94,False
+716,2021-09-24,Ravinder,Patna Pirates,Jaipur Pink Panthers,Defender,15,3,5,1,3,2,43,20.0,20.0,5,2,0,0,Loss,35,17,Ravinder,1996-12-04,28,India,Lucknow,Away,11,1,3,10,61,False
+717,2020-06-30,Anil,Gujarat Fortunegiants,U Mumba,Defender,12,5,7,1,5,2,42,41.67,14.29,7,0,0,1,Win,28,25,Anil,1986-10-31,38,Pakistan,Kolkata,Away,7,3,5,15,100,False
+718,2023-08-13,Hardeep,U Mumba,Jaipur Pink Panthers,Defender,5,1,12,10,1,20,57,20.0,83.33,21,1,1,1,Win,36,24,Hardeep,1992-10-05,32,Nepal,Hyderabad,Away,8,2,0,11,47,False
+719,2018-11-13,Ravi Kumar,Dabang Delhi,Telugu Titans,Defender,20,1,3,0,1,0,59,5.0,0.0,1,3,1,0,Win,25,25,Ravi Kumar,2005-02-07,20,Sri Lanka,Hyderabad,Away,11,1,5,14,64,False
+720,2025-01-06,Sahil,Hariyana Steelers,UP Yoddha,All-Rounder,14,5,10,10,5,20,53,35.71,100.0,25,1,0,1,Loss,22,26,N/A,2004-01-23,21,Sri Lanka,Kolkata,Away,9,3,1,3,91,False
+721,2024-11-08,Adarsh T,Telugu Titans,Tamil Thalaivas,Raider,24,17,10,7,17,14,39,70.83,70.0,31,0,0,1,Loss,24,22,Adarsh T,1995-01-11,30,Nepal,Kolkata,Away,8,2,1,12,82,False
+722,2020-09-25,Ankit Beniwal,Tamil Thalaivas,Bengal Warriors,Raider,21,11,7,2,11,4,35,52.38,28.57,15,3,1,1,Win,28,25,Ankit Beniwal,2001-06-03,24,Nepal,Hyderabad,Away,1,2,5,10,63,False
+723,2022-09-08,Vinay,Telugu Titans,Hariyana Steelers,All-Rounder,15,2,6,1,2,2,34,13.33,16.67,4,1,1,0,Win,34,16,Vinay,2003-02-27,22,Pakistan,Hyderabad,Home,9,3,0,5,63,False
+724,2024-04-03,Prince D,Telugu Titans,Patna Pirates,Raider,23,18,11,1,18,2,37,78.26,9.09,20,2,1,1,Win,28,33,Prince D,1996-03-31,29,Pakistan,Jaipur,Away,7,3,0,15,42,False
+725,2019-11-28,Sahul Kumar,Jaipur Pink Panthers,U Mumba,Raider,24,5,3,3,5,6,50,20.83,100.0,11,3,1,0,Win,30,35,Sahul Kumar,1992-10-04,32,Nepal,Chandigarh,Away,1,5,2,13,33,False
+726,2018-09-27,Harsh,Hariyana Steelers,Tamil Thalaivas,Raider,14,0,15,9,0,18,45,0.0,60.0,18,1,1,1,Loss,33,20,N/A,2000-10-28,24,India,Jaipur,Away,1,2,1,6,29,False
+727,2023-10-22,Kiran Lal,UP Yoddha,Patna Pirates,All-Rounder,13,7,8,3,7,6,59,53.85,37.5,13,1,0,0,Loss,30,16,N/A,1993-11-08,31,Pakistan,Lucknow,Home,7,0,0,15,65,False
+728,2020-06-20,Parshant Kumar,Bengal Warriors,Jaipur Pink Panthers,Defender,22,15,11,5,15,10,35,68.18,45.45,25,3,1,1,Win,24,21,N/A,1992-07-11,32,Sri Lanka,Jaipur,Away,8,1,0,13,70,False
+729,2018-05-05,Narender,Tamil Thalaivas,Hariyana Steelers,Defender,13,11,10,5,11,10,46,84.62,50.0,21,3,0,1,Win,25,32,N/A,1993-11-26,31,Bangladesh,Lucknow,Away,5,2,5,4,95,False
+730,2023-10-09,Arjun Deshwal,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,10,4,13,4,4,8,48,40.0,30.77,12,2,0,0,Loss,35,24,N/A,2001-07-23,23,Pakistan,Delhi,Away,4,4,2,3,40,False
+731,2018-10-28,Neeraj Narwal,Dabang Delhi,Telugu Titans,Raider,15,8,12,1,8,2,35,53.33,8.33,10,0,1,1,Loss,27,21,N/A,1994-07-22,30,India,Chandigarh,Away,6,2,0,9,65,False
+732,2019-12-13,Meetu Sharma,Hariyana Steelers,Telugu Titans,Raider,6,1,9,7,1,14,50,16.67,77.78,15,1,1,0,Win,30,22,Meetu Sharma,2002-08-05,22,Sri Lanka,Jaipur,Away,6,4,4,13,32,False
+733,2022-04-12,Lucky Sharma,Jaipur Pink Panthers,Patna Pirates,Defender,12,8,14,6,8,12,39,66.67,42.86,20,0,1,1,Loss,25,32,N/A,2003-06-06,21,India,Mumbai,Away,6,4,5,3,42,False
+734,2024-03-28,Ankit,UP Yoddha,Gujarat Fortunegiants,All-Rounder,12,6,7,2,6,4,40,50.0,28.57,10,2,0,0,Loss,39,17,N/A,1991-01-12,34,Bangladesh,Kolkata,Away,7,1,5,15,48,False
+735,2018-11-27,Vikas Jaglan,Patna Pirates,Dabang Delhi,All-Rounder,21,2,11,6,2,12,41,9.52,54.55,14,3,0,0,Win,22,15,N/A,2000-07-04,24,India,Patna,Home,12,2,2,7,67,False
+736,2019-04-22,Harsh,Hariyana Steelers,Telugu Titans,Raider,20,14,4,2,14,4,43,70.0,50.0,18,2,1,0,Win,22,33,Harsh,2001-01-28,24,Sri Lanka,Mumbai,Away,9,4,3,6,84,False
+737,2024-02-03,Sachin Tanwar,Patna Pirates,Bengal Warriors,Defender,22,16,10,6,16,12,54,72.73,60.0,28,3,0,0,Loss,33,34,Sachin Tanwar,1986-04-02,39,Nepal,Lucknow,Away,7,1,5,4,88,False
+738,2018-08-16,Balaji D,Bengal Warriors,Hariyana Steelers,All-Rounder,10,3,6,6,3,12,56,30.0,100.0,15,3,0,0,Loss,33,17,N/A,1989-08-14,35,Sri Lanka,Kolkata,Home,10,4,1,10,76,False
+739,2022-05-08,Rathan K,UP Yoddha,Gujarat Fortunegiants,Defender,8,4,5,3,4,6,41,50.0,60.0,10,2,0,0,Win,31,21,N/A,1995-05-24,30,Bangladesh,Chennai,Away,4,2,5,15,24,False
+740,2018-08-14,Heidarali Ekrami,U Mumba,Hariyana Steelers,Raider,7,1,8,0,1,0,46,14.29,0.0,1,2,1,0,Win,27,20,Heidarali Ekrami,1996-06-16,28,India,Jaipur,Away,10,2,5,10,74,False
+741,2020-12-31,Naveen Kumar,Dabang Delhi,Gujarat Fortunegiants,Defender,5,5,11,7,5,14,37,100.0,63.64,19,3,1,1,Win,33,32,N/A,1988-01-01,37,Nepal,Hyderabad,Away,10,1,2,7,34,False
+742,2018-08-05,Rahul Chaudhari,Jaipur Pink Panthers,Gujarat Fortunegiants,Raider,11,5,5,5,5,10,40,45.45,100.0,15,2,0,1,Win,36,15,Rahul Chaudhari,1993-06-07,31,Pakistan,Delhi,Away,11,4,4,13,63,False
+743,2022-10-07,Lucky Sharma,Jaipur Pink Panthers,Hariyana Steelers,Defender,7,4,8,5,4,10,38,57.14,62.5,14,2,1,0,Loss,32,22,N/A,1988-02-05,37,Nepal,Lucknow,Away,12,5,2,14,30,False
+744,2018-05-05,Vaibhav Garje,Bengal Warriors,Patna Pirates,Raider,8,1,11,1,1,2,30,12.5,9.09,3,2,1,0,Win,37,19,N/A,2000-02-28,25,Bangladesh,Chennai,Away,3,4,4,10,91,False
+745,2020-04-21,Mehul Kumar,Gujarat Fortunegiants,Dabang Delhi,All-Rounder,6,1,7,2,1,4,59,16.67,28.57,5,0,1,1,Win,22,31,Mehul Kumar,1987-11-07,37,India,Kolkata,Away,5,5,1,5,34,False
+746,2018-09-18,Shivam,Gujarat Fortunegiants,Jaipur Pink Panthers,Raider,20,17,15,9,17,18,51,85.0,60.0,35,1,1,0,Win,22,16,Shivam,2000-09-21,24,India,Patna,Away,1,1,1,6,67,False
+747,2023-08-23,Vinay,Telugu Titans,U Mumba,Defender,6,2,9,1,2,2,41,33.33,11.11,4,3,0,0,Win,27,23,Vinay,1998-11-29,26,Bangladesh,Lucknow,Away,10,4,1,9,56,False
+748,2021-10-03,Sachin Narwal,Gujarat Fortunegiants,Telugu Titans,Raider,17,2,3,0,2,0,47,11.76,0.0,2,2,0,0,Loss,32,22,Sachin Narwal,1992-02-26,33,Pakistan,Hyderabad,Away,2,0,2,3,91,False
+749,2019-09-22,Surender Nada,Patna Pirates,Hariyana Steelers,Defender,8,5,11,8,5,16,58,62.5,72.73,21,3,0,1,Win,24,31,N/A,1988-11-23,36,Nepal,Jaipur,Away,9,5,4,3,20,False
+750,2022-11-17,Surjeet Singh,Telugu Titans,U Mumba,Raider,21,10,10,8,10,16,51,47.62,80.0,26,3,0,1,Win,28,28,N/A,1993-06-10,31,Nepal,Hyderabad,Home,3,5,5,14,74,False
+751,2019-07-17,Surender Gill,UP Yoddha,Patna Pirates,Raider,22,3,9,5,3,10,49,13.64,55.56,13,2,0,0,Loss,32,35,N/A,1996-02-15,29,Sri Lanka,Bengaluru,Away,2,4,5,8,44,False
+752,2018-01-03,Meetu Sharma,Hariyana Steelers,Telugu Titans,Raider,24,19,13,12,19,24,38,79.17,92.31,43,3,1,0,Win,21,33,N/A,1998-05-31,27,Nepal,Ahmedabad,Away,10,5,5,15,50,False
+753,2022-12-14,Sandeep Kumar,Dabang Delhi,Telugu Titans,Defender,17,7,12,7,7,14,45,41.18,58.33,21,2,1,1,Win,22,33,N/A,1984-09-29,40,India,Jaipur,Away,3,0,3,6,31,False
+754,2019-12-25,Shubham Kumar,UP Yoddha,Hariyana Steelers,Raider,22,4,7,2,4,4,53,18.18,28.57,8,0,0,1,Win,31,33,N/A,1992-11-07,32,India,Kolkata,Away,3,3,1,3,56,False
+755,2024-02-04,Surjeet Singh,Telugu Titans,Gujarat Fortunegiants,All-Rounder,12,8,15,10,8,20,48,66.67,66.67,28,3,0,1,Loss,36,33,Surjeet Singh,1999-01-03,26,Nepal,Chennai,Away,8,3,0,7,28,False
+756,2018-02-03,Anand Tomar,Jaipur Pink Panthers,U Mumba,Defender,12,3,15,2,3,4,58,25.0,13.33,7,0,0,1,Loss,23,22,N/A,2001-08-04,23,Sri Lanka,Kolkata,Away,12,5,5,15,66,False
+757,2025-02-22,Sunil Kumar,Jaipur Pink Panthers,Tamil Thalaivas,All-Rounder,20,3,13,12,3,24,54,15.0,92.31,27,2,1,1,Win,22,19,N/A,1992-02-14,33,Bangladesh,Ahmedabad,Away,7,3,2,10,82,False
+758,2019-11-04,Jaideep Dahiya,Hariyana Steelers,Tamil Thalaivas,Defender,9,6,6,2,6,4,34,66.67,33.33,10,3,0,1,Win,30,17,Jaideep Dahiya,1988-04-04,37,Nepal,Patna,Away,4,2,1,6,64,False
+759,2024-01-30,Rathan K,UP Yoddha,U Mumba,All-Rounder,21,11,4,4,11,8,34,52.38,100.0,19,3,1,0,Win,24,23,Rathan K,2004-05-29,21,Nepal,Chandigarh,Away,11,2,5,13,100,False
+760,2024-09-10,Ankush,U Mumba,Bengal Warriors,All-Rounder,20,17,13,5,17,10,36,85.0,38.46,27,2,1,0,Win,36,21,Ankush,1985-04-16,40,Nepal,Kolkata,Away,10,0,4,4,45,False
+761,2025-01-17,Sandeep,Patna Pirates,Telugu Titans,Defender,13,8,9,1,8,2,55,61.54,11.11,10,0,0,1,Loss,33,28,Sandeep,1987-12-29,37,India,Chandigarh,Away,2,4,3,3,71,False
+762,2018-02-21,Sunil,Patna Pirates,Dabang Delhi,Defender,25,14,5,2,14,4,39,56.0,40.0,18,1,1,1,Win,25,24,N/A,1997-02-13,28,Pakistan,Delhi,Away,11,0,4,7,36,False
+763,2024-01-28,Arun,Tamil Thalaivas,Telugu Titans,All-Rounder,16,13,15,11,13,22,49,81.25,73.33,35,2,0,0,Win,26,24,Arun,1985-12-14,39,India,Delhi,Away,12,4,1,4,21,False
+764,2018-01-01,Ashish,Tamil Thalaivas,Patna Pirates,Defender,22,11,4,3,11,6,32,50.0,75.0,17,0,0,1,Loss,36,31,Ashish,1992-11-13,32,Nepal,Bengaluru,Away,3,5,2,7,49,False
+765,2019-12-12,Ujjval,Jaipur Pink Panthers,Hariyana Steelers,Raider,19,9,10,6,9,12,54,47.37,60.0,21,0,1,1,Win,37,32,Ujjval,1988-03-07,37,Nepal,Chennai,Away,7,2,3,5,83,False
+766,2024-07-27,Rohit Banne,Bengal Warriors,Dabang Delhi,All-Rounder,11,7,15,11,7,22,47,63.64,73.33,29,2,0,1,Win,20,30,Rohit Banne,2001-04-23,24,Pakistan,Ahmedabad,Away,3,5,2,8,96,False
+767,2020-03-21,Vinay,Hariyana Steelers,Patna Pirates,All-Rounder,22,21,9,1,21,2,58,95.45,11.11,23,2,1,1,Loss,37,24,N/A,1995-02-02,30,Bangladesh,Mumbai,Away,7,0,5,9,60,False
+768,2021-05-16,Arjun Patil,Bengal Warriors,Patna Pirates,Raider,14,10,8,2,10,4,37,71.43,25.0,14,3,1,0,Loss,33,34,Arjun Patil,2001-03-21,24,India,Bengaluru,Away,9,1,1,3,30,False
+769,2023-06-14,Himanshu,Tamil Thalaivas,Hariyana Steelers,All-Rounder,15,2,7,5,2,10,30,13.33,71.43,12,2,0,0,Loss,38,32,Himanshu,2002-03-12,23,Sri Lanka,Delhi,Away,7,0,5,12,88,False
+770,2024-08-26,Vinod Kumar,Gujarat Fortunegiants,Bengal Warriors,Defender,24,6,9,5,6,10,43,25.0,55.56,16,0,1,1,Loss,28,17,Vinod Kumar,1992-12-09,32,Nepal,Hyderabad,Away,1,1,4,8,46,False
+771,2020-11-08,Vikas Jaglan,Patna Pirates,Bengal Warriors,Defender,18,4,8,3,4,6,32,22.22,37.5,10,2,0,0,Win,35,24,Vikas Jaglan,2001-12-12,23,Sri Lanka,Lucknow,Away,5,3,4,12,62,False
+772,2021-06-05,Sahil,Hariyana Steelers,Jaipur Pink Panthers,All-Rounder,21,7,4,1,7,2,30,33.33,25.0,9,0,0,0,Loss,30,22,Sahil,2001-03-26,24,Bangladesh,Lucknow,Away,11,3,0,10,59,False
+773,2019-05-05,Meetu Sharma,Hariyana Steelers,Bengal Warriors,Raider,17,15,6,2,15,4,35,88.24,33.33,19,0,1,0,Loss,22,26,Meetu Sharma,2002-12-28,22,Sri Lanka,Patna,Away,3,0,1,10,74,False
+774,2021-05-09,Ashu Singh,UP Yoddha,Jaipur Pink Panthers,Raider,13,1,10,8,1,16,46,7.69,80.0,17,2,1,0,Loss,31,32,N/A,2001-04-16,24,Nepal,Ahmedabad,Away,1,4,3,15,46,False
+775,2018-02-02,Arun,Tamil Thalaivas,Jaipur Pink Panthers,Raider,5,5,14,7,5,14,35,100.0,50.0,19,3,0,0,Win,31,20,N/A,1996-02-02,29,Sri Lanka,Ahmedabad,Away,8,1,4,8,70,False
+776,2025-05-02,Sombir,Gujarat Fortunegiants,Bengal Warriors,Defender,15,8,9,1,8,2,57,53.33,11.11,10,0,1,0,Win,38,31,N/A,1990-09-21,34,India,Ahmedabad,Home,10,1,4,7,53,False
+777,2021-12-31,Harendra,UP Yoddha,Telugu Titans,Defender,20,5,7,3,5,6,54,25.0,42.86,11,1,1,0,Win,22,19,N/A,1990-03-08,35,Nepal,Chennai,Away,12,1,4,4,40,False
+778,2023-02-02,Kiran Lal,UP Yoddha,Hariyana Steelers,Raider,24,23,11,0,23,0,37,95.83,0.0,23,2,0,0,Loss,34,25,N/A,1991-01-24,34,Sri Lanka,Delhi,Away,1,3,1,6,82,False
+779,2022-08-05,Surender Gill,UP Yoddha,Hariyana Steelers,All-Rounder,11,4,15,11,4,22,59,36.36,73.33,26,2,0,1,Win,22,33,N/A,2002-09-13,22,Nepal,Bengaluru,Away,2,5,4,12,29,False
+780,2021-10-30,Arpit Saroha,Tamil Thalaivas,Gujarat Fortunegiants,Raider,25,5,3,0,5,0,44,20.0,0.0,5,3,0,0,Win,20,28,N/A,1995-06-11,29,India,Hyderabad,Away,3,1,0,9,60,False
+781,2021-06-01,Ankit Jaglan,Gujarat Fortunegiants,Telugu Titans,All-Rounder,13,5,7,0,5,0,58,38.46,0.0,5,3,0,1,Loss,25,35,Ankit Jaglan,1993-08-02,31,Bangladesh,Ahmedabad,Home,1,2,3,13,63,False
+782,2021-10-06,Ravinder,Patna Pirates,Hariyana Steelers,All-Rounder,7,4,8,0,4,0,53,57.14,0.0,4,2,1,0,Loss,36,32,Ravinder,1992-11-07,32,India,Lucknow,Away,11,2,1,5,55,False
+783,2019-07-23,Nehal Desai,U Mumba,Bengal Warriors,Defender,10,9,3,3,9,6,42,90.0,100.0,15,0,0,1,Loss,26,21,N/A,1997-02-14,28,Bangladesh,Patna,Away,3,0,3,14,26,False
+784,2019-09-14,Rajveer,Patna Pirates,Gujarat Fortunegiants,All-Rounder,12,6,10,7,6,14,38,50.0,70.0,20,2,1,1,Win,22,23,N/A,1984-09-07,40,India,Jaipur,Away,9,4,5,9,90,False
+785,2024-01-16,Tushar,U Mumba,Patna Pirates,All-Rounder,18,0,10,2,0,4,35,0.0,20.0,4,2,1,1,Win,22,16,N/A,1996-11-24,28,Sri Lanka,Bengaluru,Away,12,1,3,10,27,False
+786,2023-01-18,Rohit Gulia,Patna Pirates,Gujarat Fortunegiants,All-Rounder,23,18,6,2,18,4,38,78.26,33.33,22,1,1,0,Win,35,15,Rohit Gulia,1988-01-22,37,Pakistan,Ahmedabad,Away,1,4,2,12,32,False
+787,2020-04-30,Mohit,Telugu Titans,Patna Pirates,Defender,25,20,3,3,20,6,54,80.0,100.0,26,0,0,0,Win,35,30,N/A,2003-06-07,21,Bangladesh,Bengaluru,Away,8,1,0,11,62,False
+788,2023-12-08,Sumit,Dabang Delhi,Jaipur Pink Panthers,All-Rounder,23,23,6,4,23,8,38,100.0,66.67,31,1,0,1,Loss,31,22,N/A,1989-08-16,35,Nepal,Kolkata,Away,11,1,5,5,73,False
+789,2025-04-17,Heidarali Ekrami,U Mumba,UP Yoddha,Defender,13,9,12,12,9,24,55,69.23,100.0,33,1,0,1,Loss,26,26,N/A,2002-06-12,22,India,Kolkata,Away,10,1,2,15,97,False
+790,2023-06-12,Nehal,UP Yoddha,Gujarat Fortunegiants,Defender,22,4,15,15,4,30,42,18.18,100.0,34,1,0,1,Loss,29,18,N/A,1995-09-18,29,Nepal,Ahmedabad,Away,3,3,2,8,22,False
+791,2024-09-07,Tushar,Telugu Titans,Jaipur Pink Panthers,Raider,7,3,8,6,3,12,33,42.86,75.0,15,1,1,1,Loss,29,17,N/A,1987-09-26,37,India,Patna,Away,12,3,3,11,48,False
+792,2022-04-17,Durgesh Kumar,UP Yoddha,Gujarat Fortunegiants,Raider,15,13,3,1,13,2,40,86.67,33.33,15,3,1,0,Loss,30,30,Durgesh Kumar,1994-04-15,31,Sri Lanka,Hyderabad,Away,12,5,4,14,89,False
+793,2023-06-23,Vishal Bhardwaj,Tamil Thalaivas,Jaipur Pink Panthers,Defender,6,5,8,5,5,10,40,83.33,62.5,15,2,1,1,Win,38,18,Vishal Bhardwaj,1993-06-26,31,Bangladesh,Ahmedabad,Away,4,4,2,9,99,False
+794,2020-01-25,Ujjval,Jaipur Pink Panthers,Telugu Titans,All-Rounder,6,6,13,7,6,14,49,100.0,53.85,20,0,0,1,Loss,32,24,N/A,1995-06-04,30,Sri Lanka,Chennai,Away,4,4,1,8,87,False
+795,2024-05-14,Vinay,Telugu Titans,Patna Pirates,Defender,11,1,11,7,1,14,44,9.09,63.64,15,2,1,1,Win,38,25,N/A,1991-12-28,33,Pakistan,Lucknow,Away,5,5,1,9,53,False
+796,2024-02-13,Vishal,Dabang Delhi,Gujarat Fortunegiants,Raider,14,2,13,2,2,4,48,14.29,15.38,6,1,0,0,Loss,31,29,Vishal,1991-02-05,34,Pakistan,Patna,Away,2,5,4,8,30,False
+797,2023-11-02,Parvesh Bhainswal,Gujarat Fortunegiants,Dabang Delhi,Defender,20,2,8,6,2,12,30,10.0,75.0,14,2,0,1,Loss,26,17,N/A,1995-06-04,30,Sri Lanka,Lucknow,Away,2,3,0,12,46,False
+798,2019-06-18,Shankar Gadai,Gujarat Fortunegiants,UP Yoddha,Defender,24,21,14,14,21,28,32,87.5,100.0,49,3,1,1,Win,39,30,Shankar Gadai,1998-06-26,26,Bangladesh,Patna,Away,10,1,1,14,21,True
+799,2023-02-21,Ankush,U Mumba,Jaipur Pink Panthers,All-Rounder,5,5,9,8,5,16,44,100.0,88.89,21,0,1,1,Loss,40,25,Ankush,2001-07-13,23,Sri Lanka,Hyderabad,Away,1,0,2,13,49,False
+800,2020-04-09,Nehal Desai,U Mumba,Tamil Thalaivas,All-Rounder,12,4,3,3,4,6,45,33.33,100.0,10,2,0,1,Win,22,26,N/A,1995-01-16,30,Nepal,Patna,Away,5,0,4,13,94,False
+801,2020-08-12,Amit Kumar,Gujarat Fortunegiants,Bengal Warriors,Defender,17,16,11,7,16,14,33,94.12,63.64,30,0,0,1,Win,36,29,Amit Kumar,1994-09-02,30,Nepal,Hyderabad,Away,6,1,5,5,62,False
+802,2025-02-03,Rakesh,Gujarat Fortunegiants,Jaipur Pink Panthers,Defender,5,0,6,6,0,12,32,0.0,100.0,12,2,1,1,Win,20,18,N/A,1996-06-06,28,Pakistan,Chennai,Away,8,1,4,8,31,False
+803,2021-03-03,Mehul Kumar,Gujarat Fortunegiants,Patna Pirates,All-Rounder,19,13,3,1,13,2,37,68.42,33.33,15,0,0,0,Loss,32,26,N/A,1993-04-04,32,Sri Lanka,Bengaluru,Away,2,3,0,6,27,False
+804,2020-02-09,Soleiman Pahlevani,Bengal Warriors,Gujarat Fortunegiants,Raider,22,8,8,5,8,10,53,36.36,62.5,18,3,1,1,Loss,21,17,Soleiman Pahlevani,1994-07-03,30,Sri Lanka,Mumbai,Away,9,2,0,9,97,False
+805,2020-05-17,Vikas Kandola,Hariyana Steelers,Dabang Delhi,All-Rounder,14,14,12,4,14,8,44,100.0,33.33,22,3,0,0,Loss,25,16,N/A,1991-10-22,33,Sri Lanka,Patna,Away,5,0,5,3,26,False
+806,2020-01-31,Rahul Chaudhari,Jaipur Pink Panthers,Gujarat Fortunegiants,Defender,5,5,4,0,5,0,35,100.0,0.0,5,2,0,0,Win,26,30,N/A,1999-02-02,26,Bangladesh,Ahmedabad,Away,6,4,5,11,53,False
+807,2023-02-18,Nehal Desai,U Mumba,Patna Pirates,Raider,6,4,3,1,4,2,39,66.67,33.33,6,0,1,0,Loss,29,21,Nehal Desai,1990-03-19,35,India,Ahmedabad,Away,6,4,1,14,41,False
+808,2021-08-19,Ankit Jaglan,Gujarat Fortunegiants,Patna Pirates,All-Rounder,13,13,11,5,13,10,31,100.0,45.45,23,2,1,0,Loss,23,30,N/A,1997-05-06,28,Bangladesh,Chandigarh,Away,12,5,0,4,52,False
+809,2019-08-05,Pardeep Narwal,UP Yoddha,U Mumba,All-Rounder,19,16,12,7,16,14,40,84.21,58.33,30,3,0,0,Win,23,22,Pardeep Narwal,1994-01-21,31,Nepal,Chennai,Away,1,4,0,13,49,False
+810,2021-11-10,Abinesh Nadarajan,Tamil Thalaivas,Hariyana Steelers,Raider,5,2,14,3,2,6,43,40.0,21.43,8,0,1,0,Win,30,20,N/A,2004-02-07,21,Pakistan,Hyderabad,Away,5,1,5,9,22,False
+811,2021-12-14,Rohit Gulia,Patna Pirates,Bengal Warriors,All-Rounder,10,5,10,7,5,14,56,50.0,70.0,19,3,0,0,Loss,33,17,N/A,1988-05-26,37,Sri Lanka,Ahmedabad,Away,10,2,4,6,72,False
+812,2025-02-12,Ankit,Hariyana Steelers,Jaipur Pink Panthers,All-Rounder,6,0,6,1,0,2,44,0.0,16.67,2,3,1,0,Win,22,29,N/A,1990-03-26,35,Pakistan,Mumbai,Away,2,2,5,8,94,False
+813,2021-11-02,Ravi Kumar,Dabang Delhi,Tamil Thalaivas,All-Rounder,20,7,4,0,7,0,42,35.0,0.0,7,2,1,1,Loss,28,34,N/A,1986-11-01,38,Bangladesh,Mumbai,Away,10,2,1,5,52,False
+814,2023-10-22,Narender,Tamil Thalaivas,Dabang Delhi,All-Rounder,12,3,7,2,3,4,33,25.0,28.57,7,1,0,0,Win,33,29,N/A,2005-01-09,20,Bangladesh,Patna,Away,11,2,0,4,78,False
+815,2020-10-21,Arjun Patil,Bengal Warriors,U Mumba,All-Rounder,17,17,5,4,17,8,34,100.0,80.0,25,1,0,1,Win,30,25,Arjun Patil,1988-03-23,37,Bangladesh,Ahmedabad,Away,5,2,3,9,81,False
+816,2020-12-05,Mehul Kumar,Gujarat Fortunegiants,U Mumba,All-Rounder,24,7,4,0,7,0,49,29.17,0.0,7,2,1,0,Win,26,21,N/A,1991-09-20,33,Sri Lanka,Ahmedabad,Home,2,0,2,8,82,False
+817,2018-07-24,Tushar,U Mumba,Patna Pirates,All-Rounder,23,5,12,12,5,24,45,21.74,100.0,29,1,1,0,Loss,30,28,Tushar,1993-08-31,31,Bangladesh,Kolkata,Away,11,3,5,9,76,False
+818,2025-04-17,Rakesh Narwal,Hariyana Steelers,Patna Pirates,Defender,24,21,7,6,21,12,32,87.5,85.71,33,3,1,1,Win,29,23,N/A,1986-11-29,38,Sri Lanka,Ahmedabad,Away,7,1,0,11,40,False
+819,2020-01-08,Surender Nada,Patna Pirates,U Mumba,Raider,22,0,9,6,0,12,51,0.0,66.67,12,3,1,0,Loss,33,32,N/A,2003-04-12,22,India,Mumbai,Away,1,0,5,8,66,False
+820,2024-02-27,Tushar,Jaipur Pink Panthers,Hariyana Steelers,Raider,14,7,8,2,7,4,43,50.0,25.0,11,3,0,1,Win,32,25,Tushar,1999-01-29,26,Nepal,Chandigarh,Away,9,0,3,13,38,False
+821,2024-08-28,Sumit Sangwan,UP Yoddha,Tamil Thalaivas,All-Rounder,18,0,9,6,0,12,37,0.0,66.67,12,3,0,0,Win,38,20,N/A,1993-06-15,31,Nepal,Chennai,Away,1,5,5,5,41,False
+822,2020-02-09,Sahil Gulia,Tamil Thalaivas,Gujarat Fortunegiants,Raider,17,5,8,7,5,14,44,29.41,87.5,19,2,0,0,Win,32,20,N/A,1999-04-04,26,India,Chandigarh,Away,11,5,5,4,65,False
+823,2022-12-02,Kapil,Dabang Delhi,Telugu Titans,Raider,16,3,12,9,3,18,48,18.75,75.0,21,3,0,1,Loss,31,18,Kapil,1997-09-26,27,Nepal,Chandigarh,Away,1,4,0,11,21,False
+824,2019-12-18,Nitesh Kumar,UP Yoddha,Patna Pirates,Defender,23,5,11,3,5,6,56,21.74,27.27,11,2,1,1,Win,22,19,Nitesh Kumar,1997-01-12,28,Sri Lanka,Hyderabad,Away,2,0,2,7,53,False
+825,2019-03-05,Manuj,Gujarat Fortunegiants,Hariyana Steelers,All-Rounder,22,22,5,0,22,0,36,100.0,0.0,22,0,1,1,Win,30,29,Manuj,1986-04-21,39,Bangladesh,Hyderabad,Away,5,4,1,10,100,False
+826,2020-05-30,Surjeet Singh,Telugu Titans,Dabang Delhi,Defender,9,3,9,3,3,6,48,33.33,33.33,9,3,1,1,Loss,39,19,Surjeet Singh,1997-05-20,28,India,Hyderabad,Home,6,2,3,6,39,False
+827,2019-09-26,Himanshu Singh,Tamil Thalaivas,Telugu Titans,All-Rounder,16,2,10,4,2,8,42,12.5,40.0,10,0,1,1,Win,33,30,Himanshu Singh,1997-06-16,27,Nepal,Chennai,Home,3,2,5,13,92,False
+828,2018-10-07,Harendra,U Mumba,Jaipur Pink Panthers,Raider,17,12,6,3,12,6,57,70.59,50.0,18,1,1,0,Loss,21,34,N/A,1993-05-21,32,Sri Lanka,Ahmedabad,Away,11,5,0,3,76,False
+829,2020-05-15,Shankar Gadai,Gujarat Fortunegiants,Telugu Titans,Raider,23,17,5,2,17,4,31,73.91,40.0,21,0,1,1,Win,21,15,Shankar Gadai,2000-08-19,24,Sri Lanka,Chennai,Away,3,0,0,15,80,False
+830,2018-05-23,Sunil Kumar,Jaipur Pink Panthers,Telugu Titans,Defender,10,1,10,5,1,10,54,10.0,50.0,11,3,0,0,Win,27,19,N/A,1986-08-18,38,India,Delhi,Away,4,4,2,10,80,False
+831,2023-11-29,Vijay,Dabang Delhi,Telugu Titans,All-Rounder,25,14,4,1,14,2,50,56.0,25.0,16,1,1,0,Win,22,19,Vijay,1992-09-09,32,Bangladesh,Mumbai,Away,10,2,0,13,79,False
+832,2019-07-26,Akshay Bhoir,Bengal Warriors,Telugu Titans,All-Rounder,12,10,6,4,10,8,53,83.33,66.67,18,2,1,1,Loss,34,27,N/A,1985-02-16,40,Pakistan,Mumbai,Away,11,1,0,13,71,False
+833,2024-12-13,K. Prapanjan,Tamil Thalaivas,UP Yoddha,Raider,23,13,12,4,13,8,33,56.52,33.33,21,0,1,1,Win,22,15,K. Prapanjan,2001-03-21,24,India,Delhi,Away,7,4,0,13,47,False
+834,2023-10-26,Ankit Jaglan,Gujarat Fortunegiants,Hariyana Steelers,Raider,15,11,14,5,11,10,58,73.33,35.71,21,2,1,1,Loss,20,30,N/A,1997-01-19,28,Pakistan,Mumbai,Away,6,2,2,6,20,False
+835,2018-04-17,Ashish,Tamil Thalaivas,Patna Pirates,Defender,19,1,9,2,1,4,52,5.26,22.22,5,1,1,0,Loss,26,20,N/A,1985-04-09,40,Nepal,Jaipur,Away,3,1,2,4,57,False
+836,2018-09-14,Shivansh Thakur,U Mumba,Hariyana Steelers,All-Rounder,24,11,10,6,11,12,49,45.83,60.0,23,0,1,0,Loss,40,17,Shivansh Thakur,1997-11-11,27,Sri Lanka,Hyderabad,Away,6,0,5,10,84,False
+837,2021-02-19,Adarsh T,Telugu Titans,U Mumba,Defender,10,8,7,6,8,12,39,80.0,85.71,20,2,1,1,Loss,37,23,N/A,2000-05-22,25,India,Chandigarh,Away,2,4,1,14,83,False
+838,2024-10-11,Reza Katoulinezhad,Jaipur Pink Panthers,UP Yoddha,Defender,17,6,12,11,6,22,38,35.29,91.67,28,0,1,0,Win,20,18,Reza Katoulinezhad,1993-02-09,32,Pakistan,Chennai,Away,6,3,2,3,22,False
+839,2023-07-29,Gulveer Singh,UP Yoddha,Dabang Delhi,Raider,6,2,9,0,2,0,57,33.33,0.0,2,0,1,1,Loss,38,29,N/A,1998-10-13,26,Sri Lanka,Lucknow,Home,7,4,4,11,40,False
+840,2021-06-01,Mohit,Dabang Delhi,Gujarat Fortunegiants,Raider,17,14,4,2,14,4,45,82.35,50.0,18,3,0,0,Loss,28,32,N/A,2001-09-09,23,Pakistan,Chandigarh,Away,12,0,3,10,74,False
+841,2022-02-22,Aashish B,U Mumba,UP Yoddha,Raider,9,7,8,6,7,12,36,77.78,75.0,19,1,0,1,Loss,40,16,Aashish B,1994-07-31,30,Bangladesh,Chennai,Away,10,3,5,14,39,False
+842,2025-03-04,Ajinkya Pawar,Tamil Thalaivas,Patna Pirates,Raider,21,19,5,4,19,8,51,90.48,80.0,27,0,1,0,Loss,25,18,Ajinkya Pawar,2001-12-10,23,Sri Lanka,Chennai,Home,9,0,1,4,55,False
+843,2021-07-18,Mohit,Dabang Delhi,Gujarat Fortunegiants,Raider,21,11,5,4,11,8,39,52.38,80.0,19,3,0,0,Loss,21,21,N/A,1999-01-15,26,Pakistan,Jaipur,Away,3,3,1,12,54,False
+844,2018-04-14,M Abishek,Tamil Thalaivas,U Mumba,Defender,16,15,13,0,15,0,48,93.75,0.0,15,2,0,0,Win,24,32,M Abishek,1985-09-03,39,India,Hyderabad,Away,4,5,0,12,40,False
+845,2020-12-05,Shivam,U Mumba,Telugu Titans,Defender,9,4,13,12,4,24,50,44.44,92.31,28,2,1,0,Win,36,21,Shivam,1991-10-23,33,Nepal,Ahmedabad,Away,4,3,5,6,34,False
+846,2022-04-21,Tushar,Jaipur Pink Panthers,UP Yoddha,All-Rounder,21,10,3,1,10,2,52,47.62,33.33,12,2,0,1,Win,31,17,Tushar,1991-10-13,33,Nepal,Jaipur,Home,9,1,4,5,81,False
+847,2023-03-24,Surender Nada,Patna Pirates,Gujarat Fortunegiants,All-Rounder,9,3,7,4,3,8,46,33.33,57.14,11,0,1,0,Win,25,35,Surender Nada,2002-07-19,22,Sri Lanka,Patna,Home,8,2,1,4,69,False
+848,2023-10-06,Ashish,Tamil Thalaivas,Dabang Delhi,Raider,10,7,9,2,7,4,52,70.0,22.22,11,0,1,1,Loss,30,23,N/A,2002-12-14,22,Pakistan,Lucknow,Away,12,4,5,15,67,False
+849,2024-01-28,Vishal Bhardwaj,Tamil Thalaivas,Bengal Warriors,All-Rounder,14,13,11,9,13,18,36,92.86,81.82,31,3,1,0,Loss,36,15,Vishal Bhardwaj,2000-05-01,25,India,Lucknow,Away,9,1,0,5,33,False
+850,2023-11-01,Sahil,Hariyana Steelers,Telugu Titans,All-Rounder,6,3,11,5,3,10,40,50.0,45.45,13,2,0,1,Win,27,30,N/A,2002-04-15,23,Nepal,Chandigarh,Home,5,3,0,15,72,False
+851,2022-03-07,Nitin Rawal,Jaipur Pink Panthers,Patna Pirates,All-Rounder,7,1,7,6,1,12,43,14.29,85.71,13,0,1,1,Win,28,18,Nitin Rawal,1996-07-30,28,India,Ahmedabad,Away,12,1,0,9,64,False
+852,2024-02-07,Shivam,Gujarat Fortunegiants,UP Yoddha,All-Rounder,21,1,8,8,1,16,43,4.76,100.0,17,3,1,1,Win,22,17,N/A,1996-03-30,29,Nepal,Patna,Away,9,3,1,12,45,False
+853,2018-09-14,Surender Gill,UP Yoddha,Jaipur Pink Panthers,Raider,8,6,14,12,6,24,52,75.0,85.71,30,0,0,1,Loss,25,16,N/A,1990-09-13,34,Nepal,Chandigarh,Away,10,5,5,15,95,False
+854,2018-10-19,Vinod Kumar,Gujarat Fortunegiants,Hariyana Steelers,Raider,21,18,6,2,18,4,58,85.71,33.33,22,3,1,1,Loss,28,16,N/A,1984-07-23,40,Bangladesh,Kolkata,Away,8,2,5,3,35,False
+855,2020-06-21,Vijay,Dabang Delhi,Tamil Thalaivas,All-Rounder,23,19,3,2,19,4,35,82.61,66.67,23,0,1,0,Win,26,31,N/A,1991-10-29,33,Pakistan,Patna,Away,10,0,5,13,42,False
+856,2021-05-18,Devank,Jaipur Pink Panthers,Bengal Warriors,Defender,20,14,4,3,14,6,48,70.0,75.0,20,3,1,0,Win,30,18,Devank,1998-11-21,26,Sri Lanka,Patna,Away,11,2,3,13,73,False
+857,2020-04-27,Harendra,U Mumba,Hariyana Steelers,Defender,5,1,13,6,1,12,59,20.0,46.15,13,1,0,0,Win,40,18,Harendra,1988-12-22,36,Nepal,Chandigarh,Away,11,3,1,10,92,False
+858,2023-07-23,Sahil Gulia,Tamil Thalaivas,Patna Pirates,Raider,13,6,9,5,6,10,46,46.15,55.56,16,2,1,1,Win,25,26,Sahil Gulia,2003-05-03,22,Bangladesh,Bengaluru,Away,4,5,2,14,92,False
+859,2025-02-26,Ankush,U Mumba,Patna Pirates,Raider,16,14,15,5,14,10,60,87.5,33.33,24,2,0,0,Win,26,27,Ankush,1994-11-07,30,Pakistan,Kolkata,Away,11,3,2,6,51,False
+860,2020-03-24,K. Prapanjan,Tamil Thalaivas,Jaipur Pink Panthers,All-Rounder,20,19,15,15,19,30,59,95.0,100.0,49,0,1,1,Loss,36,33,N/A,2005-03-06,20,India,Patna,Away,2,2,1,10,73,False
+861,2022-10-07,Anil,Dabang Delhi,Tamil Thalaivas,Raider,21,1,5,1,1,2,36,4.76,20.0,3,3,1,0,Win,29,27,Anil,1990-10-14,34,Nepal,Jaipur,Away,8,1,1,9,57,False
+862,2021-01-30,Vishal,Dabang Delhi,Tamil Thalaivas,All-Rounder,10,1,3,0,1,0,33,10.0,0.0,1,3,0,1,Loss,32,15,Vishal,1991-10-17,33,Pakistan,Mumbai,Away,11,1,2,3,73,False
+863,2024-10-12,Ankit Beniwal,Tamil Thalaivas,Hariyana Steelers,Raider,5,1,5,2,1,4,47,20.0,40.0,5,0,0,0,Win,25,22,N/A,2000-10-01,24,Pakistan,Mumbai,Away,3,3,2,4,31,False
+864,2019-08-23,Sahil Gulia,Tamil Thalaivas,Patna Pirates,Raider,15,3,10,5,3,10,40,20.0,50.0,13,1,1,0,Loss,37,24,N/A,1998-05-09,27,Bangladesh,Hyderabad,Away,8,0,5,11,72,False
+865,2024-12-14,Rohit Banne,Bengal Warriors,UP Yoddha,Raider,15,11,14,1,11,2,46,73.33,7.14,13,3,0,0,Win,22,18,Rohit Banne,1989-10-29,35,India,Ahmedabad,Away,6,1,0,12,91,False
+866,2021-03-05,Bhavani Rajput,Jaipur Pink Panthers,Gujarat Fortunegiants,All-Rounder,23,2,8,3,2,6,48,8.7,37.5,8,0,1,1,Loss,30,31,Bhavani Rajput,1986-01-11,39,Pakistan,Mumbai,Away,12,3,4,3,69,False
+867,2024-01-01,Adarsh T,Telugu Titans,Dabang Delhi,Raider,21,12,7,5,12,10,50,57.14,71.43,22,2,1,0,Loss,35,17,N/A,2004-06-25,20,Nepal,Mumbai,Away,8,5,3,7,27,False
+868,2022-09-24,Tushar,U Mumba,Bengal Warriors,All-Rounder,17,5,13,7,5,14,33,29.41,53.85,19,1,0,1,Win,37,21,N/A,1991-03-23,34,India,Chandigarh,Away,5,4,1,13,26,False
+869,2020-01-21,Soleiman Pahlevani,Bengal Warriors,Telugu Titans,Raider,10,8,6,1,8,2,47,80.0,16.67,10,1,0,0,Loss,26,19,Soleiman Pahlevani,1988-06-28,36,Nepal,Delhi,Away,1,0,3,12,58,False
+870,2018-10-31,Hamid Nader,Telugu Titans,Hariyana Steelers,All-Rounder,13,10,14,8,10,16,42,76.92,57.14,26,2,1,1,Loss,32,19,N/A,1990-07-10,34,Bangladesh,Lucknow,Away,7,0,5,8,57,False
+871,2020-05-20,Neeraj Kumar,Patna Pirates,UP Yoddha,Raider,14,7,4,3,7,6,59,50.0,75.0,13,3,0,1,Loss,30,33,N/A,1992-06-02,33,India,Hyderabad,Away,12,2,0,10,48,False
+872,2022-03-01,Rinku Sharma,U Mumba,UP Yoddha,All-Rounder,12,5,8,8,5,16,47,41.67,100.0,21,0,1,1,Loss,36,35,N/A,2001-03-31,24,Bangladesh,Chennai,Away,5,0,5,13,52,False
+873,2019-11-07,Meetu Sharma,Hariyana Steelers,Patna Pirates,Raider,16,12,8,8,12,16,42,75.0,100.0,28,0,0,0,Win,36,32,N/A,2003-06-13,21,Bangladesh,Kolkata,Away,12,1,1,14,87,False
+874,2023-02-20,Siddharth Desai,Telugu Titans,Jaipur Pink Panthers,Raider,9,5,14,7,5,14,56,55.56,50.0,19,0,1,1,Loss,34,20,N/A,1993-08-06,31,Sri Lanka,Chandigarh,Away,2,5,3,9,89,False
+875,2019-02-13,Sombir,Gujarat Fortunegiants,Telugu Titans,Defender,6,0,3,3,0,6,55,0.0,100.0,6,2,1,1,Win,20,30,N/A,1984-08-27,40,India,Ahmedabad,Home,9,2,5,9,21,False
+876,2020-05-27,Prashanth Kumar Rai,Patna Pirates,Tamil Thalaivas,Defender,13,13,9,4,13,8,34,100.0,44.44,21,2,0,1,Loss,36,27,N/A,2002-05-18,23,Pakistan,Ahmedabad,Away,12,5,2,9,67,False
+877,2020-04-19,M Abishek,Tamil Thalaivas,Dabang Delhi,Defender,19,6,12,0,6,0,39,31.58,0.0,6,3,0,1,Loss,29,27,M Abishek,1999-03-18,26,Sri Lanka,Chandigarh,Away,12,1,1,7,55,False
+878,2021-07-08,Prince D,Telugu Titans,Dabang Delhi,Raider,18,7,11,7,7,14,53,38.89,63.64,21,3,0,0,Win,25,15,N/A,1995-02-26,30,Bangladesh,Bengaluru,Away,9,0,3,3,22,False
+879,2020-10-17,Sumit Sangwan,UP Yoddha,Bengal Warriors,Raider,19,4,7,3,4,6,45,21.05,42.86,10,0,1,1,Loss,30,31,Sumit Sangwan,1985-07-18,39,Nepal,Hyderabad,Away,2,3,3,8,65,False
+880,2019-10-19,Sahil,Dabang Delhi,Gujarat Fortunegiants,All-Rounder,15,3,15,8,3,16,59,20.0,53.33,19,1,1,0,Win,27,27,N/A,2003-03-27,22,Pakistan,Chennai,Away,1,2,1,8,33,False
+881,2022-02-18,K. Prapanjan,Tamil Thalaivas,Jaipur Pink Panthers,Raider,8,1,8,0,1,0,58,12.5,0.0,1,3,0,1,Win,26,21,N/A,1989-06-19,35,India,Hyderabad,Away,6,3,2,9,93,False
+882,2021-03-13,Ankit Jaglan,Gujarat Fortunegiants,Bengal Warriors,All-Rounder,24,3,14,3,3,6,52,12.5,21.43,9,1,1,0,Loss,31,32,N/A,1993-01-18,32,Pakistan,Delhi,Away,3,1,0,6,60,False
+883,2024-06-29,Amit Kumar,Gujarat Fortunegiants,Dabang Delhi,All-Rounder,10,9,12,5,9,10,51,90.0,41.67,19,3,1,0,Win,23,27,Amit Kumar,1986-04-24,39,Nepal,Bengaluru,Away,4,5,4,6,56,False
+884,2021-08-11,Anil,Gujarat Fortunegiants,Telugu Titans,Raider,24,6,14,4,6,8,38,25.0,28.57,14,3,1,1,Loss,26,16,N/A,2000-06-24,24,Sri Lanka,Lucknow,Away,10,1,3,7,88,False
+885,2019-11-23,Ashu Singh,UP Yoddha,Jaipur Pink Panthers,Defender,23,2,6,6,2,12,51,8.7,100.0,14,3,0,0,Loss,30,24,Ashu Singh,1995-11-17,29,Nepal,Jaipur,Away,10,1,2,3,63,False
+886,2022-07-18,Siddharth,Gujarat Fortunegiants,Jaipur Pink Panthers,All-Rounder,5,1,8,2,1,4,35,20.0,25.0,5,1,1,1,Loss,38,18,Siddharth,1995-11-01,29,Pakistan,Lucknow,Away,6,2,1,6,55,False
+887,2018-07-24,Sunil,Hariyana Steelers,Jaipur Pink Panthers,All-Rounder,13,12,11,5,12,10,51,92.31,45.45,22,1,1,0,Win,28,15,N/A,2001-02-24,24,Sri Lanka,Jaipur,Away,5,3,0,13,76,False
+888,2021-09-25,Guman Singh,U Mumba,Jaipur Pink Panthers,Defender,18,10,14,3,10,6,34,55.56,21.43,16,1,0,1,Win,21,21,Guman Singh,1995-06-30,29,Pakistan,Chandigarh,Away,8,0,2,12,75,False
+889,2023-10-25,Ankit Jaglan,Gujarat Fortunegiants,Patna Pirates,Raider,13,11,12,2,11,4,40,84.62,16.67,15,2,0,1,Loss,33,15,N/A,1987-04-21,38,India,Jaipur,Away,3,0,5,11,43,False
+890,2022-04-08,Nitin,Telugu Titans,UP Yoddha,Defender,17,9,8,1,9,2,56,52.94,12.5,11,2,1,0,Win,24,20,N/A,1993-10-15,31,Sri Lanka,Delhi,Away,6,1,1,12,66,False
+891,2021-11-17,Prashanth Kumar Rai,Patna Pirates,Dabang Delhi,Defender,5,0,5,5,0,10,51,0.0,100.0,10,1,1,1,Loss,32,22,Prashanth Kumar Rai,2000-07-05,24,Pakistan,Mumbai,Away,8,0,4,3,47,False
+892,2020-11-24,Sunil,Hariyana Steelers,UP Yoddha,All-Rounder,10,10,4,1,10,2,60,100.0,25.0,12,3,0,0,Loss,38,35,Sunil,1988-01-31,37,Sri Lanka,Bengaluru,Away,9,0,0,9,38,False
+893,2018-02-28,Rathan K,UP Yoddha,Bengal Warriors,Raider,10,0,3,0,0,0,35,0.0,0.0,0,1,0,0,Loss,25,19,Rathan K,1993-06-23,31,Pakistan,Mumbai,Away,12,0,4,6,93,False
+894,2018-07-23,Amit Kumar,Gujarat Fortunegiants,Tamil Thalaivas,All-Rounder,18,11,10,8,11,16,54,61.11,80.0,27,2,1,1,Win,33,24,Amit Kumar,1997-03-27,28,Sri Lanka,Jaipur,Away,1,2,2,14,48,False
+895,2019-04-12,Abhishek Singh,Telugu Titans,UP Yoddha,Defender,16,3,13,5,3,10,57,18.75,38.46,13,1,0,1,Win,35,26,Abhishek Singh,1985-04-22,40,India,Delhi,Away,1,2,2,4,26,False
+896,2018-12-06,Sahil,Hariyana Steelers,Dabang Delhi,Defender,9,5,5,5,5,10,32,55.56,100.0,15,3,1,0,Loss,25,30,Sahil,2004-05-04,21,India,Chandigarh,Home,10,0,4,12,65,False
+897,2024-01-17,Arpit Saroha,Tamil Thalaivas,Telugu Titans,Defender,13,11,9,8,11,16,31,84.62,88.89,27,1,0,1,Win,40,21,Arpit Saroha,1997-08-30,27,Sri Lanka,Kolkata,Away,11,1,1,10,61,False
+898,2020-11-12,Naveen Kumar,Dabang Delhi,Gujarat Fortunegiants,All-Rounder,9,8,8,2,8,4,44,88.89,25.0,12,0,1,0,Loss,39,29,N/A,1991-09-02,33,Nepal,Mumbai,Away,12,0,0,7,80,False
+899,2020-10-23,Sagar,Tamil Thalaivas,Patna Pirates,Defender,14,1,14,9,1,18,51,7.14,64.29,19,2,0,0,Loss,28,18,N/A,1987-06-09,37,Pakistan,Hyderabad,Away,6,5,5,6,88,False
+900,2023-11-25,Surender Gill,UP Yoddha,Patna Pirates,Defender,10,0,11,3,0,6,56,0.0,27.27,6,0,1,0,Loss,25,31,N/A,1987-05-10,38,Sri Lanka,Chennai,Away,1,1,0,12,84,False
+901,2024-04-09,Rinku Sharma,U Mumba,Telugu Titans,All-Rounder,6,6,10,3,6,6,57,100.0,30.0,12,2,1,0,Loss,21,33,Rinku Sharma,1986-05-12,39,Sri Lanka,Delhi,Away,7,4,5,13,45,False
+902,2020-03-01,Karamvir,Patna Pirates,Telugu Titans,Defender,7,3,13,13,3,26,45,42.86,100.0,29,1,0,0,Win,39,35,N/A,1990-09-23,34,Sri Lanka,Chennai,Away,11,2,0,10,30,False
+903,2019-07-24,Prashanth Kumar Rai,Patna Pirates,Dabang Delhi,Raider,21,6,5,3,6,6,42,28.57,60.0,12,2,1,0,Loss,20,30,N/A,1997-12-18,27,Sri Lanka,Jaipur,Away,2,4,4,6,41,False
+904,2018-03-11,Gulveer Singh,UP Yoddha,Gujarat Fortunegiants,All-Rounder,20,15,7,1,15,2,54,75.0,14.29,17,1,0,0,Win,38,29,N/A,1991-02-11,34,Pakistan,Delhi,Away,8,5,0,9,97,False
+905,2023-11-01,Pawan Sehrawat,Telugu Titans,Hariyana Steelers,All-Rounder,16,7,3,0,7,0,32,43.75,0.0,7,1,1,1,Loss,25,26,N/A,1988-07-01,36,Sri Lanka,Patna,Away,7,4,0,8,76,False
+906,2023-05-10,Neeraj Kumar,Patna Pirates,Telugu Titans,Raider,17,4,10,9,4,18,58,23.53,90.0,22,2,0,0,Loss,38,24,Neeraj Kumar,2002-07-29,22,India,Mumbai,Away,12,2,2,13,23,False
+907,2023-07-14,Rajveer,Patna Pirates,Telugu Titans,All-Rounder,20,19,5,2,19,4,48,95.0,40.0,23,2,0,1,Loss,30,31,N/A,1986-05-31,39,Sri Lanka,Chandigarh,Away,6,1,0,3,89,False
+908,2023-01-02,Mehul Kumar,Gujarat Fortunegiants,Jaipur Pink Panthers,Defender,19,4,5,2,4,4,42,21.05,40.0,8,1,1,1,Loss,28,16,Mehul Kumar,1984-07-12,40,India,Patna,Away,2,3,5,13,65,False
+909,2018-06-20,Rakesh,Gujarat Fortunegiants,Patna Pirates,Defender,25,0,15,8,0,16,60,0.0,53.33,16,2,0,1,Loss,30,32,N/A,1997-01-04,28,Pakistan,Lucknow,Away,7,0,1,13,59,False
+910,2023-07-23,Nitin,Telugu Titans,Jaipur Pink Panthers,Defender,16,16,11,0,16,0,36,100.0,0.0,16,0,1,1,Loss,22,22,Nitin,2000-04-30,25,Bangladesh,Bengaluru,Away,9,5,3,14,96,False
+911,2021-09-24,Ankit Beniwal,Tamil Thalaivas,Telugu Titans,Raider,7,2,4,2,2,4,59,28.57,50.0,6,0,0,0,Win,33,20,N/A,2003-12-16,21,Sri Lanka,Chandigarh,Away,1,1,3,10,56,False
+912,2023-11-09,Rajesh Narwal,Hariyana Steelers,Bengal Warriors,Defender,24,22,5,3,22,6,46,91.67,60.0,28,3,1,0,Loss,39,31,N/A,1988-06-20,36,Bangladesh,Hyderabad,Away,9,5,0,11,29,False
+913,2022-10-02,Ankit,Hariyana Steelers,Dabang Delhi,Defender,21,13,12,0,13,0,44,61.9,0.0,13,3,0,0,Loss,23,16,Ankit,1987-01-31,38,Sri Lanka,Ahmedabad,Away,8,4,0,14,88,False
+914,2018-11-21,K. Prapanjan,Tamil Thalaivas,Bengal Warriors,Defender,15,7,7,5,7,10,43,46.67,71.43,17,0,0,1,Win,31,32,K. Prapanjan,1984-06-28,40,Pakistan,Patna,Away,6,5,4,4,98,False
+915,2019-08-12,Nitesh Kumar,UP Yoddha,Telugu Titans,All-Rounder,5,3,15,4,3,8,32,60.0,26.67,11,3,0,1,Win,40,15,Nitesh Kumar,2003-10-30,21,Bangladesh,Hyderabad,Away,2,4,2,9,35,False
+916,2023-05-31,Amit Hooda,Dabang Delhi,Patna Pirates,Raider,17,2,14,7,2,14,33,11.76,50.0,16,1,0,0,Loss,33,17,Amit Hooda,1991-03-14,34,Nepal,Mumbai,Away,12,1,4,8,57,False
+917,2022-04-20,Monu,Patna Pirates,Tamil Thalaivas,All-Rounder,5,0,14,13,0,26,59,0.0,92.86,26,0,0,1,Win,23,26,Monu,1995-07-04,29,Nepal,Ahmedabad,Away,12,5,2,12,60,False
+918,2018-06-12,Ajinkya Pawar,Tamil Thalaivas,Bengal Warriors,All-Rounder,10,7,7,6,7,12,37,70.0,85.71,19,0,0,1,Loss,30,22,N/A,1996-05-10,29,Sri Lanka,Bengaluru,Away,7,4,4,9,74,False
+919,2022-01-02,Sunil,Patna Pirates,Jaipur Pink Panthers,Raider,8,2,5,3,2,6,37,25.0,60.0,8,3,0,0,Loss,30,29,N/A,1992-06-07,32,Bangladesh,Jaipur,Away,2,0,0,15,73,False
+920,2023-01-04,Parshant Kumar,Bengal Warriors,UP Yoddha,All-Rounder,18,2,9,7,2,14,57,11.11,77.78,16,2,1,0,Loss,25,20,Parshant Kumar,2001-09-29,23,Pakistan,Chandigarh,Away,11,1,3,5,39,False
+921,2025-01-07,Mohit,Telugu Titans,UP Yoddha,Raider,18,11,4,3,11,6,45,61.11,75.0,17,3,1,0,Loss,26,24,Mohit,1988-02-18,37,Bangladesh,Jaipur,Away,2,1,0,13,81,False
+922,2022-01-19,K. Prapanjan,Tamil Thalaivas,Bengal Warriors,Raider,13,12,13,10,12,20,30,92.31,76.92,32,2,0,1,Win,21,18,K. Prapanjan,1996-03-13,29,Pakistan,Kolkata,Away,8,1,1,14,43,False
+923,2022-09-16,Surender Nada,Patna Pirates,Hariyana Steelers,Raider,5,1,3,0,1,0,34,20.0,0.0,1,2,0,1,Loss,27,24,Surender Nada,2002-02-15,23,India,Chandigarh,Away,7,4,0,15,59,False
+924,2023-12-14,Rathan K,UP Yoddha,Hariyana Steelers,Defender,10,1,13,4,1,8,46,10.0,30.77,9,0,1,1,Win,29,15,N/A,1988-11-02,36,India,Chennai,Away,12,3,2,6,43,False
+925,2020-09-11,Rakesh,Gujarat Fortunegiants,Dabang Delhi,All-Rounder,8,6,8,0,6,0,49,75.0,0.0,6,3,0,1,Loss,25,17,N/A,2004-01-18,21,Sri Lanka,Patna,Away,4,2,4,10,97,False
+926,2018-04-28,Rohit Gulia,Patna Pirates,Jaipur Pink Panthers,Raider,14,9,5,3,9,6,35,64.29,60.0,15,1,1,0,Win,32,22,N/A,1997-02-02,28,Nepal,Chandigarh,Away,5,0,1,8,36,False
+927,2021-12-20,Ashu Singh,UP Yoddha,U Mumba,Raider,15,9,8,8,9,16,53,60.0,100.0,25,1,0,0,Win,40,16,N/A,1989-07-09,35,Bangladesh,Jaipur,Away,2,0,5,12,55,False
+928,2022-02-04,Gulveer Singh,UP Yoddha,Patna Pirates,Raider,12,5,6,2,5,4,60,41.67,33.33,9,2,1,0,Win,25,29,N/A,1989-12-13,35,Sri Lanka,Hyderabad,Away,6,3,2,4,65,False
+929,2022-04-08,Surinder Singh,U Mumba,Jaipur Pink Panthers,Defender,16,11,7,3,11,6,44,68.75,42.86,17,3,1,0,Loss,36,23,N/A,1996-05-06,29,Nepal,Hyderabad,Away,2,5,5,9,21,False
+930,2024-05-28,Abhijeet Malik,Jaipur Pink Panthers,Patna Pirates,All-Rounder,8,8,7,1,8,2,46,100.0,14.29,10,0,0,1,Loss,23,26,Abhijeet Malik,1999-04-28,26,Bangladesh,Lucknow,Away,6,1,4,3,43,False
+931,2022-12-08,Ajinkya Pawar,Tamil Thalaivas,Gujarat Fortunegiants,Defender,13,8,9,6,8,12,45,61.54,66.67,20,1,1,0,Loss,24,19,N/A,1997-08-09,27,Bangladesh,Hyderabad,Away,9,5,4,7,47,False
+932,2023-08-08,Rajesh Narwal,Hariyana Steelers,UP Yoddha,Defender,17,10,7,1,10,2,54,58.82,14.29,12,2,0,1,Loss,33,22,Rajesh Narwal,1990-01-31,35,Nepal,Delhi,Away,4,4,3,7,36,False
+933,2022-09-01,Ashu Malik,Dabang Delhi,Jaipur Pink Panthers,All-Rounder,17,12,7,6,12,12,41,70.59,85.71,24,1,0,1,Win,23,19,Ashu Malik,1994-01-07,31,Sri Lanka,Patna,Away,8,3,0,3,90,False
+934,2019-01-21,Shivansh Thakur,U Mumba,Gujarat Fortunegiants,Raider,7,7,11,11,7,22,43,100.0,100.0,29,2,0,0,Loss,38,28,Shivansh Thakur,1994-02-07,31,Bangladesh,Hyderabad,Away,4,4,1,14,48,False
+935,2024-12-23,Rinku Sharma,U Mumba,Hariyana Steelers,Raider,15,4,11,9,4,18,48,26.67,81.82,22,3,1,0,Win,34,31,N/A,1986-07-30,38,India,Jaipur,Away,5,0,2,4,43,False
+936,2020-02-29,Mehul Kumar,Gujarat Fortunegiants,Hariyana Steelers,Defender,23,12,6,0,12,0,55,52.17,0.0,12,0,0,1,Loss,26,31,N/A,1999-07-20,25,Pakistan,Patna,Away,12,2,3,7,38,False
+937,2021-06-06,Shankar Gadai,Gujarat Fortunegiants,Jaipur Pink Panthers,All-Rounder,17,4,12,9,4,18,53,23.53,75.0,22,3,0,0,Win,40,17,Shankar Gadai,2001-12-15,23,Sri Lanka,Delhi,Away,4,4,2,3,37,False
+938,2019-03-04,Amit Kumar,Gujarat Fortunegiants,UP Yoddha,Raider,24,21,13,7,21,14,53,87.5,53.85,35,3,1,0,Win,23,16,N/A,2000-06-17,24,Sri Lanka,Patna,Away,11,5,4,6,65,False
+939,2024-03-16,Ravi Kumar,Dabang Delhi,U Mumba,All-Rounder,5,3,5,1,3,2,52,60.0,20.0,5,2,1,0,Win,22,17,Ravi Kumar,2002-05-15,23,Pakistan,Chandigarh,Away,7,5,3,15,55,False
+940,2019-07-08,Maninder Singh,Bengal Warriors,Hariyana Steelers,Raider,17,16,13,0,16,0,40,94.12,0.0,16,1,0,1,Win,26,19,Maninder Singh,1990-09-12,34,India,Hyderabad,Away,8,2,1,3,76,False
+941,2024-07-04,Ashu Malik,Dabang Delhi,Patna Pirates,Defender,25,5,8,2,5,4,39,20.0,25.0,9,3,1,1,Win,27,20,Ashu Malik,1992-02-15,33,Pakistan,Ahmedabad,Away,8,0,1,13,80,False
+942,2023-07-19,Arjun Deshwal,Jaipur Pink Panthers,Bengal Warriors,Defender,18,8,4,2,8,4,52,44.44,50.0,12,1,0,1,Loss,25,25,N/A,1991-11-29,33,Pakistan,Kolkata,Away,7,2,5,13,73,False
+943,2018-04-22,Rohit Gulia,Hariyana Steelers,Telugu Titans,Defender,13,10,12,4,10,8,57,76.92,33.33,18,2,0,1,Win,30,22,Rohit Gulia,2000-11-15,24,Pakistan,Patna,Away,7,0,5,6,88,False
+944,2021-06-16,Rinku Sharma,U Mumba,Gujarat Fortunegiants,Defender,5,5,15,15,5,30,49,100.0,100.0,35,0,0,0,Loss,36,29,N/A,2002-04-19,23,Bangladesh,Jaipur,Away,7,2,5,9,41,False
+945,2020-12-26,Siddhant Bhosale,U Mumba,Telugu Titans,All-Rounder,8,0,6,0,0,0,54,0.0,0.0,0,0,0,0,Loss,37,15,N/A,2001-04-08,24,Sri Lanka,Hyderabad,Away,2,5,0,13,56,False
+946,2024-07-16,Sahil,Hariyana Steelers,Jaipur Pink Panthers,Defender,13,12,7,6,12,12,45,92.31,85.71,24,3,1,0,Loss,29,23,Sahil,1996-01-16,29,Sri Lanka,Kolkata,Away,11,2,1,6,74,False
+947,2023-01-17,Shivansh Thakur,U Mumba,Bengal Warriors,Raider,19,19,13,8,19,16,46,100.0,61.54,35,2,0,1,Loss,32,17,Shivansh Thakur,1985-08-26,39,India,Chandigarh,Away,4,4,3,3,44,False
+948,2022-01-14,Mahendra Rajput,Gujarat Fortunegiants,UP Yoddha,Raider,24,12,12,7,12,14,31,50.0,58.33,26,0,0,0,Win,24,29,N/A,1984-09-16,40,Nepal,Hyderabad,Away,3,2,3,10,93,False
+949,2021-09-10,Ashu Malik,Dabang Delhi,Telugu Titans,All-Rounder,21,1,5,1,1,2,38,4.76,20.0,3,2,1,1,Win,38,34,Ashu Malik,2000-10-23,24,Sri Lanka,Chandigarh,Away,6,0,3,4,81,False
+950,2021-05-18,Pardeep Narwal,UP Yoddha,Bengal Warriors,Defender,16,16,12,11,16,22,39,100.0,91.67,38,1,1,0,Loss,24,27,N/A,2001-03-08,24,Pakistan,Kolkata,Away,6,2,2,6,31,False
+951,2018-11-23,Parvesh Bhainswal,Gujarat Fortunegiants,Hariyana Steelers,All-Rounder,18,9,4,4,9,8,60,50.0,100.0,17,1,0,0,Loss,28,23,Parvesh Bhainswal,1984-08-04,40,India,Mumbai,Away,4,0,4,7,90,False
+952,2019-09-14,M Abishek,Tamil Thalaivas,UP Yoddha,All-Rounder,16,16,5,1,16,2,54,100.0,20.0,18,1,0,0,Win,27,35,M Abishek,2003-09-02,21,Sri Lanka,Mumbai,Away,7,3,5,15,71,False
+953,2021-02-04,Dipak,Dabang Delhi,Gujarat Fortunegiants,Defender,8,1,6,0,1,0,36,12.5,0.0,1,1,1,1,Win,27,20,Dipak,1986-09-28,38,Bangladesh,Patna,Away,11,0,3,10,41,False
+954,2019-02-03,Anil,Dabang Delhi,Telugu Titans,Defender,11,1,11,6,1,12,38,9.09,54.55,13,2,0,1,Loss,31,17,N/A,1994-02-11,31,Bangladesh,Chandigarh,Away,4,5,4,3,67,False
+955,2025-05-25,Balaji D,Bengal Warriors,Dabang Delhi,All-Rounder,8,0,7,4,0,8,51,0.0,57.14,8,2,1,1,Loss,21,22,N/A,1994-04-03,31,Bangladesh,Jaipur,Away,10,3,4,5,42,False
+956,2024-02-13,Sunil Kumar,Jaipur Pink Panthers,Hariyana Steelers,Defender,12,0,6,5,0,10,31,0.0,83.33,10,0,1,1,Win,23,18,N/A,2002-10-12,22,Sri Lanka,Chandigarh,Away,9,1,5,8,81,False
+957,2021-12-07,Neeraj Kumar,Patna Pirates,Hariyana Steelers,Defender,23,5,6,1,5,2,44,21.74,16.67,7,1,0,0,Win,20,18,Neeraj Kumar,1990-11-15,34,Nepal,Patna,Home,10,2,0,12,22,False
+958,2021-12-14,Abozar Mighani,UP Yoddha,Gujarat Fortunegiants,Raider,15,5,3,1,5,2,52,33.33,33.33,7,3,0,1,Loss,34,28,Abozar Mighani,1985-10-28,39,Sri Lanka,Patna,Away,7,3,0,3,92,False
+959,2018-03-01,M Abishek,Tamil Thalaivas,Gujarat Fortunegiants,Raider,15,4,5,2,4,4,41,26.67,40.0,8,2,0,0,Win,31,25,M Abishek,2005-02-01,20,Bangladesh,Chandigarh,Away,3,3,4,11,82,False
+960,2021-07-24,Sourabh Nandal,Bengal Warriors,Jaipur Pink Panthers,All-Rounder,20,18,9,1,18,2,43,90.0,11.11,20,0,0,1,Loss,36,35,Sourabh Nandal,1993-01-13,32,Sri Lanka,Bengaluru,Away,10,0,0,11,49,False
+961,2023-06-28,Karamvir,Patna Pirates,Jaipur Pink Panthers,Raider,23,13,11,6,13,12,49,56.52,54.55,25,2,1,1,Win,32,31,Karamvir,1986-01-11,39,Sri Lanka,Chennai,Away,8,3,2,6,86,False
+962,2023-07-18,M Abishek,Tamil Thalaivas,Jaipur Pink Panthers,Defender,17,6,6,4,6,8,42,35.29,66.67,14,3,1,1,Loss,32,30,N/A,2002-07-12,22,Bangladesh,Bengaluru,Away,3,0,5,3,78,False
+963,2022-05-05,Ashish,Tamil Thalaivas,Jaipur Pink Panthers,Defender,14,0,15,12,0,24,35,0.0,80.0,24,0,1,0,Loss,32,29,Ashish,2001-05-24,24,Bangladesh,Patna,Away,9,3,4,13,48,False
+964,2018-07-21,Ankit,Hariyana Steelers,Patna Pirates,Raider,14,1,4,4,1,8,35,7.14,100.0,9,0,1,0,Loss,35,23,N/A,1992-03-20,33,Nepal,Hyderabad,Away,1,1,2,15,65,False
+965,2020-05-28,Mohit Nandal,Hariyana Steelers,Telugu Titans,Raider,22,20,5,3,20,6,57,90.91,60.0,26,0,0,0,Win,26,23,Mohit Nandal,1995-05-05,30,Bangladesh,Jaipur,Away,4,1,3,15,70,False
+966,2023-06-28,Mohit Nandal,Hariyana Steelers,Jaipur Pink Panthers,Defender,6,0,3,3,0,6,47,0.0,100.0,6,0,1,1,Loss,39,26,N/A,1990-04-16,35,Bangladesh,Hyderabad,Away,9,2,1,8,63,False
+967,2023-10-06,Nitin Rawal,Jaipur Pink Panthers,Tamil Thalaivas,Raider,17,16,9,8,16,16,41,94.12,88.89,32,1,0,0,Win,24,23,N/A,1989-10-11,35,Bangladesh,Ahmedabad,Away,3,1,1,8,97,False
+968,2022-12-31,Ashish,Tamil Thalaivas,Patna Pirates,Raider,24,12,6,6,12,12,31,50.0,100.0,24,1,0,0,Win,20,32,Ashish,2005-01-01,20,Nepal,Jaipur,Away,2,3,0,5,54,False
+969,2024-10-06,Heidarali Ekrami,U Mumba,Patna Pirates,All-Rounder,15,1,3,0,1,0,34,6.67,0.0,1,3,0,1,Win,27,22,N/A,2003-07-08,21,Nepal,Ahmedabad,Away,11,4,1,13,38,False
+970,2018-03-26,Vinod Kumar,Gujarat Fortunegiants,UP Yoddha,All-Rounder,25,7,3,0,7,0,57,28.0,0.0,7,1,1,1,Win,22,29,N/A,2003-06-03,22,Pakistan,Mumbai,Away,2,3,0,3,76,False
+971,2018-08-04,Ashish,U Mumba,Hariyana Steelers,Defender,11,2,3,3,2,6,31,18.18,100.0,8,2,0,1,Win,36,32,Ashish,1990-08-15,34,Sri Lanka,Chennai,Away,1,4,2,4,24,False
+972,2021-10-26,Vijay,Dabang Delhi,Tamil Thalaivas,Defender,6,1,14,0,1,0,39,16.67,0.0,1,1,0,0,Loss,35,34,Vijay,1987-11-28,37,Bangladesh,Hyderabad,Away,9,5,4,10,92,False
+973,2022-12-14,Nehal,UP Yoddha,Dabang Delhi,All-Rounder,24,20,8,4,20,8,36,83.33,50.0,28,3,1,1,Loss,25,25,Nehal,1991-02-18,34,India,Chennai,Away,9,1,0,10,80,False
+974,2024-06-07,Sahul Kumar,Jaipur Pink Panthers,Tamil Thalaivas,Defender,25,19,9,5,19,10,56,76.0,55.56,29,2,0,0,Loss,31,23,N/A,2000-07-06,24,Pakistan,Ahmedabad,Away,9,1,1,9,79,False
+975,2020-08-28,Amit Sheoran,Bengal Warriors,U Mumba,Raider,7,2,14,7,2,14,37,28.57,50.0,16,2,0,0,Win,38,23,Amit Sheoran,1997-04-08,28,Sri Lanka,Patna,Away,10,2,5,15,30,False
+976,2021-06-03,Ajinkya Kapre,Bengal Warriors,Patna Pirates,Defender,16,15,4,1,15,2,42,93.75,25.0,17,0,0,1,Win,32,35,N/A,2000-06-24,24,Nepal,Lucknow,Away,7,1,2,5,92,False
+977,2019-03-17,Abhishek Singh,Telugu Titans,Hariyana Steelers,Defender,19,10,8,0,10,0,44,52.63,0.0,10,0,1,1,Loss,40,35,Abhishek Singh,1996-01-10,29,India,Chandigarh,Away,8,1,5,4,73,False
+978,2020-02-23,Naresh,Hariyana Steelers,Dabang Delhi,Defender,13,8,11,4,8,8,32,61.54,36.36,16,1,0,1,Win,28,19,Naresh,1990-04-09,35,Nepal,Chennai,Away,12,0,1,11,27,False
+979,2024-07-12,Naveen Kumar,Dabang Delhi,Telugu Titans,All-Rounder,22,15,13,10,15,20,43,68.18,76.92,35,2,1,1,Win,24,28,N/A,1988-09-08,36,Pakistan,Delhi,Home,10,3,5,15,27,False
+980,2025-05-23,Amit Hooda,Dabang Delhi,UP Yoddha,Raider,23,23,8,7,23,14,50,100.0,87.5,37,1,0,0,Loss,37,34,N/A,1991-10-05,33,Sri Lanka,Chennai,Away,4,1,0,5,78,False
+981,2018-11-01,Sumit,Dabang Delhi,Bengal Warriors,Raider,20,3,6,2,3,4,40,15.0,33.33,7,1,1,0,Win,25,19,Sumit,1997-03-19,28,Bangladesh,Ahmedabad,Away,3,4,0,3,72,False
+982,2023-03-02,Hardeep,U Mumba,Tamil Thalaivas,Raider,16,9,8,0,9,0,33,56.25,0.0,9,2,1,1,Loss,38,29,Hardeep,1991-12-16,33,India,Patna,Away,12,1,5,15,76,False
+983,2019-03-23,Sahil,Hariyana Steelers,Telugu Titans,All-Rounder,8,6,15,13,6,26,49,75.0,86.67,32,3,0,1,Win,31,28,Sahil,1994-07-06,30,Bangladesh,Lucknow,Away,12,5,1,10,56,False
+984,2019-02-18,Siddharth,Gujarat Fortunegiants,Hariyana Steelers,Raider,9,5,14,2,5,4,47,55.56,14.29,9,1,1,0,Win,34,26,N/A,1988-08-21,36,Nepal,Jaipur,Away,8,5,3,13,25,False
+985,2023-11-25,Abhishek Singh,Telugu Titans,Patna Pirates,Raider,20,16,12,12,16,24,32,80.0,100.0,40,0,0,0,Win,36,15,N/A,1992-10-08,32,Nepal,Patna,Away,10,1,2,4,99,False
+986,2021-01-11,Durgesh,Telugu Titans,UP Yoddha,Defender,21,9,4,4,9,8,43,42.86,100.0,17,0,1,1,Win,29,18,N/A,2000-06-12,24,Pakistan,Kolkata,Away,3,4,3,11,41,False
+987,2020-11-29,Sahul Kumar,Jaipur Pink Panthers,Hariyana Steelers,All-Rounder,17,14,3,2,14,4,55,82.35,66.67,18,0,1,0,Win,34,24,N/A,1993-08-26,31,Bangladesh,Hyderabad,Away,5,0,2,5,63,False
+988,2023-09-21,Rajnish,Telugu Titans,Gujarat Fortunegiants,All-Rounder,13,13,7,3,13,6,43,100.0,42.86,19,3,1,1,Loss,31,21,N/A,1988-03-20,37,Bangladesh,Mumbai,Away,9,4,1,7,20,False
+989,2018-05-28,Prince D,Telugu Titans,Bengal Warriors,Defender,5,1,10,4,1,8,46,20.0,40.0,9,2,0,0,Loss,39,31,Prince D,1990-02-02,35,Bangladesh,Hyderabad,Home,10,4,3,15,20,False
+990,2019-04-05,Sahul Kumar,Jaipur Pink Panthers,U Mumba,All-Rounder,17,14,15,4,14,8,39,82.35,26.67,22,2,1,0,Win,27,23,N/A,1995-04-28,30,India,Lucknow,Away,7,0,0,7,96,False
+991,2021-09-28,K. Prapanjan,Tamil Thalaivas,Bengal Warriors,All-Rounder,24,12,14,10,12,20,50,50.0,71.43,32,2,0,0,Win,36,25,K. Prapanjan,1999-08-01,25,Pakistan,Chandigarh,Away,5,2,5,15,38,False
+992,2024-05-16,Arjun Deshwal,Jaipur Pink Panthers,Patna Pirates,Raider,24,4,11,10,4,20,31,16.67,90.91,24,0,1,1,Loss,32,18,N/A,2003-04-20,22,India,Bengaluru,Away,12,0,4,8,48,False
+993,2018-11-01,Prince D,Telugu Titans,Hariyana Steelers,Raider,25,25,4,4,25,8,57,100.0,100.0,33,3,1,1,Loss,32,30,Prince D,1998-04-29,27,Nepal,Mumbai,Away,12,4,4,13,76,False
+994,2019-11-28,Sahil,Dabang Delhi,Jaipur Pink Panthers,Raider,19,1,5,5,1,10,50,5.26,100.0,11,1,0,1,Win,40,28,Sahil,1997-07-17,27,Bangladesh,Chennai,Away,7,2,3,12,58,False
+995,2022-11-11,K Prapanjan,Hariyana Steelers,Gujarat Fortunegiants,Raider,7,3,11,11,3,22,32,42.86,100.0,25,2,1,0,Win,20,20,N/A,2002-12-31,22,Nepal,Jaipur,Away,11,3,1,14,95,False
+996,2019-04-20,Sandeep Kandola,Telugu Titans,U Mumba,Defender,10,5,8,1,5,2,40,50.0,12.5,7,3,1,0,Loss,38,21,N/A,1991-07-06,33,Bangladesh,Ahmedabad,Away,1,0,1,14,51,False
+997,2023-12-06,Durgesh Kumar,UP Yoddha,Patna Pirates,All-Rounder,9,4,5,0,4,0,42,44.44,0.0,4,3,0,0,Loss,33,26,N/A,1987-11-29,37,Sri Lanka,Ahmedabad,Away,2,5,2,13,40,False
+998,2018-11-26,Ravinder,Patna Pirates,Jaipur Pink Panthers,All-Rounder,22,11,15,8,11,16,45,50.0,53.33,27,3,1,1,Loss,28,29,Ravinder,1993-12-16,31,Pakistan,Delhi,Away,4,3,5,8,33,False
+999,2022-04-29,Surender Nada,Patna Pirates,U Mumba,Raider,23,15,6,5,15,10,37,65.22,83.33,25,1,0,1,Loss,36,24,N/A,2002-11-04,22,India,Patna,Home,1,2,4,11,46,False
+1000,2019-07-10,Mahipal,UP Yoddha,Telugu Titans,All-Rounder,22,1,10,8,1,16,31,4.55,80.0,17,3,0,1,Loss,20,18,N/A,1998-11-22,26,India,Delhi,Away,8,0,1,5,61,False

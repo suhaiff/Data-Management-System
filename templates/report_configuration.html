@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="nav-buttons">
+    
+    <button onclick="history.back()" class="btn btn-secondary">
+        <i class="fas fa-arrow-left me-1"></i> Previous
+    </button>
+    <a href="/" class="btn btn-primary">
+        <i class="fas fa-home me-1"></i> Home
+    </a>
+    <button onclick="history.forward()" class="btn btn-secondary">
+        Next <i class="fas fa-arrow-right ms-1"></i>
+    </button>
+</div>
+<h2>Report Configuration</h2>
+
+<form method="POST">
+    <div class="card p-3">
+        {% for row in config_rows %}
+        <div class="d-flex align-items-center mb-2">
+            <!-- Sheet Name (readonly) -->
+            <input type="text" class="form-control me-2" value="{{ row.sheet_name }}" readonly>
+            <!-- Header Row Number -->
+            <input type="number" class="form-control me-2" name="{{ row.sheet_name }}" placeholder="Header Row Number" required>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Define Model</button>
+</form>
+{% endblock %}
