@@ -2,11 +2,13 @@ from flask import Flask, render_template, request, redirect, url_for, flash, sen
 import os
 import pandas as pd
 from werkzeug.utils import secure_filename
-from datetime import datetime, time
+from datetime import datetime
+import time
 from openpyxl import Workbook, load_workbook
 import plotly.express as px
 import plotly.io as pio
 import uuid
+import numbers
 
 # Configuration
 BASE_DIR = os.path.dirname(__file__)
@@ -23,7 +25,17 @@ app.secret_key = 'change-me-to-a-secure-random-string'
 # ensure upload folder exists
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
+# Retry helper (Windows file locks)
+def _with_retry(func, retries=5, delay=0.3):
+    for i in range(retries):
+        try:
+            return func()
+        except PermissionError:
+            if i == retries - 1:
+                raise
+            time.sleep(delay)
 
+            
 def allowed_file(filename):
     if ALLOWED_EXTENSIONS is None:
         return True
@@ -417,17 +429,48 @@ def data_model_2():
     columns = list(df.columns)
 
     if request.method == "POST":
-        sheet_name = request.form["sheet_name"]
-        chart_type = request.form["chart_type"]
-        x_col = request.form["x_column"]
-        y_col = request.form["y_column"]
-        operation = request.form["operation"]
-        font = request.form["font"]
-        color = request.form["color"]
-        width = int(request.form.get("width", 800))
-        height = int(request.form.get("height", 600))
 
-        # ✅ Step 1: Map operation names to human-readable text
+        print("Selected columns raw:", request.form.get("selected_columns"))
+
+
+        # -----------------------------
+        # Step 1: Collect all chart configurations
+        # -----------------------------
+        charts_data = []
+        index = 0
+        while f"sheet_name_{index}" in request.form:
+            sheet_name = request.form.get(f"sheet_name_{index}")
+            chart_type = request.form.get(f"chart_type_{index}")
+            x_col = request.form.get(f"x_column_{index}")
+            y_col = request.form.get(f"y_column_{index}")
+            operation = request.form.get(f"operation_{index}")
+            font = request.form.get(f"font_{index}")
+            color = request.form.get(f"color_{index}")
+            width = int(request.form.get(f"width_{index}", 800))
+            height = int(request.form.get(f"height_{index}", 600))
+
+            charts_data.append({
+                "sheet_name": sheet_name,
+                "chart_type": chart_type,
+                "x_col": x_col,
+                "y_col": y_col,
+                "operation": operation,
+                "font": font,
+                "color": color,
+                "width": width,
+                "height": height
+            })
+            index += 1
+
+            print("Chart config:", chart_type, font, color, width, height)
+
+        # -----------------------------
+        # Step 2: Generate each chart
+        # -----------------------------
+        generated_files = []
+        custom_colors = [
+            "#E57373", "#64B5F6", "#4DB6AC", "#FFD54F", "#81C784", "#FFB74D", "#9575CD"
+        ]
         operation_map = {
             "none": "",
             "sum": "Sum of",
@@ -435,105 +478,372 @@ def data_model_2():
             "count": "Count of",
             "distinct_count": "Distinct Count of"
         }
-        operation_text = operation_map.get(operation, "").strip()
 
-        # ✅ Step 2: Build a smart, descriptive chart title
-        if operation_text:
-            chart_title = f"{sheet_name} — {operation_text} {y_col} by {x_col} ({chart_type.title()} Chart)"
-        else:
-            chart_title = f"{sheet_name} — {y_col} by {x_col} ({chart_type.title()} Chart)"
+        for chart_conf in charts_data:
+            sheet_name = chart_conf["sheet_name"]
+            chart_type = chart_conf["chart_type"]
+            x_col = chart_conf["x_col"]
+            y_col = chart_conf["y_col"]
+            operation = chart_conf["operation"]
+            font = chart_conf["font"]
+            color = chart_conf["color"]
+            width = chart_conf["width"]
+            height = chart_conf["height"]
 
-        # ✅ Aggregation
-        if operation == "sum":
-            df_result = df.groupby(x_col)[y_col].sum().reset_index()
-        elif operation == "avg":
-            df_result = df.groupby(x_col)[y_col].mean().reset_index()
-        elif operation == "count":
-            df_result = df.groupby(x_col)[y_col].count().reset_index()
-            df_result.rename(columns={y_col: f"Count of {y_col}"}, inplace=True)
-        elif operation == "distinct_count":
-            df_result = df.groupby(x_col)[y_col].nunique().reset_index()
-            df_result.rename(columns={y_col: f"Distinct Count of {y_col}"}, inplace=True)
-        else:
-            df_result = df[[x_col, y_col]]
+            operation_text = operation_map.get(operation, "").strip()
 
-        # ✅ Keep y_col consistent for chart rendering
-        y_col = df_result.columns[1]
+            if chart_type == "card":
+                chart_title = f"{sheet_name} — Summary of {y_col}"
+            elif chart_type == "pie":
+                chart_title = f"{sheet_name} — {y_col} Distribution by {x_col} ({chart_type.title()} Chart)"
+            elif chart_type == "table":
+                chart_title = f"{sheet_name} — Data Table"
+            elif chart_type == "matrix_table":
+                chart_title = f"{sheet_name} — Data Table"
+            else:
+                if operation_text:
+                    chart_title = f"{sheet_name} — {operation_text} {y_col} by {x_col} ({chart_type.title()} Chart)"
+                else:
+                    chart_title = f"{sheet_name} — {y_col} by {x_col} ({chart_type.title()} Chart)"
 
-        # ✅ Create chart
-        custom_colors = [
-            "#E57373", "#64B5F6", "#4DB6AC", "#FFD54F", "#81C784", "#FFB74D", "#9575CD"
-        ]
+            # ---------- Aggregation ----------
+            if operation == "sum":
+                df_result = df.groupby(x_col)[y_col].sum().reset_index()
+            elif operation == "avg":
+                df_result = df.groupby(x_col)[y_col].mean().reset_index()
+            elif operation == "count":
+                df_result = df.groupby(x_col)[y_col].count().reset_index()
+                df_result.rename(columns={y_col: f"Count of {y_col}"}, inplace=True)
+            elif operation == "distinct_count":
+                df_result = df.groupby(x_col)[y_col].nunique().reset_index()
+                df_result.rename(columns={y_col: f"Distinct Count of {y_col}"}, inplace=True)
+            else:
+                df_result = df[[x_col, y_col]]
 
-        if chart_type == "bar":
-            fig = px.bar(
-                df_result,
-                x=x_col,
-                y=y_col,
-                color=x_col,
-                text=df_result[y_col].apply(lambda v: f"₹{v:,.0f}"),
-                title=chart_title,
-                color_discrete_sequence=custom_colors
-            )
-        else:
-            fig = px.line(
-                df_result,
-                x=x_col,
-                y=y_col,
-                title=f"{sheet_name} - {chart_type.title()} Chart"
-            )
+            y_col_actual = df_result.columns[1]
 
-        # ✅ Style chart
-        fig.update_traces(
-            texttemplate='%{text}',
-            textposition='outside',
-            hovertemplate='X: %{x}<br>Y: ₹%{y:,.0f}<extra></extra>'
-        )
-        fig.update_layout(
-            width=width,
-            height=height,
-            uniformtext_minsize=12,
-            uniformtext_mode='show',
-            font=dict(family=font, size=14),
-            title_font_color=color,
-            xaxis_title_font_color=color,
-            yaxis_title_font_color=color,
-        )
+            # ---------- Create Chart ----------
+            if chart_type == "bar":
+                fig = px.bar(
+                    df_result,
+                    x=x_col,
+                    y=y_col_actual,
+                    color=x_col,
+                    text=df_result[y_col_actual].apply(lambda v: f"₹{v:,.0f}"),
+                    title=chart_title,
+                    color_discrete_sequence=custom_colors
+                )
+                fig.update_traces(
+                    texttemplate='%{text}',
+                    textposition='outside',
+                    textangle=90,
+                    cliponaxis=False,
+                    hovertemplate='X: %{x}<br>Y: ₹%{y:,.0f}<extra></extra>'
+                )
+                # Dynamic y-axis with extra space
+                max_value = df_result[y_col_actual].max()
+                fig.update_yaxes(
+                    range=[0, max_value*1.2], dtick=5000
+                )
+                fig.update_layout(
+                    width=width,
+                    height=height,
+                    uniformtext_minsize=12,
+                    uniformtext_mode='show',
+                    font=dict(family=font, size=10),
+                    title_font_color=color,
+                    xaxis_title_font_color=color,
+                    yaxis_title_font_color=color,
+                    # plot_bgcolor="rgba(255, 255, 255, 0.0)",   # chart area behind bars
+                    # paper_bgcolor="rgba(0,0,0,0)",  # entire figure background
+                    bargap=0.3,
+                    bargroupgap=0.1,
+                    margin=dict(l=50, r=50, t=80, b=80)
+                )
+            elif chart_type == "line":
+                fig = px.line(
+                    df_result,
+                    x=x_col,
+                    y=y_col_actual,
+                    title=chart_title,
+                    markers=True
+                )
+                fig.update_traces(
+                    texttemplate='₹%{y:,.0f}',
+                    textposition='top center',
+                    hovertemplate='X: %{x}<br>Y: ₹%{y:,.0f}',
+                    mode='lines+markers+text'
+                )
+                fig.update_layout(
+                    width=width,
+                    height=height, 
+                    font=dict(family=font, size=10), 
+                    title_font_color=color,
+                    xaxis_title_font_color=color,
+                    yaxis_title_font_color=color,
+                    uniformtext_minsize=12,
+                    uniformtext_mode='show',
+                    margin=dict(l=50, r=50, t=80, b=80)
+                    )
+            elif chart_type == "pie":
+                percentages = df_result[y_col_actual] / df_result[y_col_actual].sum() * 100
+                text_positions = ['inside' if p >= 5 else 'outside' for p in percentages]
+                pull_values = [0.05 if p < 5 else 0.05 for p in percentages]
+                text_templates = [
+                    f"%{{label}}: ₹%{{value:,.0f}} ({p:.1f}%)" if p >= 5 else f"₹%{{value:,.0f}} ({p:.1f}%)"
+                    for p in percentages
+                ]
+                fig = px.pie(
+                    df_result,
+                    names=x_col,
+                    values=y_col_actual,
+                    title=chart_title,
+                    color_discrete_sequence=custom_colors
+                )
+                fig.update_traces(
+                    textposition=text_positions,
+                    texttemplate=text_templates,
+                    insidetextorientation='radial',
+                    textfont_size=10,
+                    pull=pull_values,
+                    marker_line_width=1,
+                    hovertemplate='%{label}: ₹%{value:,.0f} (%{percent})<extra></extra>'
+                )
+                fig.update_layout(
+                    width=width, 
+                    height=height, 
+                    font=dict(family=font, size=10), 
+                    title_font_color=color,
+                    margin=dict(t=50,b=50,l=50,r=50), 
+                    showlegend=False
+                    )
+            elif chart_type == "card":
+                total_value = df_result[y_col_actual].sum() if operation in ["sum", "none"] else df_result[y_col_actual].mean()
+                card_html = f"""
+                <div style='
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    justify-content:center;
+                    height:300px;
+                    background:linear-gradient(135deg, {color}, #f8f9fa);
+                    border-radius:16px;
+                    font-family:{font};
+                    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+                '>
+                    <h2 style='color:#333; margin-bottom:10px;'>{chart_title}</h2>
+                    <h1 style='font-size:3rem; color:{color}; margin:0;'>₹{total_value:,.0f}</h1>
+                </div>
+                """
 
-        # ✅ Save chart as unique file (not in session)
-        static_dir = os.path.join(BASE_DIR, "static")
-        os.makedirs(static_dir, exist_ok=True)
+            elif chart_type == "table":
+                selected_cols_str = request.form.get("selected_columns", "")
+                selected_cols = [col.strip() for col in selected_cols_str.split(",") if col.strip()]
 
-        # Remove previous file if exists
-        old_file = session.get("chart_file")
-        if old_file:
-            try:
-                old_path = os.path.join(static_dir, old_file)
-                if os.path.exists(old_path):
-                    os.remove(old_path)
-            except Exception:
-                pass
+                # Filter only columns that exist in df_result
+                existing_cols = [col for col in selected_cols if col in df.columns]
+                missing_cols = [col for col in selected_cols if col not in df.columns]
 
-        # Save new file
-        new_filename = f"chart_{uuid.uuid4().hex}.html"
-        new_path = os.path.join(static_dir, new_filename)
-        fig.write_html(new_path, include_plotlyjs="cdn", full_html=True, config={'responsive': True})
-        session["chart_file"] = new_filename
+                if missing_cols:
+                    print(f"Warning: These columns are missing from df_result: {missing_cols}")
 
-        # ✅ Log chart configuration
-        log_df = pd.DataFrame([{
-            "Sheet": sheet_name,
-            "Chart Type": chart_type,
-            "X Axis": x_col,
-            "Y Axis": y_col,
-            "Operation": operation,
-            "Font": font,
-            "Color": color
-        }])
-        with pd.ExcelWriter(EXCEL_FILE, engine="openpyxl", mode="a", if_sheet_exists="replace") as writer:
-            log_df.to_excel(writer, sheet_name="chart_config_log", index=False)
+                if not existing_cols:
+                    card_html = "<p style='color:red;'>⚠️ No valid columns selected for table.</p>"
+                else:
+                    df_table = df[existing_cols]
 
-        flash("Chart configuration saved successfully.")
+                    # Add serial numbers (1, 2, 3, ...)
+                    df_table.insert(0, "S.No", range(1, len(df_table) + 1))
+
+                    # ---------- Format currency columns ----------
+                    amount_keywords = ["amount", "total", "transaction", "price", "cost"]
+                    currency_cols = [
+                        col for col in df_table.columns 
+                        if any(keyword.lower() in col.lower() for keyword in amount_keywords)
+                    ]
+                    for col in currency_cols:
+                        df_table[col] = df_table[col].apply(
+                            lambda x: f"₹{int(x):,}" if pd.notnull(x) else ""
+                            )
+
+
+                    # Wrap table in a container div and center it
+                    table_html = f"""
+                    <div style="overflow-x:auto; display:flex; justify-content:center; align-items:center; margin:auto;">
+                        {df_table.to_html(
+                            classes="table table-striped table-bordered table-sm text-center",
+                            index=False,
+                            escape=False
+                        )}
+                    </div>
+                    """
+                    table_html = f"""
+                    <style>
+                        table th, table td {{
+                            text-align: center;
+                        }}
+                    </style>
+                    {table_html}
+                    """
+
+                    card_html = f"""
+                    <div style='
+                        background:#fff;
+                        border-radius:12px;
+                        box-shadow:0 4px 8px rgba(0,0,0,0.1);
+                        overflow:auto;
+                        padding:15px;
+                    '>
+                        <h4 style='font-family:{font}; color:{color}; margin-bottom:15px;'>{chart_title}</h4>
+                        {table_html}
+                    </div>
+                    """
+                    
+
+            elif chart_type == "matrix_table":
+                selected_cols_str = request.form.get("selected_columns", "")
+                selected_cols = [col.strip() for col in selected_cols_str.split(",") if col.strip()]
+
+                # Filter only columns that exist in df_result
+                existing_cols = [col for col in selected_cols if col in df.columns]
+                missing_cols = [col for col in selected_cols if col not in df.columns]
+
+                if missing_cols:
+                    print(f"Warning: These columns are missing from df_result: {missing_cols}")
+
+                if not existing_cols:
+                    card_html = "<p style='color:red;'>⚠️ No valid columns selected for table.</p>"
+                else:
+
+                    # Create df_table with only selected columns
+                    df_table = df[existing_cols]
+
+                    # Add serial numbers (1, 2, 3, ...)
+                    df_table.insert(0, "S.No", range(1, len(df_table) + 1))
+
+                    # Define keywords for summable columns
+                    summable_keywords = ["amount", "total", "qty", "quantity", "price", "value", "cost"]
+
+                    # Calculate totals
+                    totals = {}
+                    for col in df_table.columns:
+                        col_lower = col.lower()
+                        if col == "S.No":
+                            totals[col] = "Total"
+                        elif any(keyword in col_lower for keyword in summable_keywords):
+                            if pd.api.types.is_numeric_dtype(df_table[col]):
+                                totals[col] = df_table[col].sum()
+                            else:
+                                totals[col] = ""
+                        else:
+                            totals[col] = "" 
+
+                    # Append total row
+                    df_table.loc[len(df_table)] = totals
+
+
+                    # ---------- Format currency columns ----------
+                    amount_keywords = ["amount", "total", "price", "cost"]
+                    currency_cols = [
+                        col for col in df_table.columns 
+                        if any(keyword.lower() in col.lower() for keyword in amount_keywords)
+                    ]
+                    for col in currency_cols:
+                        df_table[col] = df_table[col].apply(
+                            lambda x: f"₹{int(x):,}" if pd.notnull(x) else ""
+                            )
+                    
+
+                    # Wrap table in a container div and center it
+                    table_html = f"""
+                    <div style="overflow-x:auto; display:flex; justify-content:center; align-items:center; margin:auto;">
+                        {df_table.to_html(
+                            classes="table table-striped table-bordered table-sm text-center",
+                            index=False,
+                            escape=False
+                        )}
+                    </div>
+                    """
+                    # Apply bold + background to last row (Total) using CSS inside <style>
+                    table_html = f"""
+                    <style>
+                        table tbody tr:last-child {{
+                            font-weight: bold;
+                            background-color: #f0f0f0;
+                        }}
+                        table th, table td {{
+                            text-align: center;
+                        }}
+                    </style>
+                    {table_html}
+                    """
+
+                    card_html = f"""
+                    <div style='
+                        background:#fff;
+                        border-radius:12px;
+                        box-shadow:0 4px 8px rgba(0,0,0,0.1);
+                        overflow:auto;
+                        padding:15px;
+                    '>
+                        <h4 style='font-family:{font}; color:{color}; margin-bottom:15px;'>{chart_title}</h4>
+                        {table_html}
+                    </div>
+                    """
+
+            else:
+                continue  # skip unknown chart type
+
+
+
+            # ---------- Save chart ----------
+            static_dir = os.path.join(BASE_DIR, "static")
+            os.makedirs(static_dir, exist_ok=True)
+            new_filename = f"chart_{uuid.uuid4().hex}.html"
+            new_path = os.path.join(static_dir, new_filename)
+
+            if chart_type in ["card", "table", "matrix_table"]:
+                full_html = f"""
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                    <style>
+                        body {{
+                            margin: 0;
+                            padding: 10px;
+                            background: #fafafa;
+                        }}
+                    </style>
+                </head>
+                <body>
+                    <div class="chart-wrapper" id="chart-{uuid.uuid4().hex}" style="margin-bottom:20px;">
+                        {card_html}
+                    </div>
+                </body>
+                </html>
+                """
+                with open(new_path, "w", encoding="utf-8") as f:
+                    f.write(card_html)
+            else:
+                fig.write_html(new_path, include_plotlyjs="cdn", full_html=True, config={'responsive': True})
+
+                # --- Ensure DOCTYPE at top to prevent Quirks Mode ---
+                with open(new_path, "r+", encoding="utf-8") as f:
+                    content = f.read()
+                    if not content.lstrip().startswith("<!DOCTYPE html>"):
+                        f.seek(0)
+                        f.write("<!DOCTYPE html>\n" + content)
+                        f.truncate()
+
+            generated_files.append(new_filename)
+
+        # -----------------------------
+        # Step 3: Store generated files in session
+        # -----------------------------
+        session["chart_files"] = generated_files
+        flash(f"{len(generated_files)} chart(s) generated successfully.")
         return redirect(url_for("chart_view"))
 
     return render_template("data_model_2.html", columns=columns)
@@ -541,15 +851,15 @@ def data_model_2():
 
 @app.route("/chart_view")
 def chart_view():
-    chart_file = session.get("chart_file", None)
-    if chart_file:
-        static_path = os.path.join(BASE_DIR, "static", chart_file)
-        # wait until file fully written (max 2s)
+    chart_files = session.get("chart_files", [])
+    if chart_files:
+        static_paths = [os.path.join(BASE_DIR, "static", chart_file) for chart_file in chart_files]
+        # wait until files fully written (max 2s)
         for _ in range(20):
-            if os.path.exists(static_path) and os.path.getsize(static_path) > 1000:
+            if all(os.path.exists(static_path) and os.path.getsize(static_path) > 1000 for static_path in static_paths):
                 break
             time.sleep(0.1)
-    return render_template("chart_view.html", chart_file=chart_file)
+    return render_template("chart_view.html", chart_files=chart_files)
 
 
 @app.route('/dashboard')

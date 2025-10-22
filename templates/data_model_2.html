@@ -15,91 +15,248 @@
 <h2 class="mb-4">Data Model 2 — Chart Configuration</h2>
 
 <div class="container chart-config-card">
-  <form method="POST" action="/data_model_2">
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="sheet_name" class="form-label">Select Table (Sheet)</label>
-        <select class="form-select" name="sheet_name" id="sheet_name">
-          <option value="Sheet1">Sheet 1</option>
-          <option value="Sheet2">Sheet 2</option>
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="chart_type" class="form-label">Select Chart Type</label>
-        <select class="form-select" name="chart_type" id="chart_type">
-          <option value="bar">Bar Chart</option>
-          <option value="line">Line Chart</option>
-        </select>
-      </div>
-    </div>
+  <form method="POST" id="multiChartForm" action="/data_model_2">
 
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="x_column" class="form-label">Select X-Axis Column</label>
-        <select class="form-select" name="x_column" id="x_column">
-          {% for col in columns %}
-          <option value="{{ col }}">{{ col }}</option>
-          {% endfor %}
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label for="y_column" class="form-label">Select Y-Axis Column</label>
-        <select class="form-select" name="y_column" id="y_column">
-          {% for col in columns %}
-          <option value="{{ col }}">{{ col }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
+    <div id="chart-forms-container">
 
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="operation" class="form-label">Operation</label>
-        <select class="form-select" name="operation" id="operation">
-          <option value="none">None</option>
-          <option value="sum">Sum</option>
-          <option value="avg">Average</option>
-          <option value="count">Count</option>
-          <option value="distinct_count">Distinct Count</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-        <label for="font" class="form-label">Font</label>
-        <select class="form-select" name="font" id="font">
-          <option value="Arial" style="font-family: Arial;">Arial</option>
-          <option value="Verdana" style="font-family: Verdana;">Verdana</option>
-          <option value="Times New Roman" style="font-family: 'Times New Roman';">Times New Roman</option>
-          <option value="Georgia" style="font-family: Georgia;">Georgia</option>
-          <option value="Courier New" style="font-family: 'Courier New';">Courier New</option>
-          <option value="Trebuchet MS" style="font-family: 'Trebuchet MS';">Trebuchet MS</option>
-          <option value="Lucida Sans" style="font-family: 'Lucida Sans';">Lucida Sans</option>
-          <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
-          <option value="Comic Sans MS" style="font-family: 'Comic Sans MS';">Comic Sans</option>
-          <option value="Roboto" style="font-family: Roboto;">Roboto</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-        <label for="color" class="form-label">Color</label>
-        <input type="color" class="form-control form-control-color" name="color" id="color" value="#007bff">
-      </div>
-    </div>
+      <!-- Template form (cloned via JS) -->
+      <div class="chart-form row mb-4 p-3 border rounded" data-index="0">
+        <h5>Chart #1</h5>
 
-    <!-- ✅ New row for Chart Width & Height -->
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="width" class="form-label">Chart Width (px)</label>
-        <input type="number" class="form-control" name="width" id="width" value="800" min="400" max="2000">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Select Table (Chart)</label>
+            <select class="form-select" name="sheet_name_0">
+              <option value="Chart1">Chart 1</option>
+              <option value="Chart2">Chart 2</option>
+              <option value="Chart3">Chart 3</option>
+              <option value="Chart4">Chart 4</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Select Chart Type</label>
+            <select class="form-select" name="chart_type_0" id="chart_type_0">
+              <option value="bar">Bar Chart</option>
+              <option value="line">Line Chart</option>
+              <option value="pie">Pie Chart</option>
+              <option value="card">Card Summary</option>
+              <option value="table">Table</option>
+              <option value="matrix_table">Matrix Table</option>
+            </select>
+          </div>
+        </div>
+        <div class="regular-fields" id="regular-fields">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Select X-Axis Column</label>
+              <select class="form-select" name="x_column_0">
+                {% for col in columns %}
+                <option value="{{ col }}">{{ col }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Select Y-Axis Column</label>
+              <select class="form-select" name="y_column_0">
+                {% for col in columns %}
+                <option value="{{ col }}">{{ col }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Operation</label>
+            <select class="form-select" name="operation_0">
+              <option value="none">None</option>
+              <option value="sum">Sum</option>
+              <option value="avg">Average</option>
+              <option value="count">Count</option>
+              <option value="distinct_count">Distinct Count</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Table-specific field -->
+        <div id="table-fields" style="display: none;">
+          <label class="form-label">Select Columns for Table</label>
+          <div class="d-flex flex-column gap-2">
+            <select id="table_columns" class="form-select">
+              {% for col in columns %}
+              <option value="{{ col }}">{{ col }}</option>
+              {% endfor %}
+            </select>
+            <button type="button" id="add-column" class="btn btn-sm btn-success mt-2">
+              + Add Column
+            </button>
+          </div>
+          <div id="selected-columns" class="mt-2"></div>
+        </div>
+
+        <!-- Hidden input to send selected columns -->
+        <input type="hidden" name="selected_columns" id="selected_columns_input">
+
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <label class="form-label">Font</label>
+            <select class="form-select" name="font_0">
+              <option value="Arial" style="font-family: Arial;">Arial</option>
+              <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+              <option value="Times New Roman" style="font-family: 'Times New Roman';">Times New Roman</option>
+              <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+              <option value="Courier New" style="font-family: 'Courier New';">Courier New</option>
+              <option value="Trebuchet MS" style="font-family: 'Trebuchet MS';">Trebuchet MS</option>
+              <option value="Lucida Sans" style="font-family: 'Lucida Sans';">Lucida Sans</option>
+              <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+              <option value="Comic Sans MS" style="font-family: 'Comic Sans MS';">Comic Sans</option>
+              <option value="Roboto" style="font-family: Roboto;">Roboto</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Color</label>
+            <input type="color" class="form-control form-control-color" name="color_0" value="#007bff">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Chart Width (px)</label>
+            <input type="number" class="form-control" name="width_0" value="800" min="400" max="2000">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Chart Height (px)</label>
+            <input type="number" class="form-control" name="height_0" value="600" min="300" max="1500">
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-danger btn-sm remove-chart-btn">Remove</button>
+        </div>
       </div>
-      <div class="col-md-6">
-        <label for="height" class="form-label">Chart Height (px)</label>
-        <input type="number" class="form-control" name="height" id="height" value="600" min="300" max="1500">
-      </div>
+      <!-- end of chart-form -->
+
     </div>
 
     <div class="d-flex gap-2 mt-3">
-      <button type="submit" class="btn btn-primary">Generate Chart</button>
-      <button type="button" class="btn btn-success" onclick="window.location.href='/view_table'">View Table</button>
-    </div>
+      <button type="button" class="btn btn-success" id="addChartBtn">Add Chart</button>
+      <button type="submit" class="btn btn-primary">Generate All Charts</button>
+    </div>  
+
   </form>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById("chart-forms-container");
+    const addBtn = document.getElementById("addChartBtn");
+
+    addBtn.addEventListener("click", function() {
+        const index = container.children.length;
+        const newForm = container.children[0].cloneNode(true);
+
+        // Update input names with new index
+        newForm.dataset.index = index;
+        newForm.querySelector("h5").textContent = `Chart #${index+1}`;
+
+        // ✅ Define 'inputs' correctly here
+        const inputs = newForm.querySelectorAll("select, input");
+
+        inputs.forEach(input => {
+            const baseName = input.name.replace(/_\d+$/, ""); // remove old index
+            input.name = `${baseName}_${index}`;
+
+            // Reset values for new form
+            if (input.type === "number") {
+                input.value = input.name.includes("width") ? 800 : 600;
+            } else if (input.type === "color") {
+                input.value = "#007bff";
+            } else if (input.tagName === "SELECT") {
+                input.selectedIndex = 0; // reset dropdown to first option
+            }
+        });
+
+        container.appendChild(newForm);
+    });
+
+    // Remove chart
+    container.addEventListener("click", function(e) {
+        if(e.target.classList.contains("remove-chart-btn")) {
+            const forms = container.querySelectorAll(".chart-form");
+            if(forms.length > 1) {
+                e.target.closest(".chart-form").remove();
+                // Re-index remaining forms
+                container.querySelectorAll(".chart-form").forEach((form, idx) => {
+                    form.dataset.index = idx;
+                    form.querySelector("h5").textContent = `Chart #${idx+1}`;
+                    const inputs = form.querySelectorAll("select, input");
+                    inputs.forEach(input => {
+                        const nameParts = input.name.split("_");
+                        input.name = nameParts[0] + "_" + idx;
+                    });
+                });
+            } else {
+                alert("At least one chart configuration is required.");
+            }
+        }
+    });
+});
+
+
+
+// Script for table column selection
+const chartType = document.getElementById("chart_type_0");
+const regularFields = document.getElementById("regular-fields");
+const tableFields = document.getElementById("table-fields");
+const selectedColsDiv = document.getElementById("selected-columns");
+const selectedColsInput = document.getElementById("selected_columns_input");
+const addColumnBtn = document.getElementById("add-column");
+const tableColSelect = document.getElementById("table_columns");
+
+let selectedCols = [];
+
+chartType.addEventListener("change", () => {
+  if (chartType.value === "table" || chartType.value === "matrix_table") {
+    regularFields.style.display = "none";
+    tableFields.style.display = "block";
+  } else {
+    regularFields.style.display = "block";
+    tableFields.style.display = "none";
+  }
+});
+
+addColumnBtn.addEventListener("click", () => {
+  const col = tableColSelect.value;
+  if (!selectedCols.includes(col)) {
+    selectedCols.push(col);
+    updateSelectedCols();
+  }
+});
+
+function removeColumn(col) {
+  selectedCols = selectedCols.filter(c => c !== col);
+  updateSelectedCols();
+}
+
+function updateSelectedCols() {
+  selectedColsDiv.innerHTML = selectedCols.map(
+    c => `<div class="badge bg-secondary p-2 me-2">
+            ${c}
+            <button type="button" onclick="removeColumn('${c}')" class="btn btn-sm btn-light ms-2">-</button>
+          </div>`
+  ).join("");
+  selectedColsInput.value = selectedCols.join(",");
+}
+</script>
+
+<style>
+.chart-config-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.chart-form {
+    background: #f9f9f9;
+}
+</style>
+
 {% endblock %}
