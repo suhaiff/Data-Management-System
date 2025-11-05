@@ -13,9 +13,9 @@
         Next <i class="fas fa-arrow-right ms-1"></i>
     </button>
 </div>
-<h2>Configuration</h2>
+<h2 class="chart-config-title">Chart Configuration - Define Sheets</h2>
 <div class="card">
-    <div class="card-body">
+    <div class="card_body">
         <form id="configForm" method="POST" action="{{ url_for('configuration') }}">
             <div id="tableRows">
                 <div class="row mb-2 table-row">
@@ -29,16 +29,42 @@
                             {% endfor %}
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 table-row-btns">
                         <button type="button" class="btn btn-success addRow">+</button>
                         <button type="button" class="btn btn-danger removeRow">-</button>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary mt-3">Submit Configuration</button>
+            <button type="submit" class="btn btn-primary pre-submit-btn mt-4">Submit Configuration</button>
         </form>
     </div>
 </div>
+
+
+<style>
+.chart-config-title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+}
+.table-row {
+  justify-content: center;
+  gap: 1rem;
+}
+.table-row-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.pre-submit-btn {
+  display: block;
+  margin: 1rem auto;
+}
+.card_body {
+  padding: 2.5rem 0;
+}
+</style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {

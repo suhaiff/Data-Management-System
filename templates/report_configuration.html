@@ -13,10 +13,10 @@
         Next <i class="fas fa-arrow-right ms-1"></i>
     </button>
 </div>
-<h2>Report Configuration</h2>
+<h2 class="pre-config-title">Chart Configuration - Define Header</h2>
 
 <form method="POST">
-    <div class="card p-3">
+    <div class="card p-3 mb-3">
         {% for row in config_rows %}
         <div class="d-flex align-items-center mb-2">
             <!-- Sheet Name (readonly) -->
@@ -26,7 +26,20 @@
         </div>
         {% endfor %}
     </div>
-    <br>
-    <button type="submit" class="btn btn-primary">Define Model</button>
+    <button type="submit" class="pre-next-btn btn btn-primary">Define Model</button>
 </form>
+
+<style>
+.pre-config-title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+}
+.pre-next-btn {
+  display: block;
+  margin: 1.5rem auto;
+}
+</style>
+
 {% endblock %}

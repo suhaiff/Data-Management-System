@@ -12,7 +12,7 @@
         Next <i class="fas fa-arrow-right ms-1"></i>
     </button>
 </div>
-<h2>Data Model — define joins</h2>
+<h2 class="config-title">Chart Configuration - Define Join</h2>
 
 {% with messages = get_flashed_messages() %}
   {% if messages %}
@@ -24,7 +24,7 @@
 
 <form id="joinForm" method="POST" action="{{ url_for('data_model') }}">
   <div id="joinRows">
-    <div class="row join-row mb-2">
+    <div class="row join-row mb-2 mt-4">
       <div class="col-md-4">
         <label>Left Column</label>
         <select class="form-select left-col" name="left_col[]" required>
@@ -51,7 +51,7 @@
         </select>
       </div>
 
-      <div class="col-md-2">
+      <div class="col-md-4">
         <label>Join Type</label>
         <select class="form-select" name="join_type[]" required>
           <option>Inner Join</option>
@@ -61,15 +61,28 @@
         </select>
       </div>
 
-      <div class="col-md-2 d-flex align-items-end">
+      <!-- <div class="col-md-2 d-flex align-items-end">
         <button type="button" class="btn btn-success me-2 addRow">+</button>
         <button type="button" class="btn btn-danger removeRow">-</button>
-      </div>
+      </div> -->
     </div>
   </div>
 
-  <button type="submit" class="btn btn-primary mt-3">Submit & Define Model</button>
+  <button type="submit" class="next-btn btn btn-primary mt-4">Submit & Define Model</button>
 </form>
+
+<style>
+  .config-title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: auto;
+}
+.next-btn {
+  display: block;
+  margin: 2rem auto 1rem auto;
+}
+</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {

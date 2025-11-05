@@ -12,30 +12,24 @@
     </button>
 </div>
 
-<h2 class="mb-4">Data Model 2 — Chart Configuration</h2>
+<h2 class="config2-title mb-4">Chart Configuration - Config Form</h2>
 
 <div class="container chart-config-card">
   <form method="POST" id="multiChartForm" action="/data_model_2">
-
     <div id="chart-forms-container">
 
-      <!-- Template form (cloned via JS) -->
-      <div class="chart-form row mb-4 p-3 border rounded" data-index="0">
+      <!-- Template form -->
+      <div class="chart-form row mb-4 p-3 border rounded chart-config" data-index="0">
         <h5>Chart #1</h5>
 
         <div class="row mb-3">
           <div class="col-md-6">
-            <label class="form-label">Select Table (Chart)</label>
-            <select class="form-select" name="sheet_name_0">
-              <option value="Chart1">Chart 1</option>
-              <option value="Chart2">Chart 2</option>
-              <option value="Chart3">Chart 3</option>
-              <option value="Chart4">Chart 4</option>
-            </select>
+            <label class="form-label">Chart Title (Custom)</label>
+            <input type="text" class="form-control" name="chart_title_0" placeholder="Enter custom title">
           </div>
           <div class="col-md-6">
             <label class="form-label">Select Chart Type</label>
-            <select class="form-select" name="chart_type_0" id="chart_type_0">
+            <select class="form-select chart-type" name="chart_type_0">
               <option value="bar">Bar Chart</option>
               <option value="line">Line Chart</option>
               <option value="pie">Pie Chart</option>
@@ -45,7 +39,8 @@
             </select>
           </div>
         </div>
-        <div class="regular-fields" id="regular-fields">
+
+        <div class="regular-fields">
           <div class="row mb-3">
             <div class="col-md-6">
               <label class="form-label">Select X-Axis Column</label>
@@ -77,25 +72,25 @@
         </div>
 
         <!-- Table-specific field -->
-        <div id="table-fields" style="display: none;">
+        <div class="table-fields" style="display: none;">
           <label class="form-label">Select Columns for Table</label>
           <div class="d-flex flex-column gap-2">
-            <select id="table_columns" class="form-select">
+            <select class="form-select table-columns">
               {% for col in columns %}
               <option value="{{ col }}">{{ col }}</option>
               {% endfor %}
             </select>
-            <button type="button" id="add-column" class="btn btn-sm btn-success mt-2">
+            <button type="button" class="btn btn-sm btn-success mt-2 add-column">
               + Add Column
             </button>
           </div>
-          <div id="selected-columns" class="mt-2"></div>
+          <div class="selected-columns mt-2"></div>
         </div>
 
-        <!-- Hidden input to send selected columns -->
-        <input type="hidden" name="selected_columns" id="selected_columns_input">
+        <!-- Hidden input to store selected columns -->
+        <input type="hidden" name="selected_columns_0" class="selected_columns_input">
 
-        <div class="row mb-3">
+        <div class="row mb-3 mt-2">
           <div class="col-md-3">
             <label class="form-label">Font</label>
             <select class="form-select" name="font_0">
@@ -132,17 +127,19 @@
           <button type="button" class="btn btn-danger btn-sm remove-chart-btn">Remove</button>
         </div>
       </div>
-      <!-- end of chart-form -->
+      <!-- end chart-form -->
 
     </div>
 
-    <div class="d-flex gap-2 mt-3">
+    <div class="config-btns d-flex gap-2 mt-3">
       <button type="button" class="btn btn-success" id="addChartBtn">Add Chart</button>
       <button type="submit" class="btn btn-primary">Generate All Charts</button>
+      <!-- Table View button -->
+      <a href="{{ url_for('table_view') }}" class="btn btn-primary">Table View</a>
     </div>  
-
   </form>
 </div>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -152,27 +149,25 @@ document.addEventListener("DOMContentLoaded", function() {
     addBtn.addEventListener("click", function() {
         const index = container.children.length;
         const newForm = container.children[0].cloneNode(true);
-
-        // Update input names with new index
         newForm.dataset.index = index;
         newForm.querySelector("h5").textContent = `Chart #${index+1}`;
 
-        // ✅ Define 'inputs' correctly here
+        // Update all input/select names
         const inputs = newForm.querySelectorAll("select, input");
-
         inputs.forEach(input => {
-            const baseName = input.name.replace(/_\d+$/, ""); // remove old index
+            const baseName = input.name.replace(/_\d+$/, "");
             input.name = `${baseName}_${index}`;
-
-            // Reset values for new form
-            if (input.type === "number") {
-                input.value = input.name.includes("width") ? 800 : 600;
-            } else if (input.type === "color") {
-                input.value = "#007bff";
-            } else if (input.tagName === "SELECT") {
-                input.selectedIndex = 0; // reset dropdown to first option
-            }
+            if(input.type === "number") input.value = input.name.includes("width") ? 800 : 600;
+            else if(input.type === "color") input.value = "#007bff";
+            else if(input.tagName === "SELECT") input.selectedIndex = 0;
         });
+
+        // Reset selected columns
+        const hiddenInput = newForm.querySelector(".selected_columns_input");
+        if (hiddenInput) {
+          hiddenInput.name = `selected_columns_${index}`;
+          hiddenInput.value = ""; // reset value for new form
+        }
 
         container.appendChild(newForm);
     });
@@ -181,81 +176,82 @@ document.addEventListener("DOMContentLoaded", function() {
     container.addEventListener("click", function(e) {
         if(e.target.classList.contains("remove-chart-btn")) {
             const forms = container.querySelectorAll(".chart-form");
-            if(forms.length > 1) {
+            if(forms.length > 1){
                 e.target.closest(".chart-form").remove();
-                // Re-index remaining forms
+                // Reindex remaining
                 container.querySelectorAll(".chart-form").forEach((form, idx) => {
                     form.dataset.index = idx;
                     form.querySelector("h5").textContent = `Chart #${idx+1}`;
                     const inputs = form.querySelectorAll("select, input");
                     inputs.forEach(input => {
-                        const nameParts = input.name.split("_");
-                        input.name = nameParts[0] + "_" + idx;
+                        const baseName = input.name.replace(/_\d+$/, "");
+                        input.name = `${baseName}_${idx}`;
                     });
                 });
-            } else {
-                alert("At least one chart configuration is required.");
-            }
+            } else alert("At least one chart configuration is required.");
         }
     });
 });
 
-
-
-// Script for table column selection
-const chartType = document.getElementById("chart_type_0");
-const regularFields = document.getElementById("regular-fields");
-const tableFields = document.getElementById("table-fields");
-const selectedColsDiv = document.getElementById("selected-columns");
-const selectedColsInput = document.getElementById("selected_columns_input");
-const addColumnBtn = document.getElementById("add-column");
-const tableColSelect = document.getElementById("table_columns");
-
-let selectedCols = [];
-
-chartType.addEventListener("change", () => {
-  if (chartType.value === "table" || chartType.value === "matrix_table") {
-    regularFields.style.display = "none";
-    tableFields.style.display = "block";
-  } else {
-    regularFields.style.display = "block";
-    tableFields.style.display = "none";
-  }
+// Chart type toggle
+document.addEventListener("change", function(e){
+    if(e.target.classList.contains("chart-type")){
+        const container = e.target.closest(".chart-config");
+        const chartType = e.target.value;
+        container.querySelector(".regular-fields").style.display = (chartType === "table" || chartType === "matrix_table") ? "none" : "block";
+        container.querySelector(".table-fields").style.display = (chartType === "table" || chartType === "matrix_table") ? "block" : "none";
+    }
 });
 
-addColumnBtn.addEventListener("click", () => {
-  const col = tableColSelect.value;
-  if (!selectedCols.includes(col)) {
-    selectedCols.push(col);
-    updateSelectedCols();
-  }
+// Add/Remove table columns
+document.addEventListener("click", function(e){
+    if(e.target.classList.contains("add-column") || e.target.classList.contains("remove-col")){
+        const container = e.target.closest(".chart-config");
+        const selectedColsDiv = container.querySelector(".selected-columns");
+        const hiddenInput = container.querySelector(".selected_columns_input");
+        let selectedCols = hiddenInput.value ? hiddenInput.value.split(",") : [];
+
+        if(e.target.classList.contains("add-column")){
+            const val = container.querySelector(".table-columns").value;
+            if(!selectedCols.includes(val)) selectedCols.push(val);
+        }
+        if(e.target.classList.contains("remove-col")){
+            const val = e.target.dataset.col;
+            selectedCols = selectedCols.filter(c => c !== val);
+        }
+
+        // Update badges and hidden input
+        selectedColsDiv.innerHTML = selectedCols.map(
+            c => `<div class="badge bg-secondary p-2 me-2">
+                    ${c} <button type="button" class="btn btn-sm btn-light ms-2 remove-col" data-col="${c}">-</button>
+                  </div>`
+        ).join("");
+        hiddenInput.value = selectedCols.join(",");
+    }
 });
 
-function removeColumn(col) {
-  selectedCols = selectedCols.filter(c => c !== col);
-  updateSelectedCols();
-}
-
-function updateSelectedCols() {
-  selectedColsDiv.innerHTML = selectedCols.map(
-    c => `<div class="badge bg-secondary p-2 me-2">
-            ${c}
-            <button type="button" onclick="removeColumn('${c}')" class="btn btn-sm btn-light ms-2">-</button>
-          </div>`
-  ).join("");
-  selectedColsInput.value = selectedCols.join(",");
-}
 </script>
 
 <style>
 .chart-config-card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin: 2rem auto;
 }
 .chart-form {
-    background: #f9f9f9;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  margin: 20px;
+}
+.config2-title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.config-btns {
+  justify-content: center;
 }
 </style>
 

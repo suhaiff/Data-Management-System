@@ -13,16 +13,41 @@
         Next <i class="fas fa-arrow-right ms-1"></i>
     </button>
 </div>
-<h2>Upload Data</h2>
+<h2 class="upload-title">Chart Configuration - Upload Data</h2>
 <div class="card">
     <div class="card-body">
         <form method="POST" action="{{ url_for('upload') }}" enctype="multipart/form-data">
-            <div class="mb-3">
+            <div class="upload-section mb-3">
                 <label for="fileUpload" class="form-label">Choose File</label>
                 <input type="file" class="form-control" id="fileUpload" name="file">
             </div>
-            <button type="submit" class="btn btn-primary">Upload</button>
+            <button type="submit" class="upload-submit-btn btn btn-primary">Upload</button>
         </form>
     </div>
 </div>
+<style>
+    .card {
+        width: 60%;
+        margin: 2rem auto;
+    }
+    .card-body {
+        padding: 2.5rem;
+    }
+    .upload-title {
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 2rem 0;
+    }
+    .upload-section label{
+        font-weight: 600;
+        letter-spacing: 1px;
+        display: block;
+        text-align: center;
+    }
+    .upload-submit-btn {
+        display: block;
+        margin: 1.5rem auto;
+    }
+</style>
 {% endblock %}

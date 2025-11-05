@@ -110,6 +110,8 @@ body {
 }
 
 .form-control, .form-select {
+    color: rgba(0,0,0,0.9);
+    letter-spacing: 1.5px;
     border-radius: 5px;
     border: 1px solid #dee2e6;
     padding: 10px;
