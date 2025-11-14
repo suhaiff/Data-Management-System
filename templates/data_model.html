@@ -1,31 +1,34 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="nav-buttons">
-    
-    <button onclick="history.back()" class="btn btn-secondary">
-        <i class="fas fa-arrow-left me-1"></i> Previous
-    </button>
-    <a href="/" class="btn btn-primary">
-        <i class="fas fa-home me-1"></i> Home
-    </a>
-    <button onclick="history.forward()" class="btn btn-secondary">
-        Next <i class="fas fa-arrow-right ms-1"></i>
-    </button>
+  <button onclick="history.back()" class="btn btn-secondary">
+    <i class="fas fa-arrow-left me-1"></i> Previous
+  </button>
+  <a href="/" class="btn btn-primary">
+    <i class="fas fa-home me-1"></i> Home
+  </a>
+  <button onclick="history.forward()" class="btn btn-secondary">
+    Next <i class="fas fa-arrow-right ms-1"></i>
+  </button>
 </div>
+
 <h2 class="config-title">Chart Configuration - Define Join</h2>
 
-{% with messages = get_flashed_messages() %}
+<!-- Flash messages -->
+{% with messages = get_flashed_messages(with_categories=true) %}
   {% if messages %}
-    <div class="alert alert-info">
-      {% for m in messages %} <div>{{ m }}</div> {% endfor %}
-    </div>
+    {% for category, message in messages %}
+      <div class="alert alert-{{ 'danger' if category == 'error' else category }}">
+        {{ message }}
+      </div>
+    {% endfor %}
   {% endif %}
 {% endwith %}
 
 <form id="joinForm" method="POST" action="{{ url_for('data_model') }}">
   <div id="joinRows">
-    <div class="row join-row mb-2 mt-4">
-      <div class="col-md-4">
+    <div class="row join-row mb-3 mt-4">
+      <div class="col-md-3">
         <label>Left Column</label>
         <select class="form-select left-col" name="left_col[]" required>
           {% for sheet, cols in available_columns.items() %}
@@ -38,7 +41,7 @@
         </select>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-3">
         <label>Right Column</label>
         <select class="form-select right-col" name="right_col[]" required>
           {% for sheet, cols in available_columns.items() %}
@@ -51,7 +54,7 @@
         </select>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-2">
         <label>Join Type</label>
         <select class="form-select" name="join_type[]" required>
           <option>Inner Join</option>
@@ -61,10 +64,19 @@
         </select>
       </div>
 
-      <!-- <div class="col-md-2 d-flex align-items-end">
-        <button type="button" class="btn btn-success me-2 addRow">+</button>
-        <button type="button" class="btn btn-danger removeRow">-</button>
-      </div> -->
+      <div class="col-md-2 d-flex align-items-end">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" name="bridge_toggle" id="bridge_toggle">
+          <label class="form-check-label" for="bridge_toggle">Bridge</label>
+        </div>
+      </div>
+
+      <div class="col-md-2 d-flex align-items-end">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" name="create_preview" id="create_preview">
+          <label class="form-check-label" for="create_preview">Preview</label>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -73,15 +85,20 @@
 
 <style>
   .config-title {
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin: auto;
-}
-.next-btn {
-  display: block;
-  margin: 2rem auto 1rem auto;
-}
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: auto;
+  }
+  .next-btn {
+    display: block;
+    margin: 2rem auto 1rem auto;
+  }
+  .alert {
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
+  }
 </style>
 
 <script>

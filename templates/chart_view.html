@@ -14,7 +14,7 @@
     </button>
   </div>
 
-  <h2 class="output-title mt-4 mb-4">final Output - Chart View</h2>
+  <h2 class="output-title mt-4 mb-4" id="defaultTitle">Dashboard - Chart View</h2>
 
   <!-- Add this code after your existing header section -->
   <div class="filter-section mb-4 p-3 bg-light rounded shadow-sm">
@@ -67,6 +67,7 @@
                         src="{{ url_for('static', filename=chart_file) }}"
                         class="w-100 chart-iframe"
                         style="height: 500px; border: none; border-radius: 8px;"
+                        
                         allowfullscreen
                         loading="lazy">
                     </iframe>
@@ -92,337 +93,109 @@
 <script id="column-values" type="application/json">
 {{ column_values|tojson|safe }}
 </script>
-<!-- <script>
-// Initialize filters map
-const activeFilters = new Map();
 
-// Handle column selection
-document.getElementById('filterColumn').addEventListener('change', function() {
-    const column = this.value;
-    const checkboxContainer = document.getElementById('valueCheckboxes');
-    const applyButton = document.getElementById('applyFilter');
-    
-    if (!column) {
-        checkboxContainer.classList.add('d-none');
-        applyButton.disabled = true;
-        return;
-    }
-    
-    const values = {{ column_values|tojson|safe }};
-    const columnValues = values[column] || [];
-    
-    const checkboxesHTML = columnValues.map(value => `
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" 
-                   value="${value}" 
-                   id="check_${typeof value === 'string' ? value : String(value).replace(/[^a-zA-Z0-9]/g, '_')}">
-            <label class="form-check-label" for="check_${typeof value === 'string' ? value : String(value).replace(/[^a-zA-Z0-9]/g, '_')}">
-                ${value}
-            </label>
-        </div>
-    `).join('');
-    
-    checkboxContainer.querySelector('.checkbox-container').innerHTML = checkboxesHTML;
-    checkboxContainer.classList.remove('d-none');
-    applyButton.disabled = false;
-});
-
-// Handle filter application
-document.getElementById('applyFilter').addEventListener('click', function() {
-    const column = document.getElementById('filterColumn').value;
-    const selectedValues = Array.from(
-        document.querySelectorAll('#valueCheckboxes input:checked'),
-        cb => isNaN(cb.value) ? cb.value : Number(cb.value)
-    );
-    
-    if (selectedValues.length > 0) {
-        activeFilters.set(column, selectedValues);
-        updateFilterChips();
-        applyFiltersToCharts();
-    }
-});
-
-// Update filter chips display
-function updateFilterChips() {
-    const container = document.getElementById('selectedFilters');
-    container.innerHTML = '';
-    
-    if (activeFilters.size === 0) {
-        return;
-    }
-    
-    activeFilters.forEach((values, column) => {
-        const chip = document.createElement('div');
-        chip.className = 'badge bg-primary me-2 mb-2 p-2';
-        chip.innerHTML = `
-            ${column}: ${values.join(', ')}
-            <button type="button" class="btn-close btn-close-white ms-2" 
-                    aria-label="Remove" 
-                    onclick="removeFilter('${column}')">
-            </button>
-        `;
-        container.appendChild(chip);
-    });
-}
-
-// Remove filter
-function removeFilter(column) {
-    activeFilters.delete(column);
-    updateFilterChips();
-    applyFiltersToCharts();
-}
-
-// Apply filters to charts
-function applyFiltersToCharts() {
-    let filteredData = {{ joined_data|tojson|safe }};
-    
-    activeFilters.forEach((values, column) => {
-        filteredData = filteredData.filter(row => {
-            const rowValue = row[column];
-            return values.includes(
-                typeof rowValue === 'number' ? rowValue : String(rowValue)
-            );
-        });
-    });
-    
-    document.querySelectorAll('.chart-container iframe').forEach(iframe => {
-        if (iframe.contentWindow && iframe.contentWindow.updateChartData) {
-            iframe.contentWindow.updateChartData(filteredData);
-        }
-    });
-}
-</script> -->
-<!-- Add this JavaScript code at the end of your file, before </body> -->
 <script>
+let activeFilters = {};  // e.g. { "Region": ["East", "West"], "Category": ["A"] }
 
-// line chart zoom aware behavior
-document.addEventListener("DOMContentLoaded", function () {
-  // Find all Plotly charts on the page
-  const plots = document.querySelectorAll("div.js-plotly-plot");
-
-  plots.forEach((plot) => {
-    const chartType = plot.layout?.meta?.chartType;
-    if (chartType !== "line_zoom_labels") return;
-
-    const totalPoints = plot.data[0].x.length;
-
-    plot.on("plotly_relayout", function (eventData) {
-      if (!eventData["xaxis.range[0]"] || !eventData["xaxis.range[1]"]) return;
-
-      const x0 = eventData["xaxis.range[0]"];
-      const x1 = eventData["xaxis.range[1]"];
-      const visibleSpan = x1 - x0;
-
-      // Show labels only if zoomed enough (25% of original range)
-      const showLabels = visibleSpan < totalPoints * 0.25;
-
-      Plotly.restyle(
-        plot,
-        { text: [showLabels ? plot.data[0].y.map(String) : null] },
-        [0]
-      );
-    });
-  });
-});
-
-let activeFilters = new Map(); // Store active filters
-
+// When column changes, load checkboxes
 document.getElementById('filterColumn').addEventListener('change', function() {
-    const column = this.value;
-    const checkboxContainer = document.getElementById('valueCheckboxes');
-    const applyButton = document.getElementById('applyFilter');
+    const col = this.value;
+    const checkboxesDiv = document.querySelector('.checkbox-container');
+    const checkboxWrapper = document.getElementById('valueCheckboxes');
+    const applyBtn = document.getElementById('applyFilter');
     
-    if (!column) {
-        checkboxContainer.classList.add('d-none');
-        applyButton.disabled = true;
+    checkboxesDiv.innerHTML = '';
+    applyBtn.disabled = true;
+
+    if (!col) {
+        checkboxWrapper.classList.add('d-none');
         return;
     }
-    
-    // Get unique values for selected column
-    const jsonDataElement = document.getElementById('column-values');
-    const values = JSON.parse(jsonDataElement.textContent);
-    const columnValues = values[column];
-    
-    // Create checkboxes
-    const checkboxesHTML = columnValues.map(value => `
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="${value}" id="check_${value}">
-            <label class="form-check-label" for="check_${value}">
-                ${value}
-            </label>
-        </div>
-    `).join('');
-    
-    checkboxContainer.querySelector('.checkbox-container').innerHTML = checkboxesHTML;
-    checkboxContainer.classList.remove('d-none');
-    applyButton.disabled = false;
+
+    // Get column values from template (rendered by Flask)
+    const colValues = JSON.parse(document.getElementById('column-values').textContent);
+    const values = colValues[col] || [];
+
+    values.forEach(val => {
+        const id = `chk-${col}-${val}`;
+        const label = document.createElement('label');
+        label.classList.add('d-block', 'mb-1');
+        label.innerHTML = `
+            <input type="checkbox" class="form-check-input me-1" value="${val}" id="${id}">
+            ${val}
+        `;
+        checkboxesDiv.appendChild(label);
+    });
+
+    checkboxWrapper.classList.remove('d-none');
+
+    checkboxesDiv.querySelectorAll('input[type="checkbox"]').forEach(chk => {
+        chk.addEventListener('change', () => {
+            const anyChecked = checkboxesDiv.querySelectorAll('input:checked').length > 0;
+            applyBtn.disabled = !anyChecked;
+        });
+    });
 });
 
+// Apply filter button
 document.getElementById('applyFilter').addEventListener('click', function() {
     const column = document.getElementById('filterColumn').value;
-    const selectedValues = [...document.querySelectorAll('#valueCheckboxes input:checked')]
+    if (!column) return;
+
+    const selected = Array.from(document.querySelectorAll('.checkbox-container input:checked'))
         .map(cb => cb.value);
-    
-    if (selectedValues.length > 0) {
-        // Store the filter
-        activeFilters.set(column, selectedValues);
-        
-        // Update filter chips display
-        updateFilterChips();
-        
-        // Apply filters to charts
-        applyFiltersToCharts();
-    }
+
+    if (selected.length === 0) return;
+
+    // Add/replace active filter
+    activeFilters[column] = selected;
+    renderFilterChips();
+    applyFiltersToCharts();
 });
 
-function updateFilterChips() {
+// Render chips for active filters
+function renderFilterChips() {
     const container = document.getElementById('selectedFilters');
     container.innerHTML = '';
-    
-    activeFilters.forEach((values, column) => {
-        const chip = document.createElement('div');
-        chip.className = 'badge bg-secondary me-2 mb-2 p-2';
-        chip.innerHTML = `
-            ${column}: ${values.join(', ')}
-            <button type="button" class="btn-close btn-close-white ms-2" 
-                    aria-label="Remove" style="font-size: 0.5rem;"
-                    onclick="removeFilter('${column}')"></button>
-        `;
-        container.appendChild(chip);
+
+    Object.entries(activeFilters).forEach(([col, vals]) => {
+        vals.forEach(val => {
+            const chip = document.createElement('span');
+            chip.className = 'badge bg-primary me-2 mb-2';
+            chip.textContent = `${col}: ${val}`;
+            chip.style.cursor = 'pointer';
+            chip.onclick = () => {
+                activeFilters[col] = activeFilters[col].filter(v => v !== val);
+                if (activeFilters[col].length === 0) delete activeFilters[col];
+                renderFilterChips();
+                applyFiltersToCharts();
+            };
+            container.appendChild(chip);
+        });
     });
 }
 
-function removeFilter(column) {
-    activeFilters.delete(column);
-    updateFilterChips();
-    applyFiltersToCharts();
-}
-
+// ✅ Send filters to all iframes
 function applyFiltersToCharts() {
-    let filteredData = JSON.parse(document.getElementById('json-data').textContent);
-    
-    // Apply each active filter
-    activeFilters.forEach((values, column) => {
-        filteredData = filteredData.filter(row => {
-            const rowValue = row[column];
-            return values.includes(rowValue?.toString());
-        });
-    });
-
-    // Update each chart
-    document.querySelectorAll('.chart-iframe').forEach(iframe => {
-        const chartType = iframe.getAttribute('data-chart-type');
-        const xCol = iframe.getAttribute('data-x-col');
-        const yCol = iframe.getAttribute('data-y-col');
-        const operation = iframe.getAttribute('data-operation');
-
-        // Send filtered data to all chart iframes
-        document.querySelectorAll('.chart-iframe').forEach(iframe => {
-            iframe.contentWindow.postMessage({
-                type: "updateChartData",
-                data: filteredData,
-                chartType: iframe.getAttribute('data-chart-type'),
-                xCol: iframe.getAttribute('data-x-col'),
-                yCol: iframe.getAttribute('data-y-col'),
-                operation: iframe.getAttribute('data-operation')
-            }, "*");
-        });
+    const chartIframes = document.querySelectorAll('.chart-iframe');
+    chartIframes.forEach(iframe => {
+        iframe.contentWindow.postMessage(
+            { type: 'updateFilters', filters: activeFilters },
+            '*'
+        );
     });
 }
 
-// Add these helper functions for different chart types
-function updateTableChart(iframe, filteredData) {
-    const doc = iframe.contentWindow.document;
-    const tableBody = doc.querySelector('table tbody');
-    if (tableBody) {
-        // Update table with filtered data
-        const rows = filteredData.map((row, index) => `
-            <tr>
-                <td>${index + 1}</td>
-                ${Object.values(row).map(val => `<td>${val}</td>`).join('')}
-            </tr>
-        `).join('');
-        tableBody.innerHTML = rows;
-    }
-}
+// Get title from localStorage and set it
+window.addEventListener("DOMContentLoaded", () => {
+  // Read the stored title
+  const savedTitle = localStorage.getItem("dashboardTitle");
 
-function updateCardChart(iframe, filteredData, yCol, operation) {
-    const doc = iframe.contentWindow.document;
-    const valueElement = doc.querySelector('h1');
-    if (valueElement) {
-        let value = 0;
-        if (operation === 'sum') {
-            value = filteredData.reduce((sum, row) => sum + (parseFloat(row[yCol]) || 0), 0);
-        } else if (operation === 'avg') {
-            value = filteredData.reduce((sum, row) => sum + (parseFloat(row[yCol]) || 0), 0) / filteredData.length;
-        }
-        valueElement.textContent = `₹${value.toLocaleString('en-IN', {maximumFractionDigits: 0})}`;
-    }
-}
-
-function updatePlotlyChart(iframe, filteredData, xCol, yCol, operation, chartType) {
-    const plotlyDiv = iframe.contentWindow.document.querySelector('.js-plotly-plot');
-    if (!plotlyDiv) return;
-
-    // Process data based on operation
-    let processedData = processChartData(filteredData, xCol, yCol, operation);
-
-    // Update chart based on chart type
-    if (chartType === 'bar' || chartType === 'line') {
-        const update = {
-            x: [processedData.map(d => d[xCol])],
-            y: [processedData.map(d => d[yCol])]
-        };
-        iframe.contentWindow.Plotly.update(plotlyDiv, update);
-    } else if (chartType === 'pie') {
-        const update = {
-            labels: processedData.map(d => d[xCol]),
-            values: processedData.map(d => d[yCol])
-        };
-        iframe.contentWindow.Plotly.update(plotlyDiv, update);
-    }
-}
-
-function processChartData(data, xCol, yCol, operation) {
-    if (!operation || operation === 'none') return data;
-
-    const grouped = {};
-    data.forEach(row => {
-        const key = row[xCol];
-        if (!grouped[key]) grouped[key] = [];
-        grouped[key].push(parseFloat(row[yCol]) || 0);
-    });
-
-    return Object.entries(grouped).map(([key, values]) => {
-        let value;
-        switch (operation) {
-            case 'sum':
-                value = values.reduce((a, b) => a + b, 0);
-                break;
-            case 'avg':
-                value = values.reduce((a, b) => a + b, 0) / values.length;
-                break;
-            case 'count':
-                value = values.length;
-                break;
-            case 'distinct_count':
-                value = new Set(values).size;
-                break;
-            default:
-                value = values[0];
-        }
-        return { [xCol]: key, [yCol]: value };
-    });
-}
-
-function showChartLoading(show = true) {
-    document.querySelectorAll('.chart-container').forEach(container => {
-        const overlay = container.querySelector('.loading-overlay') || 
-            container.appendChild(createElement('div', { className: 'loading-overlay' }, 
-                'Updating chart...'));
-        overlay.classList.toggle('active', show);
-    });
-}
+  // Update the h2 text only if we have something saved
+  if (savedTitle) {
+    document.getElementById("defaultTitle").textContent = savedTitle;
+  }
+});
 </script>
 
 <style>

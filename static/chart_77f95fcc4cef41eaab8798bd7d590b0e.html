@@ -1,0 +1,141 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                    <style>
+                        body {{
+                            margin: 0;
+                            padding: 10px;
+                            background: #fafafa;
+                        }}
+                    </style>
+                </head>
+                <body>
+                    <div class="chart-wrapper" id="chart-227ee090f0c6444488a40dca2cd92836" style="margin-bottom:20px;">
+                        
+                        <div style='
+                            background:#fff;
+                            border-radius:12px;
+                            box-shadow:0 4px 8px rgba(0,0,0,0.1);
+                            overflow:auto;
+                            padding:15px;
+                        '>
+                            <h4 style='
+                                font-family:Arial; 
+                                color:#007bff; 
+                                font-size:25px; 
+                                text-align:center;
+                                font-weight:bold;
+                                margin-top:14px;
+                                margin-bottom:22px;
+                            '>
+                            Data Table - Matrix(Summable)</h4>
+                            
+                        <style>
+                            table {
+                                border-collapse: collapse;
+                                margin: auto;
+                            }
+                            table th, table td {
+                                text-align: center;
+                                padding: 6px 10px;
+                            }
+                            table tbody tr:last-child {
+                                font-weight: bold;
+                                background-color: #f0f0f0;
+                            }
+                        </style>
+                        <div style="overflow-x:auto; display:flex; justify-content:center; align-items:center; margin:auto;">
+                            <table border="1" class="dataframe table table-striped table-bordered table-sm text-center align-middle">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Region</th>
+      <th>P001</th>
+      <th>P002</th>
+      <th>P003</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>East</td>
+      <td>20000</td>
+      <td>5000</td>
+      <td>0</td>
+      <td>₹25,000</td>
+    </tr>
+    <tr>
+      <td>North</td>
+      <td>12000</td>
+      <td>8000</td>
+      <td>6000</td>
+      <td>₹26,000</td>
+    </tr>
+    <tr>
+      <td>South</td>
+      <td>15000</td>
+      <td>10000</td>
+      <td>7000</td>
+      <td>₹32,000</td>
+    </tr>
+    <tr>
+      <td>West</td>
+      <td>18000</td>
+      <td>9000</td>
+      <td>0</td>
+      <td>₹27,000</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>65000</td>
+      <td>32000</td>
+      <td>13000</td>
+      <td>₹110,000</td>
+    </tr>
+  </tbody>
+</table>
+                        </div>
+                        
+                        </div>
+                        
+                    </div>
+                    <script>
+                    window.addEventListener("message", (event) => {
+                        if (event.data.type === "updateFilters") {
+                            const filters = event.data.filters;
+                            console.log("Chart received filters:", filters);
+                            
+                            const table = document.querySelector("table");
+                            if (!table) return;
+
+                            // Get header names from <thead>
+                            const headers = Array.from(table.querySelectorAll("thead th")).map(th => th.innerText.trim());
+                            const rows = table.querySelectorAll("tbody tr");
+
+                            rows.forEach(row => {
+                                let show = true;
+                                const cells = Array.from(row.querySelectorAll("td"));
+
+                                // Build a mapping of {columnName: cellText}
+                                const rowData = {};
+                                headers.forEach((col, i) => {
+                                    rowData[col] = cells[i] ? cells[i].innerText.trim() : "";
+                                });
+
+                                // Check all active filters
+                                for (const [col, values] of Object.entries(filters)) {
+                                    if (values.length && !values.includes(rowData[col])) {
+                                        show = false;
+                                        break;
+                                    }
+                                }
+                                // Show or hide the row
+                                row.style.display = show ? "" : "none";
+                            });
+                        }
+                    });
+                    </script>
+                </body>
+                </html>

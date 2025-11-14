@@ -15,6 +15,12 @@
 <h2 class="config2-title mb-4">Chart Configuration - Config Form</h2>
 
 <div class="container chart-config-card">
+  <div class="title-box col-md-6" id="input-section">
+    <label class="form-label" for="userInput">Dashboard Title</label>
+    <input class="form-control" type="text" id="userInput" placeholder="Enter Custom Title">
+    <!-- <button onclick="updateHeading()">Submit</button> -->
+  </div>
+  <hr>
   <form method="POST" id="multiChartForm" action="/data_model_2">
     <div id="chart-forms-container">
 
@@ -87,6 +93,42 @@
           <div class="selected-columns mt-2"></div>
         </div>
 
+        <!-- Matrix Table-specific fields -->
+        <div class="matrix-table-fields" style="display: none;">
+
+          <div class="form-group" style="margin-bottom:12px;">
+              <label for="matrix_row_dim" style="font-weight:600;">Row Dimension:</label>
+              <select name="matrix_row_dim" id="matrix_row_dim" class="form-select form-select-sm">
+                  <option value="">-- Select Row Field --</option>
+                  {% for col in columns %}
+                  <option value="{{ col }}">{{ col }}</option>
+                  {% endfor %}
+              </select>
+              <small class="form-text text-muted">This becomes the row grouping (e.g. Region, Category).</small>
+          </div>
+          <div class="form-group" style="margin-bottom:12px;">
+              <label for="matrix_col_dim" style="font-weight:600;">Column Dimension:</label>
+              <select name="matrix_col_dim" id="matrix_col_dim" class="form-select form-select-sm">
+                  <option value="">-- Select Column Field --</option>
+                  {% for col in columns %}
+                  <option value="{{ col }}">{{ col }}</option>
+                  {% endfor %}
+              </select>
+              <small class="form-text text-muted">This becomes the table columns (e.g. Product, Month).</small>
+          </div>
+          <div class="form-group" style="margin-bottom:12px;">
+              <label for="matrix_value_dim" style="font-weight:600;">Value (Measure):</label>
+              <select name="matrix_value_dim" id="matrix_value_dim" class="form-select form-select-sm">
+                  <option value="">-- Select Value Field --</option>
+                  {% for col in columns %}
+                  <option value="{{ col }}">{{ col }}</option>
+                  {% endfor %}
+              </select>
+              <small class="form-text text-muted">This is the numeric value to aggregate (e.g. Amount, Quantity).</small>
+          </div>
+
+        </div>
+
         <!-- Hidden input to store selected columns -->
         <input type="hidden" name="selected_columns_0" class="selected_columns_input">
 
@@ -133,7 +175,7 @@
 
     <div class="config-btns d-flex gap-2 mt-3">
       <button type="button" class="btn btn-success" id="addChartBtn">Add Chart</button>
-      <button type="submit" class="btn btn-primary">Generate All Charts</button>
+      <button onclick="updateHeading()" type="submit" class="btn btn-primary">Generate All Charts</button>
       <!-- Table View button -->
       <a href="{{ url_for('table_view') }}" class="btn btn-primary">Table View</a>
     </div>  
@@ -193,15 +235,41 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Chart type toggle
-document.addEventListener("change", function(e){
-    if(e.target.classList.contains("chart-type")){
+// // Chart type toggle
+// Chart type toggle for regular/table/matrix-table fields
+document.addEventListener("change", function(e) {
+    if (e.target.classList.contains("chart-type")) {
         const container = e.target.closest(".chart-config");
         const chartType = e.target.value;
-        container.querySelector(".regular-fields").style.display = (chartType === "table" || chartType === "matrix_table") ? "none" : "block";
-        container.querySelector(".table-fields").style.display = (chartType === "table" || chartType === "matrix_table") ? "block" : "none";
+
+        // Get references safely
+        const regularFields = container.querySelector(".regular-fields");
+        const tableFields = container.querySelector(".table-fields");
+        const matrixFields = container.querySelector(".matrix-table-fields");
+
+        // Default all hidden
+        if (regularFields) regularFields.style.display = "none";
+        if (tableFields) tableFields.style.display = "none";
+        if (matrixFields) matrixFields.style.display = "none";
+
+        // Show based on chart type
+        if (chartType === "table") {
+            if (tableFields) tableFields.style.display = "block";
+        } else if (chartType === "matrix_table") {
+            if (matrixFields) matrixFields.style.display = "block";
+        } else {
+            if (regularFields) regularFields.style.display = "block";
+        }
     }
 });
+// document.addEventListener("change", function(e){
+//     if(e.target.classList.contains("chart-type")){
+//         const container = e.target.closest(".chart-config");
+//         const chartType = e.target.value;
+//         container.querySelector(".regular-fields").style.display = (chartType === "table") ? "none" : "block";
+//         container.querySelector(".table-fields").style.display = (chartType === "table") ? "block" : "none";
+//     }
+// });
 
 // Add/Remove table columns
 document.addEventListener("click", function(e){
@@ -230,6 +298,20 @@ document.addEventListener("click", function(e){
     }
 });
 
+
+// Update heading based on user input
+function updateHeading() {
+  const input = document.getElementById("userInput").value.trim();
+  // const heading = document.getElementById("defaultTitle");
+  // Save title to localStorage so next page can read it
+  localStorage.setItem("dashboardTitle", input || "Dashboard - Chart View");
+
+  if (input) {
+    heading.textContent = input;  // Replace with user input
+  } else {
+    heading.textContent = "Default Heading Text"; // Keep default
+  }
+}
 </script>
 
 <style>
@@ -252,6 +334,9 @@ document.addEventListener("click", function(e){
 }
 .config-btns {
   justify-content: center;
+}
+.title-box{
+  margin: 1rem auto;
 }
 </style>
 

@@ -1,0 +1,56 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                    <style>
+                        body {{
+                            margin: 0;
+                            padding: 10px;
+                            background: #fafafa;
+                        }}
+                    </style>
+                </head>
+                <body>
+                    <div class="chart-wrapper" id="chart-fb128ac116b04d9b94d27480fa322570" style="margin-bottom:20px;">
+                        <p style='color:red;'>⚠️ Please select Row, Column, and Value fields for matrix table.</p>
+                    </div>
+                    <script>
+                    window.addEventListener("message", (event) => {
+                        if (event.data.type === "updateFilters") {
+                            const filters = event.data.filters;
+                            console.log("Chart received filters:", filters);
+                            
+                            const table = document.querySelector("table");
+                            if (!table) return;
+
+                            // Get header names from <thead>
+                            const headers = Array.from(table.querySelectorAll("thead th")).map(th => th.innerText.trim());
+                            const rows = table.querySelectorAll("tbody tr");
+
+                            rows.forEach(row => {
+                                let show = true;
+                                const cells = Array.from(row.querySelectorAll("td"));
+
+                                // Build a mapping of {columnName: cellText}
+                                const rowData = {};
+                                headers.forEach((col, i) => {
+                                    rowData[col] = cells[i] ? cells[i].innerText.trim() : "";
+                                });
+
+                                // Check all active filters
+                                for (const [col, values] of Object.entries(filters)) {
+                                    if (values.length && !values.includes(rowData[col])) {
+                                        show = false;
+                                        break;
+                                    }
+                                }
+                                // Show or hide the row
+                                row.style.display = show ? "" : "none";
+                            });
+                        }
+                    });
+                    </script>
+                </body>
+                </html>

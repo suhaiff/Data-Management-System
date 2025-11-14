@@ -1,0 +1,164 @@
+# Data Model page (join builder) - accepts both /data-model and /data_model
+@app.route('/data-model', methods=['GET', 'POST'])
+@app.route('/data_model', methods=['GET', 'POST'])
+def data_model():
+    # Load available columns from file_header_columns sheet
+    available_columns = {}      # { "SheetName": [ {"col": column_name, "option": option_value}, ... ] }
+    option_map = {}             # { "SheetName_ColumnName": (sheet, column) }
+    sheet_to_path = {}          # { "SheetName": relative_path }
+
+    if os.path.exists(EXCEL_FILE):
+        try:
+            wb = load_workbook(EXCEL_FILE, read_only=True)
+            if "file_header_columns" in wb.sheetnames:
+                ws = wb["file_header_columns"]
+                for r in ws.iter_rows(min_row=2, values_only=True):
+                    # expected: [S.No, Path, File Name, Sheet Name, Column Name, SheetName_ColumnName]
+                    path = r[1]; file_name = r[2]; sheet = r[3]; col = r[4]; opt = r[5]
+                    if sheet and opt:
+                        available_columns.setdefault(sheet, []).append({"col": col, "option": opt})
+                        option_map[opt] = (sheet, col)
+                        # track the path for that sheet (first occurrence)
+                        if sheet not in sheet_to_path and path:
+                            sheet_to_path[sheet] = path
+            wb.close()
+        except Exception as e:
+            flash(f"Error reading file_header_columns: {e}")
+            return render_template('data_model.html', active_page='data_model',
+                                   available_columns=available_columns)
+
+    if request.method == 'POST':
+        left_opts = request.form.getlist("left_col[]")
+        right_opts = request.form.getlist("right_col[]")
+        join_types = request.form.getlist("join_type[]")
+
+        # Basic validation
+        if not (left_opts and right_opts and join_types) or not (len(left_opts) == len(right_opts) == len(join_types)):
+            flash("Invalid form submission: ensure each row has left, right and join type.")
+            return redirect(url_for('data_model'))
+
+        # Prepare dataframes cache per (path, sheet) so we don't reload repeatedly
+        df_cache = {}  # key = (path, sheet) -> DataFrame
+
+        def load_sheet_df(sheet_name):
+            """Load the dataframe for that sheet using sheet_to_path mapping."""
+            if sheet_name not in sheet_to_path:
+                return None, f"No file path found for sheet '{sheet_name}' in file_header_columns."
+            path_rel = sheet_to_path[sheet_name]
+            path_abs = os.path.join(BASE_DIR, path_rel)
+            if not os.path.exists(path_abs):
+                return None, f"File not found: {path_abs}"
+            key = (path_abs, sheet_name)
+            if key in df_cache:
+                return df_cache[key], None
+            try:
+                df = pd.read_excel(path_abs, sheet_name=sheet_name, engine="openpyxl")
+                df_cache[key] = df
+                return df, None
+            except Exception as e:
+                return None, f"Failed to read {sheet_name} from {path_abs}: {e}"
+
+        # perform sequential joins (chain must be connected)
+        result_df = None
+        included_sheets = set()
+        join_map = {"Inner Join": "inner", "Left Join": "left", "Right Join": "right", "Outer Join": "outer"}
+
+        join_log_rows = []  # to record what was joined for the data_model sheet
+
+        try:
+            for l_opt, r_opt, jt in zip(left_opts, right_opts, join_types):
+                if l_opt not in option_map or r_opt not in option_map:
+                    flash(f"Column mapping not found for {l_opt} or {r_opt}")
+                    return redirect(url_for('data_model'))
+
+                l_sheet, l_col = option_map[l_opt]
+                r_sheet, r_col = option_map[r_opt]
+
+                df_left, err = load_sheet_df(l_sheet)
+                if err:
+                    flash(err); return redirect(url_for('data_model'))
+                df_right, err = load_sheet_df(r_sheet)
+                if err:
+                    flash(err); return redirect(url_for('data_model'))
+
+                how = join_map.get(jt, "inner")
+
+                if result_df is None:
+                    # first join
+                    if l_col not in df_left.columns:
+                        flash(f"Column '{l_col}' not in sheet '{l_sheet}'"); return redirect(url_for('data_model'))
+                    if r_col not in df_right.columns:
+                        flash(f"Column '{r_col}' not in sheet '{r_sheet}'"); return redirect(url_for('data_model'))
+                    result_df = pd.merge(df_left, df_right, left_on=l_col, right_on=r_col, how=how, suffixes=('_L','_R'))
+                    included_sheets.update([l_sheet, r_sheet])
+                else:
+                    # subsequent join: determine which side (left/right) is already in result_df
+                    # we check presence of columns named exactly l_col or r_col in result_df
+                    if l_col in result_df.columns:
+                        # result_df has left column -> merge with df_right using r_col
+                        if r_col not in df_right.columns:
+                            flash(f"Column '{r_col}' not found in {r_sheet}"); return redirect(url_for('data_model'))
+                        result_df = pd.merge(result_df, df_right, left_on=l_col, right_on=r_col, how=how, suffixes=('','_R2'))
+                        included_sheets.add(r_sheet)
+                    elif r_col in result_df.columns:
+                        # result_df has right column -> merge with df_left
+                        if l_col not in df_left.columns:
+                            flash(f"Column '{l_col}' not found in {l_sheet}"); return redirect(url_for('data_model'))
+                        result_df = pd.merge(result_df, df_left, left_on=r_col, right_on=l_col, how=how, suffixes=('','_L2'))
+                        included_sheets.add(l_sheet)
+                    else:
+                        # not connected -> abort with clear message
+                        flash(f"Join chain is not connected for {l_opt} <> {r_opt}. Make sure joins form a connected chain.")
+                        return redirect(url_for('data_model'))
+
+                join_log_rows.append((l_opt, r_opt, jt))
+
+        except Exception as e:
+            flash(f"Unexpected error during join: {e}")
+            return redirect(url_for('data_model'))
+
+        # If nothing was joined
+        if result_df is None:
+            flash("No joins performed.")
+            return redirect(url_for('data_model'))
+        
+        # Clean NaN and NaT values before saving
+        result_df = result_df.fillna("")  # replaces NaN, NaT, None with empty string
+
+
+        # Save joined result to EXCEL_FILE as 'joined_output' (replace if exists)
+        try:
+            if os.path.exists(EXCEL_FILE):
+                with pd.ExcelWriter(EXCEL_FILE, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
+                    result_df.to_excel(writer, sheet_name='joined_output', index=False)
+            else:
+                with pd.ExcelWriter(EXCEL_FILE, engine='openpyxl') as writer:
+                    result_df.to_excel(writer, sheet_name='joined_output', index=False)
+        except Exception as e:
+            flash(f"Failed to write joined_output sheet: {e}")
+            return redirect(url_for('data_model'))
+
+        # Log the join definitions into 'data_model' sheet
+        try:
+            wb_log = load_workbook(EXCEL_FILE)
+            if "data_model" not in wb_log.sheetnames:
+                ws_dm = wb_log.create_sheet("data_model")
+                ws_dm.append(["S.No", "Sheet1_Column", "Sheet2_Column", "Join_Type"])
+            else:
+                ws_dm = wb_log["data_model"]
+            start_idx = ws_dm.max_row
+            for i, (lopt, ropt, jt) in enumerate(join_log_rows, start=start_idx):
+                ws_dm.append([i, lopt, ropt, jt])
+            wb_log.save(EXCEL_FILE)
+            wb_log.close()
+        except Exception as e:
+            flash(f"Failed to log data_model details: {e}")
+            return redirect(url_for('data_model'))
+
+        # Save the joined DataFrame temporarily as JSON in session or just redirect to preview route
+        # We'll just redirect to preview route; preview route will read 'joined_output' sheet.
+        flash("Join completed and saved to 'joined_output'. Redirecting to preview...")
+        return redirect(url_for('data_model_2'))
+
+    # GET: render builder UI
+    return render_template('data_model.html', active_page='data_model', available_columns=available_columns)
